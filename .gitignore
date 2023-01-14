@@ -1,0 +1,12 @@
+.vscode/
+artifacts/
+node_modules/
+cache/
+
+.env
+yarn.lock
+*.ptau
+*.zkey
+*proof.json
+*public.json
+*verification_key.json

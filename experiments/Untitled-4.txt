@@ -1,0 +1,540 @@
+[00:08:32] a2468834@WSL:/mnt/d/snarkjs-example$ (yarn zkey evaluateMerkleTreePos2 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMerkleTreePos4 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMerkleTreePos8 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMerkleTreePos16 powers-of-tau/powersOfTau28_hez_final_25.ptau;)
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMerkleTreePos2 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMerkleTreePos2.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreePos2_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                0c66138a 5ccbacd8 5d18845d 25190569
+                f032792a 8dbd9e28 91b1b778 a1a2121a
+                d4e46452 7105b277 0991c3d4 b182e726
+                f1cf5d66 bb3110dd 247c0406 9a9403b1
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos2_00.zkey circuits/zkey/evaluateMerkleTreePos2_01.zkey -e=2937cd5b03a007853cc0 '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/779
+[DEBUG] snarkJS: Applying key: H Section: 0/1024
+[INFO]  snarkJS: Circuit Hash:
+                0c66138a 5ccbacd8 5d18845d 25190569
+                f032792a 8dbd9e28 91b1b778 a1a2121a
+                d4e46452 7105b277 0991c3d4 b182e726
+                f1cf5d66 bb3110dd 247c0406 9a9403b1
+[INFO]  snarkJS: Contribution Hash:
+                1517e010 0ab5ee9b e454544a 5309c0a4
+                b9576f6d 0d75214f 9c31ed23 e5e440d2
+                5f3abaec 4f7753fc 52adf4e3 9f1c800f
+                d5afd16f 1425e257 9ad45b45 e522657a
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos2_01.zkey circuits/zkey/evaluateMerkleTreePos2_02.zkey -e=a4293085736bb1e9868d '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/779
+[DEBUG] snarkJS: Applying key: H Section: 0/1024
+[INFO]  snarkJS: Circuit Hash:
+                0c66138a 5ccbacd8 5d18845d 25190569
+                f032792a 8dbd9e28 91b1b778 a1a2121a
+                d4e46452 7105b277 0991c3d4 b182e726
+                f1cf5d66 bb3110dd 247c0406 9a9403b1
+[INFO]  snarkJS: Contribution Hash:
+                5dd042d1 9ffc249c 018e4da4 8db4796c
+                1c25a1d7 4f48b983 cdcdd106 5d26fefc
+                1e3d77a3 ea53a2e4 eff64ee5 6ff33013
+                e8e0e9b2 2f94cdef 3b14b604 44f51a60
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos2_02.zkey circuits/zkey/evaluateMerkleTreePos2_03.zkey -e=33c5dc12a26d12c9152a '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/779
+[DEBUG] snarkJS: Applying key: H Section: 0/1024
+[INFO]  snarkJS: Circuit Hash:
+                0c66138a 5ccbacd8 5d18845d 25190569
+                f032792a 8dbd9e28 91b1b778 a1a2121a
+                d4e46452 7105b277 0991c3d4 b182e726
+                f1cf5d66 bb3110dd 247c0406 9a9403b1
+[INFO]  snarkJS: Contribution Hash:
+                4eeb3156 3d49966f ae7568a2 f63544d7
+                65681296 38ff7f40 b55cfd9b 71a52b8b
+                f5e4cff2 925f7c20 ebe27645 31383f83
+                ab5594f5 053b0140 066bebb1 70351840
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMerkleTreePos2_03.zkey circuits/zkey/evaluateMerkleTreePos2_final.zkey b9495724da75cea361f2 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/779
+[DEBUG] snarkJS: Applying key: H Section: 0/1024
+[INFO]  snarkJS: Contribution Hash:
+                067e4193 5eb6f5b0 839cbab9 c0bf025a
+                023cf87c cc2f3cc6 088f7a6a bb11144d
+                abdee801 917053b6 ef2f8d76 ff9f7a8d
+                da606d60 d23ed23e aa48df50 f68bf64f
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMerkleTreePos2.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreePos2_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/778
+[DEBUG] snarkJS: writing coeffs: 0/497
+[DEBUG] snarkJS: Writing points start IC: 0/2
+[DEBUG] snarkJS: Writing points end IC: 0/2
+[DEBUG] snarkJS: spliting buffer: 0/1024
+[DEBUG] snarkJS: HashingHPoints: 0/1024
+[DEBUG] snarkJS: Writing points start C: 0/779
+[DEBUG] snarkJS: Writing points end C: 0/779
+[DEBUG] snarkJS: Writing points start A: 0/781
+[DEBUG] snarkJS: Writing points end A: 0/781
+[DEBUG] snarkJS: Writing points start B1: 0/781
+[DEBUG] snarkJS: Writing points end B1: 0/781
+[DEBUG] snarkJS: Writing points start B2: 0/781
+[DEBUG] snarkJS: Writing points end B2: 0/781
+[INFO]  snarkJS: Circuit hash:
+                0c66138a 5ccbacd8 5d18845d 25190569
+                f032792a 8dbd9e28 91b1b778 a1a2121a
+                d4e46452 7105b277 0991c3d4 b182e726
+                f1cf5d66 bb3110dd 247c0406 9a9403b1
+[DEBUG] snarkJS: Same ratio check L section:  0/779
+[DEBUG] snarkJS: H Verificaition(tau):  0/1024
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/1024
+[INFO]  snarkJS: Circuit Hash:
+                0c66138a 5ccbacd8 5d18845d 25190569
+                f032792a 8dbd9e28 91b1b778 a1a2121a
+                d4e46452 7105b277 0991c3d4 b182e726
+                f1cf5d66 bb3110dd 247c0406 9a9403b1
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                067e4193 5eb6f5b0 839cbab9 c0bf025a
+                023cf87c cc2f3cc6 088f7a6a bb11144d
+                abdee801 917053b6 ef2f8d76 ff9f7a8d
+                da606d60 d23ed23e aa48df50 f68bf64f
+[INFO]  snarkJS: Beacon generator: b9495724da75cea361f2
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                4eeb3156 3d49966f ae7568a2 f63544d7
+                65681296 38ff7f40 b55cfd9b 71a52b8b
+                f5e4cff2 925f7c20 ebe27645 31383f83
+                ab5594f5 053b0140 066bebb1 70351840
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                5dd042d1 9ffc249c 018e4da4 8db4796c
+                1c25a1d7 4f48b983 cdcdd106 5d26fefc
+                1e3d77a3 ea53a2e4 eff64ee5 6ff33013
+                e8e0e9b2 2f94cdef 3b14b604 44f51a60
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                1517e010 0ab5ee9b e454544a 5309c0a4
+                b9576f6d 0d75214f 9c31ed23 e5e440d2
+                5f3abaec 4f7753fc 52adf4e3 9f1c800f
+                d5afd16f 1425e257 9ad45b45 e522657a
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 19.60s.
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMerkleTreePos4 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMerkleTreePos4.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreePos4_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                58268c38 86380036 a0bd791a 61379eb4
+                023d495a 31054e21 eff039f4 5b931215
+                a0d40286 96d8441a 718d28f9 fd194cc1
+                677646f3 f0a915ac 5488720e 6dfed883
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos4_00.zkey circuits/zkey/evaluateMerkleTreePos4_01.zkey -e=7d169bc077763af6ca19 '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/2331
+[DEBUG] snarkJS: Applying key: H Section: 0/4096
+[INFO]  snarkJS: Circuit Hash:
+                58268c38 86380036 a0bd791a 61379eb4
+                023d495a 31054e21 eff039f4 5b931215
+                a0d40286 96d8441a 718d28f9 fd194cc1
+                677646f3 f0a915ac 5488720e 6dfed883
+[INFO]  snarkJS: Contribution Hash:
+                7555f6bd 492a898a 0dd5b1a7 82910270
+                716a97b3 af1ffc02 86d7e4d2 97ba383e
+                db820155 3aa58699 2e777d95 9b426cf1
+                973094bf b967ed13 862953cf 6b60e3e3
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos4_01.zkey circuits/zkey/evaluateMerkleTreePos4_02.zkey -e=211c0793f51837f60f9c '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/2331
+[DEBUG] snarkJS: Applying key: H Section: 0/4096
+[INFO]  snarkJS: Circuit Hash:
+                58268c38 86380036 a0bd791a 61379eb4
+                023d495a 31054e21 eff039f4 5b931215
+                a0d40286 96d8441a 718d28f9 fd194cc1
+                677646f3 f0a915ac 5488720e 6dfed883
+[INFO]  snarkJS: Contribution Hash:
+                3eb45dfa b4916bd5 4c6bb089 362f3d90
+                a9a254c4 bcb9d9b0 e64b07c3 203f8a20
+                a64c23bf f75aa789 1f183cb9 fdc38464
+                b0fd4317 27ebf625 dd78346e f9508762
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos4_02.zkey circuits/zkey/evaluateMerkleTreePos4_03.zkey -e=96ba957d53fa9e42be90 '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/2331
+[DEBUG] snarkJS: Applying key: H Section: 0/4096
+[INFO]  snarkJS: Circuit Hash:
+                58268c38 86380036 a0bd791a 61379eb4
+                023d495a 31054e21 eff039f4 5b931215
+                a0d40286 96d8441a 718d28f9 fd194cc1
+                677646f3 f0a915ac 5488720e 6dfed883
+[INFO]  snarkJS: Contribution Hash:
+                e1854b39 e0eed3a6 acb6bb00 751552c8
+                ce615f70 f9e83f8e 0c63dd91 24692e0f
+                f487712c c5e245d7 1603ae25 1d2fc719
+                3582c29c 0689c61a 46728984 cf6405ea
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMerkleTreePos4_03.zkey circuits/zkey/evaluateMerkleTreePos4_final.zkey c31183e39712bbbbd1bb 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/2331
+[DEBUG] snarkJS: Applying key: H Section: 0/4096
+[INFO]  snarkJS: Contribution Hash:
+                7d56e84b 472e0e44 2eb43334 bed147ca
+                9bbdfb86 0a80978e 61d529bd 88aa2e81
+                46e42acd 540af199 ec37dfee 1abee2d8
+                cfa1aa0b 50d59b13 da2db3da 6bfa6654
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMerkleTreePos4.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreePos4_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/2328
+[DEBUG] snarkJS: writing coeffs: 0/1487
+[DEBUG] snarkJS: Writing points start IC: 0/2
+[DEBUG] snarkJS: Writing points end IC: 0/2
+[DEBUG] snarkJS: spliting buffer: 0/4096
+[DEBUG] snarkJS: HashingHPoints: 0/4096
+[DEBUG] snarkJS: Writing points start C: 0/2331
+[DEBUG] snarkJS: Writing points end C: 0/2331
+[DEBUG] snarkJS: Writing points start A: 0/2333
+[DEBUG] snarkJS: Writing points end A: 0/2333
+[DEBUG] snarkJS: Writing points start B1: 0/2333
+[DEBUG] snarkJS: Writing points end B1: 0/2333
+[DEBUG] snarkJS: Writing points start B2: 0/2333
+[DEBUG] snarkJS: Writing points end B2: 0/2333
+[INFO]  snarkJS: Circuit hash:
+                58268c38 86380036 a0bd791a 61379eb4
+                023d495a 31054e21 eff039f4 5b931215
+                a0d40286 96d8441a 718d28f9 fd194cc1
+                677646f3 f0a915ac 5488720e 6dfed883
+[DEBUG] snarkJS: Same ratio check L section:  0/2331
+[DEBUG] snarkJS: H Verificaition(tau):  0/4096
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/4096
+[INFO]  snarkJS: Circuit Hash:
+                58268c38 86380036 a0bd791a 61379eb4
+                023d495a 31054e21 eff039f4 5b931215
+                a0d40286 96d8441a 718d28f9 fd194cc1
+                677646f3 f0a915ac 5488720e 6dfed883
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                7d56e84b 472e0e44 2eb43334 bed147ca
+                9bbdfb86 0a80978e 61d529bd 88aa2e81
+                46e42acd 540af199 ec37dfee 1abee2d8
+                cfa1aa0b 50d59b13 da2db3da 6bfa6654
+[INFO]  snarkJS: Beacon generator: c31183e39712bbbbd1bb
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                e1854b39 e0eed3a6 acb6bb00 751552c8
+                ce615f70 f9e83f8e 0c63dd91 24692e0f
+                f487712c c5e245d7 1603ae25 1d2fc719
+                3582c29c 0689c61a 46728984 cf6405ea
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                3eb45dfa b4916bd5 4c6bb089 362f3d90
+                a9a254c4 bcb9d9b0 e64b07c3 203f8a20
+                a64c23bf f75aa789 1f183cb9 fdc38464
+                b0fd4317 27ebf625 dd78346e f9508762
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                7555f6bd 492a898a 0dd5b1a7 82910270
+                716a97b3 af1ffc02 86d7e4d2 97ba383e
+                db820155 3aa58699 2e777d95 9b426cf1
+                973094bf b967ed13 862953cf 6b60e3e3
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 20.84s.
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMerkleTreePos8 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMerkleTreePos8.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreePos8_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                649286de 7bb33c0f 9330b8be ac3ed640
+                031b3dfa fce60366 000d2a47 c7cd1988
+                76e32452 7ed34979 e2b724ed fcfc1ec1
+                51ffffe6 7ac462c4 8d5b4e93 18897f75
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos8_00.zkey circuits/zkey/evaluateMerkleTreePos8_01.zkey -e=9650d9f61cfa7bc9810a '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/5435
+[DEBUG] snarkJS: Applying key: H Section: 0/8192
+[INFO]  snarkJS: Circuit Hash:
+                649286de 7bb33c0f 9330b8be ac3ed640
+                031b3dfa fce60366 000d2a47 c7cd1988
+                76e32452 7ed34979 e2b724ed fcfc1ec1
+                51ffffe6 7ac462c4 8d5b4e93 18897f75
+[INFO]  snarkJS: Contribution Hash:
+                4b7ecbee 6158cd87 83b4d51c 8f58e96d
+                f4225f2d ddc4241c 2f705c50 8c228e72
+                071ee409 40be34dc 6b464e06 4770780d
+                8936b00f 036eb2e2 3218c6b2 0dc409ab
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos8_01.zkey circuits/zkey/evaluateMerkleTreePos8_02.zkey -e=6b631eb72893dae14272 '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/5435
+[DEBUG] snarkJS: Applying key: H Section: 0/8192
+[INFO]  snarkJS: Circuit Hash:
+                649286de 7bb33c0f 9330b8be ac3ed640
+                031b3dfa fce60366 000d2a47 c7cd1988
+                76e32452 7ed34979 e2b724ed fcfc1ec1
+                51ffffe6 7ac462c4 8d5b4e93 18897f75
+[INFO]  snarkJS: Contribution Hash:
+                8b221f1b c21ea5d7 9e2e86a7 a63cd46c
+                668f8075 c0d0965e a9e9d03f ec377dee
+                07361199 28039f2b cccb070e fb1f2709
+                00333f12 8ec28864 9a41a3f9 a2cb4451
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos8_02.zkey circuits/zkey/evaluateMerkleTreePos8_03.zkey -e=c07223c417bbed5530e2 '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/5435
+[DEBUG] snarkJS: Applying key: H Section: 0/8192
+[INFO]  snarkJS: Circuit Hash:
+                649286de 7bb33c0f 9330b8be ac3ed640
+                031b3dfa fce60366 000d2a47 c7cd1988
+                76e32452 7ed34979 e2b724ed fcfc1ec1
+                51ffffe6 7ac462c4 8d5b4e93 18897f75
+[INFO]  snarkJS: Contribution Hash:
+                ee200731 1fbf76c4 a0ae25b6 7c3f5701
+                5e9f65bc 6bd6629a b5016251 e7bb1f4f
+                6c666fe7 d6fbac43 cbb0b081 3ffba840
+                7559aee6 0dfcd493 86db1a74 61409401
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMerkleTreePos8_03.zkey circuits/zkey/evaluateMerkleTreePos8_final.zkey 35177919deea6bf5e39d 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/5435
+[DEBUG] snarkJS: Applying key: H Section: 0/8192
+[INFO]  snarkJS: Contribution Hash:
+                1eee045a 1690cb8c 93a2d47d b4b9fcbb
+                71fa38ac e27c24e5 d500b4cc fcef7076
+                d25b55f0 6eb70ac7 4b30fb00 323522e4
+                a1f574c4 cf9c8d5e 2fbcceb4 b6369aab
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMerkleTreePos8.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreePos8_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/5428
+[DEBUG] snarkJS: writing coeffs: 0/3467
+[DEBUG] snarkJS: Writing points start IC: 0/2
+[DEBUG] snarkJS: Writing points end IC: 0/2
+[DEBUG] snarkJS: spliting buffer: 0/8192
+[DEBUG] snarkJS: HashingHPoints: 0/8192
+[DEBUG] snarkJS: Writing points start C: 0/5435
+[DEBUG] snarkJS: Writing points end C: 0/5435
+[DEBUG] snarkJS: Writing points start A: 0/5437
+[DEBUG] snarkJS: Writing points end A: 0/5437
+[DEBUG] snarkJS: Writing points start B1: 0/5437
+[DEBUG] snarkJS: Writing points end B1: 0/5437
+[DEBUG] snarkJS: Writing points start B2: 0/5437
+[DEBUG] snarkJS: Writing points end B2: 0/5437
+[INFO]  snarkJS: Circuit hash:
+                649286de 7bb33c0f 9330b8be ac3ed640
+                031b3dfa fce60366 000d2a47 c7cd1988
+                76e32452 7ed34979 e2b724ed fcfc1ec1
+                51ffffe6 7ac462c4 8d5b4e93 18897f75
+[DEBUG] snarkJS: Same ratio check L section:  0/5435
+[DEBUG] snarkJS: H Verificaition(tau):  0/8192
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/8192
+[INFO]  snarkJS: Circuit Hash:
+                649286de 7bb33c0f 9330b8be ac3ed640
+                031b3dfa fce60366 000d2a47 c7cd1988
+                76e32452 7ed34979 e2b724ed fcfc1ec1
+                51ffffe6 7ac462c4 8d5b4e93 18897f75
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                1eee045a 1690cb8c 93a2d47d b4b9fcbb
+                71fa38ac e27c24e5 d500b4cc fcef7076
+                d25b55f0 6eb70ac7 4b30fb00 323522e4
+                a1f574c4 cf9c8d5e 2fbcceb4 b6369aab
+[INFO]  snarkJS: Beacon generator: 35177919deea6bf5e39d
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                ee200731 1fbf76c4 a0ae25b6 7c3f5701
+                5e9f65bc 6bd6629a b5016251 e7bb1f4f
+                6c666fe7 d6fbac43 cbb0b081 3ffba840
+                7559aee6 0dfcd493 86db1a74 61409401
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                8b221f1b c21ea5d7 9e2e86a7 a63cd46c
+                668f8075 c0d0965e a9e9d03f ec377dee
+                07361199 28039f2b cccb070e fb1f2709
+                00333f12 8ec28864 9a41a3f9 a2cb4451
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                4b7ecbee 6158cd87 83b4d51c 8f58e96d
+                f4225f2d ddc4241c 2f705c50 8c228e72
+                071ee409 40be34dc 6b464e06 4770780d
+                8936b00f 036eb2e2 3218c6b2 0dc409ab
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 31.32s.
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMerkleTreePos16 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMerkleTreePos16.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreePos16_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                a7bd30b9 f45e051b 454dde89 d013e2f1
+                5b3e9805 15a6f8eb 9b9930bf 30f2b0d6
+                4bfd6522 8cb7b181 2cae4705 cf81e713
+                f1def0a8 b54d52c9 6edf92e9 3bd1993d
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos16_00.zkey circuits/zkey/evaluateMerkleTreePos16_01.zkey -e=8d96008e9be3bf0edf0f '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/11643
+[DEBUG] snarkJS: Applying key: H Section: 0/16384
+[INFO]  snarkJS: Circuit Hash:
+                a7bd30b9 f45e051b 454dde89 d013e2f1
+                5b3e9805 15a6f8eb 9b9930bf 30f2b0d6
+                4bfd6522 8cb7b181 2cae4705 cf81e713
+                f1def0a8 b54d52c9 6edf92e9 3bd1993d
+[INFO]  snarkJS: Contribution Hash:
+                4de0b856 1c57bd10 2264138d c0833d86
+                36bc35ba 2e262554 95b4e175 065fbc32
+                1e448901 ed396554 1e014fd9 8f5d7ad8
+                bab217ca 0251c599 19fb7779 7453a1dd
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos16_01.zkey circuits/zkey/evaluateMerkleTreePos16_02.zkey -e=17354358a7245345f2b7 '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/11643
+[DEBUG] snarkJS: Applying key: H Section: 0/16384
+[INFO]  snarkJS: Circuit Hash:
+                a7bd30b9 f45e051b 454dde89 d013e2f1
+                5b3e9805 15a6f8eb 9b9930bf 30f2b0d6
+                4bfd6522 8cb7b181 2cae4705 cf81e713
+                f1def0a8 b54d52c9 6edf92e9 3bd1993d
+[INFO]  snarkJS: Contribution Hash:
+                bfbefea6 140c1ffc dd4ef961 13546775
+                3c56b222 c3e277bd 5f5bdc3c bdf0f401
+                4118e7ae 2d8f2684 9a2a1539 eff5bd47
+                317901a6 36b5d12a edcae2b5 c150e067
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreePos16_02.zkey circuits/zkey/evaluateMerkleTreePos16_03.zkey -e=6249c1dc27003611b373 '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/11643
+[DEBUG] snarkJS: Applying key: H Section: 0/16384
+[INFO]  snarkJS: Circuit Hash:
+                a7bd30b9 f45e051b 454dde89 d013e2f1
+                5b3e9805 15a6f8eb 9b9930bf 30f2b0d6
+                4bfd6522 8cb7b181 2cae4705 cf81e713
+                f1def0a8 b54d52c9 6edf92e9 3bd1993d
+[INFO]  snarkJS: Contribution Hash:
+                9ecf4b48 91613114 4412c9e5 ce00b62a
+                867038b3 d330a2f9 4e6eb722 971bf90d
+                ad05a1e2 1279f33f d43e6c35 f6061f9f
+                38486301 c297aa65 05684382 6c0165d9
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMerkleTreePos16_03.zkey circuits/zkey/evaluateMerkleTreePos16_final.zkey 04c4f4921a5e7ff1e21f 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/11643
+[DEBUG] snarkJS: Applying key: H Section: 0/16384
+[INFO]  snarkJS: Contribution Hash:
+                e5c90734 eb0a7b0e a17f2854 97124ec3
+                2456bbfa 8eeb2cbf 341ad7d9 c8f436b7
+                b721bdbf 619e5bc3 ef90b444 266e40c5
+                89ba57ef 8022f9ae ffdf313c ff207333
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMerkleTreePos16.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreePos16_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/11628
+[DEBUG] snarkJS: processing constraints: 10000/11628
+[DEBUG] snarkJS: writing coeffs: 0/7427
+[DEBUG] snarkJS: Writing points start IC: 0/2
+[DEBUG] snarkJS: Writing points end IC: 0/2
+[DEBUG] snarkJS: spliting buffer: 0/16384
+[DEBUG] snarkJS: spliting buffer: 10000/16384
+[DEBUG] snarkJS: HashingHPoints: 0/16384
+[DEBUG] snarkJS: Writing points start C: 0/11643
+[DEBUG] snarkJS: Writing points end C: 0/11643
+[DEBUG] snarkJS: Writing points start A: 0/11645
+[DEBUG] snarkJS: Writing points end A: 0/11645
+[DEBUG] snarkJS: Writing points start B1: 0/11645
+[DEBUG] snarkJS: Writing points end B1: 0/11645
+[DEBUG] snarkJS: Writing points start B2: 0/11645
+[DEBUG] snarkJS: Writing points end B2: 0/11645
+[INFO]  snarkJS: Circuit hash:
+                a7bd30b9 f45e051b 454dde89 d013e2f1
+                5b3e9805 15a6f8eb 9b9930bf 30f2b0d6
+                4bfd6522 8cb7b181 2cae4705 cf81e713
+                f1def0a8 b54d52c9 6edf92e9 3bd1993d
+[DEBUG] snarkJS: Same ratio check L section:  0/11643
+[DEBUG] snarkJS: H Verificaition(tau):  0/16384
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/16384
+[INFO]  snarkJS: Circuit Hash:
+                a7bd30b9 f45e051b 454dde89 d013e2f1
+                5b3e9805 15a6f8eb 9b9930bf 30f2b0d6
+                4bfd6522 8cb7b181 2cae4705 cf81e713
+                f1def0a8 b54d52c9 6edf92e9 3bd1993d
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                e5c90734 eb0a7b0e a17f2854 97124ec3
+                2456bbfa 8eeb2cbf 341ad7d9 c8f436b7
+                b721bdbf 619e5bc3 ef90b444 266e40c5
+                89ba57ef 8022f9ae ffdf313c ff207333
+[INFO]  snarkJS: Beacon generator: 04c4f4921a5e7ff1e21f
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                9ecf4b48 91613114 4412c9e5 ce00b62a
+                867038b3 d330a2f9 4e6eb722 971bf90d
+                ad05a1e2 1279f33f d43e6c35 f6061f9f
+                38486301 c297aa65 05684382 6c0165d9
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                bfbefea6 140c1ffc dd4ef961 13546775
+                3c56b222 c3e277bd 5f5bdc3c bdf0f401
+                4118e7ae 2d8f2684 9a2a1539 eff5bd47
+                317901a6 36b5d12a edcae2b5 c150e067
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                4de0b856 1c57bd10 2264138d c0833d86
+                36bc35ba 2e262554 95b4e175 065fbc32
+                1e448901 ed396554 1e014fd9 8f5d7ad8
+                bab217ca 0251c599 19fb7779 7453a1dd
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 44.63s.
+[00:11:57] a2468834@WSL:/mnt/d/snarkjs-example$

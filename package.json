@@ -1,0 +1,24 @@
+{
+  "name": "snarkjs-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.3",
+    "chai": "^4.3.7",
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "csv": "^6.2.5",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.4",
+    "mocha": "^10.2.0",
+    "snarkjs": "^0.5.0",
+    "zkey-manager": "^0.1.2"
+  },
+  "scripts": {
+    "compile": "yarn zkey-manager compile --config zkey.config.yml",
+    "genZkey": "yarn zkey-manager genZkeys --config zkey.config.yml"
+  }
+}

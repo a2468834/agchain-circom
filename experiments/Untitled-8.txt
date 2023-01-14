@@ -1,0 +1,1535 @@
+[03:17:34] a2468834@WSL:/mnt/d/snarkjs-example$ (\
+> yarn zkey evaluateMerkleTreeSHA2 powers-of-tau/powersOfTau28_hez_final_25.ptau;\
+> yarn zkey evaluateMerkleTreeSHA4 powers-of-tau/powersOfTau28_hez_final_25.ptau;\
+> yarn proof evaluateMerkleTreeSHA2 circuits/data/input2.json;\
+> yarn proof evaluateMerkleTreeSHA4 circuits/data/input4.json;\
+> yarn compile evaluateMerkleTreeSHA16;\
+> )
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMerkleTreeSHA2 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMerkleTreeSHA2.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreeSHA2_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                0e058527 d3c4d5f5 40601f83 40b1eaac
+                15acfa2f c4ec0b91 147a04b1 7d04fafd
+                9b72ae8a 88aedacd 7e792442 0a380e3f
+                0454914b e0b844ca 21a4d638 f73c416d
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreeSHA2_00.zkey circuits/zkey/evaluateMerkleTreeSHA2_01.zkey -e=bb651bbfcb6e57eab835 '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/204162
+[DEBUG] snarkJS: Applying key: L Section: 65536/204162
+[DEBUG] snarkJS: Applying key: L Section: 131072/204162
+[DEBUG] snarkJS: Applying key: L Section: 196608/204162
+[DEBUG] snarkJS: Applying key: H Section: 0/262144
+[DEBUG] snarkJS: Applying key: H Section: 65536/262144
+[DEBUG] snarkJS: Applying key: H Section: 131072/262144
+[DEBUG] snarkJS: Applying key: H Section: 196608/262144
+[INFO]  snarkJS: Circuit Hash:
+                0e058527 d3c4d5f5 40601f83 40b1eaac
+                15acfa2f c4ec0b91 147a04b1 7d04fafd
+                9b72ae8a 88aedacd 7e792442 0a380e3f
+                0454914b e0b844ca 21a4d638 f73c416d
+[INFO]  snarkJS: Contribution Hash:
+                15d5c59d efb55b79 167cff4a 57179f2f
+                2d7137e0 878507db 41c0cbff e6e4ec22
+                ffdf15be 47c8a0b2 783a5b7b 394a51da
+                3b61a8e3 9cc90346 8e185f4a 11ae6309
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreeSHA2_01.zkey circuits/zkey/evaluateMerkleTreeSHA2_02.zkey -e=30307e9373b210283428 '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/204162
+[DEBUG] snarkJS: Applying key: L Section: 65536/204162
+[DEBUG] snarkJS: Applying key: L Section: 131072/204162
+[DEBUG] snarkJS: Applying key: L Section: 196608/204162
+[DEBUG] snarkJS: Applying key: H Section: 0/262144
+[DEBUG] snarkJS: Applying key: H Section: 65536/262144
+[DEBUG] snarkJS: Applying key: H Section: 131072/262144
+[DEBUG] snarkJS: Applying key: H Section: 196608/262144
+[INFO]  snarkJS: Circuit Hash:
+                0e058527 d3c4d5f5 40601f83 40b1eaac
+                15acfa2f c4ec0b91 147a04b1 7d04fafd
+                9b72ae8a 88aedacd 7e792442 0a380e3f
+                0454914b e0b844ca 21a4d638 f73c416d
+[INFO]  snarkJS: Contribution Hash:
+                c7415a6e dc2625b2 9c590895 a4564301
+                0ae921e7 d6c8d320 6b3fe3e0 dbebbff2
+                59efafbe e0604c8a a6e2abb7 de9b744d
+                816695a1 c2a9f3e1 34405f40 5bf95451
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreeSHA2_02.zkey circuits/zkey/evaluateMerkleTreeSHA2_03.zkey -e=a65aac0e24c9223c6b5a '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/204162
+[DEBUG] snarkJS: Applying key: L Section: 65536/204162
+[DEBUG] snarkJS: Applying key: L Section: 131072/204162
+[DEBUG] snarkJS: Applying key: L Section: 196608/204162
+[DEBUG] snarkJS: Applying key: H Section: 0/262144
+[DEBUG] snarkJS: Applying key: H Section: 65536/262144
+[DEBUG] snarkJS: Applying key: H Section: 131072/262144
+[DEBUG] snarkJS: Applying key: H Section: 196608/262144
+[INFO]  snarkJS: Circuit Hash:
+                0e058527 d3c4d5f5 40601f83 40b1eaac
+                15acfa2f c4ec0b91 147a04b1 7d04fafd
+                9b72ae8a 88aedacd 7e792442 0a380e3f
+                0454914b e0b844ca 21a4d638 f73c416d
+[INFO]  snarkJS: Contribution Hash:
+                5dd9b86d 6bcdc2e6 dbe06a7c 74204886
+                f3b98304 e5bd8255 5a5dca51 049e4e72
+                8f797516 59ea120e de49e85f f2de7872
+                536f6f1e 8958e360 3fe99df0 c289cbed
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMerkleTreeSHA2_03.zkey circuits/zkey/evaluateMerkleTreeSHA2_final.zkey 77cd0e809a758531818f 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/204162
+[DEBUG] snarkJS: Applying key: L Section: 65536/204162
+[DEBUG] snarkJS: Applying key: L Section: 131072/204162
+[DEBUG] snarkJS: Applying key: L Section: 196608/204162
+[DEBUG] snarkJS: Applying key: H Section: 0/262144
+[DEBUG] snarkJS: Applying key: H Section: 65536/262144
+[DEBUG] snarkJS: Applying key: H Section: 131072/262144
+[DEBUG] snarkJS: Applying key: H Section: 196608/262144
+[INFO]  snarkJS: Contribution Hash:
+                7ed90c82 3886435d 7cd7fc51 4f63c9f6
+                2b7b75b6 95c581a4 d045d433 5eed1915
+                efa999c3 7c47e18b 521abfc4 39a5ab65
+                dfa1fa28 205abef0 7a44efd0 8d9f1bd6
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMerkleTreeSHA2.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreeSHA2_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/204474
+[DEBUG] snarkJS: processing constraints: 10000/204474
+[DEBUG] snarkJS: processing constraints: 20000/204474
+[DEBUG] snarkJS: processing constraints: 30000/204474
+[DEBUG] snarkJS: processing constraints: 40000/204474
+[DEBUG] snarkJS: processing constraints: 50000/204474
+[DEBUG] snarkJS: processing constraints: 60000/204474
+[DEBUG] snarkJS: processing constraints: 70000/204474
+[DEBUG] snarkJS: processing constraints: 80000/204474
+[DEBUG] snarkJS: processing constraints: 90000/204474
+[DEBUG] snarkJS: processing constraints: 100000/204474
+[DEBUG] snarkJS: processing constraints: 110000/204474
+[DEBUG] snarkJS: processing constraints: 120000/204474
+[DEBUG] snarkJS: processing constraints: 130000/204474
+[DEBUG] snarkJS: processing constraints: 140000/204474
+[DEBUG] snarkJS: processing constraints: 150000/204474
+[DEBUG] snarkJS: processing constraints: 160000/204474
+[DEBUG] snarkJS: processing constraints: 170000/204474
+[DEBUG] snarkJS: processing constraints: 180000/204474
+[DEBUG] snarkJS: processing constraints: 190000/204474
+[DEBUG] snarkJS: processing constraints: 200000/204474
+[DEBUG] snarkJS: writing coeffs: 0/101331
+[DEBUG] snarkJS: writing coeffs: 100000/101331
+[DEBUG] snarkJS: Writing points start IC: 0/2
+[DEBUG] snarkJS: Configuring big array IC: 10000/19208
+[DEBUG] snarkJS: Writing points end IC: 0/2
+[DEBUG] snarkJS: spliting buffer: 0/262144
+[DEBUG] snarkJS: spliting buffer: 10000/262144
+[DEBUG] snarkJS: spliting buffer: 20000/262144
+[DEBUG] snarkJS: spliting buffer: 30000/262144
+[DEBUG] snarkJS: spliting buffer: 40000/262144
+[DEBUG] snarkJS: spliting buffer: 50000/262144
+[DEBUG] snarkJS: spliting buffer: 60000/262144
+[DEBUG] snarkJS: spliting buffer: 70000/262144
+[DEBUG] snarkJS: spliting buffer: 80000/262144
+[DEBUG] snarkJS: spliting buffer: 90000/262144
+[DEBUG] snarkJS: spliting buffer: 100000/262144
+[DEBUG] snarkJS: spliting buffer: 110000/262144
+[DEBUG] snarkJS: spliting buffer: 120000/262144
+[DEBUG] snarkJS: spliting buffer: 130000/262144
+[DEBUG] snarkJS: spliting buffer: 140000/262144
+[DEBUG] snarkJS: spliting buffer: 150000/262144
+[DEBUG] snarkJS: spliting buffer: 160000/262144
+[DEBUG] snarkJS: spliting buffer: 170000/262144
+[DEBUG] snarkJS: spliting buffer: 180000/262144
+[DEBUG] snarkJS: spliting buffer: 190000/262144
+[DEBUG] snarkJS: spliting buffer: 200000/262144
+[DEBUG] snarkJS: spliting buffer: 210000/262144
+[DEBUG] snarkJS: spliting buffer: 220000/262144
+[DEBUG] snarkJS: spliting buffer: 230000/262144
+[DEBUG] snarkJS: spliting buffer: 240000/262144
+[DEBUG] snarkJS: spliting buffer: 250000/262144
+[DEBUG] snarkJS: spliting buffer: 260000/262144
+[DEBUG] snarkJS: HashingHPoints: 0/262144
+[DEBUG] snarkJS: HashingHPoints: 16384/262144
+[DEBUG] snarkJS: HashingHPoints: 32768/262144
+[DEBUG] snarkJS: HashingHPoints: 49152/262144
+[DEBUG] snarkJS: HashingHPoints: 65536/262144
+[DEBUG] snarkJS: HashingHPoints: 81920/262144
+[DEBUG] snarkJS: HashingHPoints: 98304/262144
+[DEBUG] snarkJS: HashingHPoints: 114688/262144
+[DEBUG] snarkJS: HashingHPoints: 131072/262144
+[DEBUG] snarkJS: HashingHPoints: 147456/262144
+[DEBUG] snarkJS: HashingHPoints: 163840/262144
+[DEBUG] snarkJS: HashingHPoints: 180224/262144
+[DEBUG] snarkJS: HashingHPoints: 196608/262144
+[DEBUG] snarkJS: HashingHPoints: 212992/262144
+[DEBUG] snarkJS: HashingHPoints: 229376/262144
+[DEBUG] snarkJS: HashingHPoints: 245760/262144
+[DEBUG] snarkJS: Writing points start C: 0/204162
+[DEBUG] snarkJS: Writing points start C: 11936/204162
+[DEBUG] snarkJS: Writing points start C: 22915/204162
+[DEBUG] snarkJS: Writing points start C: 36359/204162
+[DEBUG] snarkJS: Writing points start C: 49804/204162
+[DEBUG] snarkJS: Writing points start C: 63274/204162
+[DEBUG] snarkJS: Writing points start C: 76745/204162
+[DEBUG] snarkJS: Writing points start C: 89166/204162
+[DEBUG] snarkJS: Writing points end C: 11936/204162
+[DEBUG] snarkJS: Writing points end C: 0/204162
+[DEBUG] snarkJS: Writing points end C: 76745/204162
+[DEBUG] snarkJS: Writing points end C: 22915/204162
+[DEBUG] snarkJS: Writing points end C: 63274/204162
+[DEBUG] snarkJS: Writing points end C: 49804/204162
+[DEBUG] snarkJS: Writing points end C: 36359/204162
+[DEBUG] snarkJS: Writing points end C: 89166/204162
+[DEBUG] snarkJS: Writing points start C: 102593/204162
+[DEBUG] snarkJS: Writing points start C: 116219/204162
+[DEBUG] snarkJS: Writing points start C: 129866/204162
+[DEBUG] snarkJS: Writing points start C: 143527/204162
+[DEBUG] snarkJS: Writing points start C: 156958/204162
+[DEBUG] snarkJS: Writing points start C: 169971/204162
+[DEBUG] snarkJS: Writing points start C: 182998/204162
+[DEBUG] snarkJS: Writing points start C: 195975/204162
+[DEBUG] snarkJS: Writing points end C: 195975/204162
+[DEBUG] snarkJS: Writing points end C: 182998/204162
+[DEBUG] snarkJS: Writing points end C: 143527/204162
+[DEBUG] snarkJS: Writing points end C: 116219/204162
+[DEBUG] snarkJS: Writing points end C: 156958/204162
+[DEBUG] snarkJS: Writing points end C: 169971/204162
+[DEBUG] snarkJS: Writing points end C: 102593/204162
+[DEBUG] snarkJS: Writing points end C: 129866/204162
+[DEBUG] snarkJS: Writing points start A: 0/204164
+[DEBUG] snarkJS: Configuring big array A: 10000/18074
+[DEBUG] snarkJS: Writing points start A: 32768/204164
+[DEBUG] snarkJS: Writing points start A: 65536/204164
+[DEBUG] snarkJS: Writing points start A: 98304/204164
+[DEBUG] snarkJS: Writing points start A: 131072/204164
+[DEBUG] snarkJS: Writing points start A: 163840/204164
+[DEBUG] snarkJS: Writing points start A: 196608/204164
+[DEBUG] snarkJS: Writing points end A: 196608/204164
+[DEBUG] snarkJS: Writing points end A: 0/204164
+[DEBUG] snarkJS: Writing points end A: 65536/204164
+[DEBUG] snarkJS: Writing points end A: 32768/204164
+[DEBUG] snarkJS: Writing points end A: 98304/204164
+[DEBUG] snarkJS: Writing points end A: 131072/204164
+[DEBUG] snarkJS: Writing points end A: 163840/204164
+[DEBUG] snarkJS: Writing points start B1: 0/204164
+[DEBUG] snarkJS: Writing points start B1: 32768/204164
+[DEBUG] snarkJS: Writing points start B1: 65536/204164
+[DEBUG] snarkJS: Writing points start B1: 98304/204164
+[DEBUG] snarkJS: Writing points start B1: 131072/204164
+[DEBUG] snarkJS: Writing points start B1: 163840/204164
+[DEBUG] snarkJS: Writing points start B1: 196608/204164
+[DEBUG] snarkJS: Writing points end B1: 0/204164
+[DEBUG] snarkJS: Writing points end B1: 32768/204164
+[DEBUG] snarkJS: Writing points end B1: 65536/204164
+[DEBUG] snarkJS: Writing points end B1: 98304/204164
+[DEBUG] snarkJS: Writing points end B1: 196608/204164
+[DEBUG] snarkJS: Writing points end B1: 131072/204164
+[DEBUG] snarkJS: Writing points end B1: 163840/204164
+[DEBUG] snarkJS: Writing points start B2: 0/204164
+[DEBUG] snarkJS: Writing points start B2: 32768/204164
+[DEBUG] snarkJS: Writing points start B2: 65536/204164
+[DEBUG] snarkJS: Writing points start B2: 98304/204164
+[DEBUG] snarkJS: Writing points start B2: 131072/204164
+[DEBUG] snarkJS: Writing points start B2: 163840/204164
+[DEBUG] snarkJS: Writing points start B2: 196608/204164
+[DEBUG] snarkJS: Writing points end B2: 0/204164
+[DEBUG] snarkJS: Writing points end B2: 32768/204164
+[DEBUG] snarkJS: Writing points end B2: 65536/204164
+[DEBUG] snarkJS: Writing points end B2: 98304/204164
+[DEBUG] snarkJS: Writing points end B2: 196608/204164
+[DEBUG] snarkJS: Writing points end B2: 131072/204164
+[DEBUG] snarkJS: Writing points end B2: 163840/204164
+[INFO]  snarkJS: Circuit hash:
+                0e058527 d3c4d5f5 40601f83 40b1eaac
+                15acfa2f c4ec0b91 147a04b1 7d04fafd
+                9b72ae8a 88aedacd 7e792442 0a380e3f
+                0454914b e0b844ca 21a4d638 f73c416d
+[DEBUG] snarkJS: Same ratio check L section:  0/204162
+[DEBUG] snarkJS: H Verificaition(tau):  0/262144
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/262144
+[INFO]  snarkJS: Circuit Hash:
+                0e058527 d3c4d5f5 40601f83 40b1eaac
+                15acfa2f c4ec0b91 147a04b1 7d04fafd
+                9b72ae8a 88aedacd 7e792442 0a380e3f
+                0454914b e0b844ca 21a4d638 f73c416d
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                7ed90c82 3886435d 7cd7fc51 4f63c9f6
+                2b7b75b6 95c581a4 d045d433 5eed1915
+                efa999c3 7c47e18b 521abfc4 39a5ab65
+                dfa1fa28 205abef0 7a44efd0 8d9f1bd6
+[INFO]  snarkJS: Beacon generator: 77cd0e809a758531818f
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                5dd9b86d 6bcdc2e6 dbe06a7c 74204886
+                f3b98304 e5bd8255 5a5dca51 049e4e72
+                8f797516 59ea120e de49e85f f2de7872
+                536f6f1e 8958e360 3fe99df0 c289cbed
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                c7415a6e dc2625b2 9c590895 a4564301
+                0ae921e7 d6c8d320 6b3fe3e0 dbebbff2
+                59efafbe e0604c8a a6e2abb7 de9b744d
+                816695a1 c2a9f3e1 34405f40 5bf95451
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                15d5c59d efb55b79 167cff4a 57179f2f
+                2d7137e0 878507db 41c0cbff e6e4ec22
+                ffdf15be 47c8a0b2 783a5b7b 394a51da
+                3b61a8e3 9cc90346 8e185f4a 11ae6309
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 311.36s.
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMerkleTreeSHA4 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMerkleTreeSHA4.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreeSHA4_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                510e534b f6e2f080 73994ffe f9ee89fa
+                18288e22 6aaaf25e 9828497a a1cf1c30
+                04d67c69 8604dcbb a15ed5e6 d42fbf62
+                3379d7fd beee3766 d5383ad7 b2558049
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreeSHA4_00.zkey circuits/zkey/evaluateMerkleTreeSHA4_01.zkey -e=21940547cb13e55d050d '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/612480
+[DEBUG] snarkJS: Applying key: L Section: 65536/612480
+[DEBUG] snarkJS: Applying key: L Section: 131072/612480
+[DEBUG] snarkJS: Applying key: L Section: 196608/612480
+[DEBUG] snarkJS: Applying key: L Section: 262144/612480
+[DEBUG] snarkJS: Applying key: L Section: 327680/612480
+[DEBUG] snarkJS: Applying key: L Section: 393216/612480
+[DEBUG] snarkJS: Applying key: L Section: 458752/612480
+[DEBUG] snarkJS: Applying key: L Section: 524288/612480
+[DEBUG] snarkJS: Applying key: L Section: 589824/612480
+[DEBUG] snarkJS: Applying key: H Section: 0/1048576
+[DEBUG] snarkJS: Applying key: H Section: 65536/1048576
+[DEBUG] snarkJS: Applying key: H Section: 131072/1048576
+[DEBUG] snarkJS: Applying key: H Section: 196608/1048576
+[DEBUG] snarkJS: Applying key: H Section: 262144/1048576
+[DEBUG] snarkJS: Applying key: H Section: 327680/1048576
+[DEBUG] snarkJS: Applying key: H Section: 393216/1048576
+[DEBUG] snarkJS: Applying key: H Section: 458752/1048576
+[DEBUG] snarkJS: Applying key: H Section: 524288/1048576
+[DEBUG] snarkJS: Applying key: H Section: 589824/1048576
+[DEBUG] snarkJS: Applying key: H Section: 655360/1048576
+[DEBUG] snarkJS: Applying key: H Section: 720896/1048576
+[DEBUG] snarkJS: Applying key: H Section: 786432/1048576
+[DEBUG] snarkJS: Applying key: H Section: 851968/1048576
+[DEBUG] snarkJS: Applying key: H Section: 917504/1048576
+[DEBUG] snarkJS: Applying key: H Section: 983040/1048576
+[INFO]  snarkJS: Circuit Hash:
+                510e534b f6e2f080 73994ffe f9ee89fa
+                18288e22 6aaaf25e 9828497a a1cf1c30
+                04d67c69 8604dcbb a15ed5e6 d42fbf62
+                3379d7fd beee3766 d5383ad7 b2558049
+[INFO]  snarkJS: Contribution Hash:
+                532346a3 5fae5284 c3a04e6c 7f617578
+                dcbdab8e 40dfda5d 7c179d6b 682c7ff3
+                098c73cc 2c4bfbeb c304255a 94adef10
+                182d04ee 06a7f4ef 9bf2a7e2 9c351570
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreeSHA4_01.zkey circuits/zkey/evaluateMerkleTreeSHA4_02.zkey -e=49f530630b6771b4c429 '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/612480
+[DEBUG] snarkJS: Applying key: L Section: 65536/612480
+[DEBUG] snarkJS: Applying key: L Section: 131072/612480
+[DEBUG] snarkJS: Applying key: L Section: 196608/612480
+[DEBUG] snarkJS: Applying key: L Section: 262144/612480
+[DEBUG] snarkJS: Applying key: L Section: 327680/612480
+[DEBUG] snarkJS: Applying key: L Section: 393216/612480
+[DEBUG] snarkJS: Applying key: L Section: 458752/612480
+[DEBUG] snarkJS: Applying key: L Section: 524288/612480
+[DEBUG] snarkJS: Applying key: L Section: 589824/612480
+[DEBUG] snarkJS: Applying key: H Section: 0/1048576
+[DEBUG] snarkJS: Applying key: H Section: 65536/1048576
+[DEBUG] snarkJS: Applying key: H Section: 131072/1048576
+[DEBUG] snarkJS: Applying key: H Section: 196608/1048576
+[DEBUG] snarkJS: Applying key: H Section: 262144/1048576
+[DEBUG] snarkJS: Applying key: H Section: 327680/1048576
+[DEBUG] snarkJS: Applying key: H Section: 393216/1048576
+[DEBUG] snarkJS: Applying key: H Section: 458752/1048576
+[DEBUG] snarkJS: Applying key: H Section: 524288/1048576
+[DEBUG] snarkJS: Applying key: H Section: 589824/1048576
+[DEBUG] snarkJS: Applying key: H Section: 655360/1048576
+[DEBUG] snarkJS: Applying key: H Section: 720896/1048576
+[DEBUG] snarkJS: Applying key: H Section: 786432/1048576
+[DEBUG] snarkJS: Applying key: H Section: 851968/1048576
+[DEBUG] snarkJS: Applying key: H Section: 917504/1048576
+[DEBUG] snarkJS: Applying key: H Section: 983040/1048576
+[INFO]  snarkJS: Circuit Hash:
+                510e534b f6e2f080 73994ffe f9ee89fa
+                18288e22 6aaaf25e 9828497a a1cf1c30
+                04d67c69 8604dcbb a15ed5e6 d42fbf62
+                3379d7fd beee3766 d5383ad7 b2558049
+[INFO]  snarkJS: Contribution Hash:
+                ae03099d 02160043 804154bd 1deffb8e
+                53a9bac1 85400ab4 5227dfe5 9b601eeb
+                3880f5ba babdbc83 636ab72f 41e3341b
+                dbb46df6 47e3b58b 566f9008 101cf69e
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMerkleTreeSHA4_02.zkey circuits/zkey/evaluateMerkleTreeSHA4_03.zkey -e=15781747878022f1b49f '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/612480
+[DEBUG] snarkJS: Applying key: L Section: 65536/612480
+[DEBUG] snarkJS: Applying key: L Section: 131072/612480
+[DEBUG] snarkJS: Applying key: L Section: 196608/612480
+[DEBUG] snarkJS: Applying key: L Section: 262144/612480
+[DEBUG] snarkJS: Applying key: L Section: 327680/612480
+[DEBUG] snarkJS: Applying key: L Section: 393216/612480
+[DEBUG] snarkJS: Applying key: L Section: 458752/612480
+[DEBUG] snarkJS: Applying key: L Section: 524288/612480
+[DEBUG] snarkJS: Applying key: L Section: 589824/612480
+[DEBUG] snarkJS: Applying key: H Section: 0/1048576
+[DEBUG] snarkJS: Applying key: H Section: 65536/1048576
+[DEBUG] snarkJS: Applying key: H Section: 131072/1048576
+[DEBUG] snarkJS: Applying key: H Section: 196608/1048576
+[DEBUG] snarkJS: Applying key: H Section: 262144/1048576
+[DEBUG] snarkJS: Applying key: H Section: 327680/1048576
+[DEBUG] snarkJS: Applying key: H Section: 393216/1048576
+[DEBUG] snarkJS: Applying key: H Section: 458752/1048576
+[DEBUG] snarkJS: Applying key: H Section: 524288/1048576
+[DEBUG] snarkJS: Applying key: H Section: 589824/1048576
+[DEBUG] snarkJS: Applying key: H Section: 655360/1048576
+[DEBUG] snarkJS: Applying key: H Section: 720896/1048576
+[DEBUG] snarkJS: Applying key: H Section: 786432/1048576
+[DEBUG] snarkJS: Applying key: H Section: 851968/1048576
+[DEBUG] snarkJS: Applying key: H Section: 917504/1048576
+[DEBUG] snarkJS: Applying key: H Section: 983040/1048576
+[INFO]  snarkJS: Circuit Hash:
+                510e534b f6e2f080 73994ffe f9ee89fa
+                18288e22 6aaaf25e 9828497a a1cf1c30
+                04d67c69 8604dcbb a15ed5e6 d42fbf62
+                3379d7fd beee3766 d5383ad7 b2558049
+[INFO]  snarkJS: Contribution Hash:
+                5adb3878 7c999622 31f63c50 beb61336
+                79165a02 447fde29 e4957533 04ce0b1b
+                6127cae9 4e7bb7a0 e4b3c168 42ea09cc
+                d75139a5 990326ee 6eab52b1 5b77b834
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMerkleTreeSHA4_03.zkey circuits/zkey/evaluateMerkleTreeSHA4_final.zkey 3ed6df7d7213ae46ffbb 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/612480
+[DEBUG] snarkJS: Applying key: L Section: 65536/612480
+[DEBUG] snarkJS: Applying key: L Section: 131072/612480
+[DEBUG] snarkJS: Applying key: L Section: 196608/612480
+[DEBUG] snarkJS: Applying key: L Section: 262144/612480
+[DEBUG] snarkJS: Applying key: L Section: 327680/612480
+[DEBUG] snarkJS: Applying key: L Section: 393216/612480
+[DEBUG] snarkJS: Applying key: L Section: 458752/612480
+[DEBUG] snarkJS: Applying key: L Section: 524288/612480
+[DEBUG] snarkJS: Applying key: L Section: 589824/612480
+[DEBUG] snarkJS: Applying key: H Section: 0/1048576
+[DEBUG] snarkJS: Applying key: H Section: 65536/1048576
+[DEBUG] snarkJS: Applying key: H Section: 131072/1048576
+[DEBUG] snarkJS: Applying key: H Section: 196608/1048576
+[DEBUG] snarkJS: Applying key: H Section: 262144/1048576
+[DEBUG] snarkJS: Applying key: H Section: 327680/1048576
+[DEBUG] snarkJS: Applying key: H Section: 393216/1048576
+[DEBUG] snarkJS: Applying key: H Section: 458752/1048576
+[DEBUG] snarkJS: Applying key: H Section: 524288/1048576
+[DEBUG] snarkJS: Applying key: H Section: 589824/1048576
+[DEBUG] snarkJS: Applying key: H Section: 655360/1048576
+[DEBUG] snarkJS: Applying key: H Section: 720896/1048576
+[DEBUG] snarkJS: Applying key: H Section: 786432/1048576
+[DEBUG] snarkJS: Applying key: H Section: 851968/1048576
+[DEBUG] snarkJS: Applying key: H Section: 917504/1048576
+[DEBUG] snarkJS: Applying key: H Section: 983040/1048576
+[INFO]  snarkJS: Contribution Hash:
+                5bd456f0 80e10ea1 5e9cd4e2 eb04470d
+                791d6048 02b66961 d40bb596 77febfae
+                38ee14f5 3c8c90c7 d74c97c0 d93b9c32
+                eb487253 ea87bd6a f57ea263 753006e3
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMerkleTreeSHA4.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMerkleTreeSHA4_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/613418
+[DEBUG] snarkJS: processing constraints: 10000/613418
+[DEBUG] snarkJS: processing constraints: 20000/613418
+[DEBUG] snarkJS: processing constraints: 30000/613418
+[DEBUG] snarkJS: processing constraints: 40000/613418
+[DEBUG] snarkJS: processing constraints: 50000/613418
+[DEBUG] snarkJS: processing constraints: 60000/613418
+[DEBUG] snarkJS: processing constraints: 70000/613418
+[DEBUG] snarkJS: processing constraints: 80000/613418
+[DEBUG] snarkJS: processing constraints: 90000/613418
+[DEBUG] snarkJS: processing constraints: 100000/613418
+[DEBUG] snarkJS: processing constraints: 110000/613418
+[DEBUG] snarkJS: processing constraints: 120000/613418
+[DEBUG] snarkJS: processing constraints: 130000/613418
+[DEBUG] snarkJS: processing constraints: 140000/613418
+[DEBUG] snarkJS: processing constraints: 150000/613418
+[DEBUG] snarkJS: processing constraints: 160000/613418
+[DEBUG] snarkJS: processing constraints: 170000/613418
+[DEBUG] snarkJS: processing constraints: 180000/613418
+[DEBUG] snarkJS: processing constraints: 190000/613418
+[DEBUG] snarkJS: processing constraints: 200000/613418
+[DEBUG] snarkJS: processing constraints: 210000/613418
+[DEBUG] snarkJS: processing constraints: 220000/613418
+[DEBUG] snarkJS: processing constraints: 230000/613418
+[DEBUG] snarkJS: processing constraints: 240000/613418
+[DEBUG] snarkJS: processing constraints: 250000/613418
+[DEBUG] snarkJS: processing constraints: 260000/613418
+[DEBUG] snarkJS: processing constraints: 270000/613418
+[DEBUG] snarkJS: processing constraints: 280000/613418
+[DEBUG] snarkJS: processing constraints: 290000/613418
+[DEBUG] snarkJS: processing constraints: 300000/613418
+[DEBUG] snarkJS: processing constraints: 310000/613418
+[DEBUG] snarkJS: processing constraints: 320000/613418
+[DEBUG] snarkJS: processing constraints: 330000/613418
+[DEBUG] snarkJS: processing constraints: 340000/613418
+[DEBUG] snarkJS: processing constraints: 350000/613418
+[DEBUG] snarkJS: processing constraints: 360000/613418
+[DEBUG] snarkJS: processing constraints: 370000/613418
+[DEBUG] snarkJS: processing constraints: 380000/613418
+[DEBUG] snarkJS: processing constraints: 390000/613418
+[DEBUG] snarkJS: processing constraints: 400000/613418
+[DEBUG] snarkJS: processing constraints: 410000/613418
+[DEBUG] snarkJS: processing constraints: 420000/613418
+[DEBUG] snarkJS: processing constraints: 430000/613418
+[DEBUG] snarkJS: processing constraints: 440000/613418
+[DEBUG] snarkJS: processing constraints: 450000/613418
+[DEBUG] snarkJS: processing constraints: 460000/613418
+[DEBUG] snarkJS: processing constraints: 470000/613418
+[DEBUG] snarkJS: processing constraints: 480000/613418
+[DEBUG] snarkJS: processing constraints: 490000/613418
+[DEBUG] snarkJS: processing constraints: 500000/613418
+[DEBUG] snarkJS: processing constraints: 510000/613418
+[DEBUG] snarkJS: processing constraints: 520000/613418
+[DEBUG] snarkJS: processing constraints: 530000/613418
+[DEBUG] snarkJS: processing constraints: 540000/613418
+[DEBUG] snarkJS: processing constraints: 550000/613418
+[DEBUG] snarkJS: processing constraints: 560000/613418
+[DEBUG] snarkJS: processing constraints: 570000/613418
+[DEBUG] snarkJS: processing constraints: 580000/613418
+[DEBUG] snarkJS: processing constraints: 590000/613418
+[DEBUG] snarkJS: processing constraints: 600000/613418
+[DEBUG] snarkJS: processing constraints: 610000/613418
+[DEBUG] snarkJS: writing coeffs: 0/303989
+[DEBUG] snarkJS: writing coeffs: 100000/303989
+[DEBUG] snarkJS: writing coeffs: 200000/303989
+[DEBUG] snarkJS: writing coeffs: 300000/303989
+[DEBUG] snarkJS: Writing points start IC: 0/2
+[DEBUG] snarkJS: Configuring big array IC: 10000/57622
+[DEBUG] snarkJS: Configuring big array IC: 20000/57622
+[DEBUG] snarkJS: Configuring big array IC: 30000/57622
+[DEBUG] snarkJS: Configuring big array IC: 40000/57622
+[DEBUG] snarkJS: Configuring big array IC: 50000/57622
+[DEBUG] snarkJS: Multiexp start: IC: 0/57622
+[DEBUG] snarkJS: Writing points start IC: 1/2
+[DEBUG] snarkJS: Multiexp start: IC: 0/2
+[DEBUG] snarkJS: Multiexp end: IC: 0/2
+[DEBUG] snarkJS: Writing points end IC: 1/2
+[DEBUG] snarkJS: Multiexp end: IC: 0/57622
+[DEBUG] snarkJS: Writing points end IC: 0/2
+[DEBUG] snarkJS: spliting buffer: 0/1048576
+[DEBUG] snarkJS: spliting buffer: 10000/1048576
+[DEBUG] snarkJS: spliting buffer: 20000/1048576
+[DEBUG] snarkJS: spliting buffer: 30000/1048576
+[DEBUG] snarkJS: spliting buffer: 40000/1048576
+[DEBUG] snarkJS: spliting buffer: 50000/1048576
+[DEBUG] snarkJS: spliting buffer: 60000/1048576
+[DEBUG] snarkJS: spliting buffer: 70000/1048576
+[DEBUG] snarkJS: spliting buffer: 80000/1048576
+[DEBUG] snarkJS: spliting buffer: 90000/1048576
+[DEBUG] snarkJS: spliting buffer: 100000/1048576
+[DEBUG] snarkJS: spliting buffer: 110000/1048576
+[DEBUG] snarkJS: spliting buffer: 120000/1048576
+[DEBUG] snarkJS: spliting buffer: 130000/1048576
+[DEBUG] snarkJS: spliting buffer: 140000/1048576
+[DEBUG] snarkJS: spliting buffer: 150000/1048576
+[DEBUG] snarkJS: spliting buffer: 160000/1048576
+[DEBUG] snarkJS: spliting buffer: 170000/1048576
+[DEBUG] snarkJS: spliting buffer: 180000/1048576
+[DEBUG] snarkJS: spliting buffer: 190000/1048576
+[DEBUG] snarkJS: spliting buffer: 200000/1048576
+[DEBUG] snarkJS: spliting buffer: 210000/1048576
+[DEBUG] snarkJS: spliting buffer: 220000/1048576
+[DEBUG] snarkJS: spliting buffer: 230000/1048576
+[DEBUG] snarkJS: spliting buffer: 240000/1048576
+[DEBUG] snarkJS: spliting buffer: 250000/1048576
+[DEBUG] snarkJS: spliting buffer: 260000/1048576
+[DEBUG] snarkJS: spliting buffer: 270000/1048576
+[DEBUG] snarkJS: spliting buffer: 280000/1048576
+[DEBUG] snarkJS: spliting buffer: 290000/1048576
+[DEBUG] snarkJS: spliting buffer: 300000/1048576
+[DEBUG] snarkJS: spliting buffer: 310000/1048576
+[DEBUG] snarkJS: spliting buffer: 320000/1048576
+[DEBUG] snarkJS: spliting buffer: 330000/1048576
+[DEBUG] snarkJS: spliting buffer: 340000/1048576
+[DEBUG] snarkJS: spliting buffer: 350000/1048576
+[DEBUG] snarkJS: spliting buffer: 360000/1048576
+[DEBUG] snarkJS: spliting buffer: 370000/1048576
+[DEBUG] snarkJS: spliting buffer: 380000/1048576
+[DEBUG] snarkJS: spliting buffer: 390000/1048576
+[DEBUG] snarkJS: spliting buffer: 400000/1048576
+[DEBUG] snarkJS: spliting buffer: 410000/1048576
+[DEBUG] snarkJS: spliting buffer: 420000/1048576
+[DEBUG] snarkJS: spliting buffer: 430000/1048576
+[DEBUG] snarkJS: spliting buffer: 440000/1048576
+[DEBUG] snarkJS: spliting buffer: 450000/1048576
+[DEBUG] snarkJS: spliting buffer: 460000/1048576
+[DEBUG] snarkJS: spliting buffer: 470000/1048576
+[DEBUG] snarkJS: spliting buffer: 480000/1048576
+[DEBUG] snarkJS: spliting buffer: 490000/1048576
+[DEBUG] snarkJS: spliting buffer: 500000/1048576
+[DEBUG] snarkJS: spliting buffer: 510000/1048576
+[DEBUG] snarkJS: spliting buffer: 520000/1048576
+[DEBUG] snarkJS: spliting buffer: 530000/1048576
+[DEBUG] snarkJS: spliting buffer: 540000/1048576
+[DEBUG] snarkJS: spliting buffer: 550000/1048576
+[DEBUG] snarkJS: spliting buffer: 560000/1048576
+[DEBUG] snarkJS: spliting buffer: 570000/1048576
+[DEBUG] snarkJS: spliting buffer: 580000/1048576
+[DEBUG] snarkJS: spliting buffer: 590000/1048576
+[DEBUG] snarkJS: spliting buffer: 600000/1048576
+[DEBUG] snarkJS: spliting buffer: 610000/1048576
+[DEBUG] snarkJS: spliting buffer: 620000/1048576
+[DEBUG] snarkJS: spliting buffer: 630000/1048576
+[DEBUG] snarkJS: spliting buffer: 640000/1048576
+[DEBUG] snarkJS: spliting buffer: 650000/1048576
+[DEBUG] snarkJS: spliting buffer: 660000/1048576
+[DEBUG] snarkJS: spliting buffer: 670000/1048576
+[DEBUG] snarkJS: spliting buffer: 680000/1048576
+[DEBUG] snarkJS: spliting buffer: 690000/1048576
+[DEBUG] snarkJS: spliting buffer: 700000/1048576
+[DEBUG] snarkJS: spliting buffer: 710000/1048576
+[DEBUG] snarkJS: spliting buffer: 720000/1048576
+[DEBUG] snarkJS: spliting buffer: 730000/1048576
+[DEBUG] snarkJS: spliting buffer: 740000/1048576
+[DEBUG] snarkJS: spliting buffer: 750000/1048576
+[DEBUG] snarkJS: spliting buffer: 760000/1048576
+[DEBUG] snarkJS: spliting buffer: 770000/1048576
+[DEBUG] snarkJS: spliting buffer: 780000/1048576
+[DEBUG] snarkJS: spliting buffer: 790000/1048576
+[DEBUG] snarkJS: spliting buffer: 800000/1048576
+[DEBUG] snarkJS: spliting buffer: 810000/1048576
+[DEBUG] snarkJS: spliting buffer: 820000/1048576
+[DEBUG] snarkJS: spliting buffer: 830000/1048576
+[DEBUG] snarkJS: spliting buffer: 840000/1048576
+[DEBUG] snarkJS: spliting buffer: 850000/1048576
+[DEBUG] snarkJS: spliting buffer: 860000/1048576
+[DEBUG] snarkJS: spliting buffer: 870000/1048576
+[DEBUG] snarkJS: spliting buffer: 880000/1048576
+[DEBUG] snarkJS: spliting buffer: 890000/1048576
+[DEBUG] snarkJS: spliting buffer: 900000/1048576
+[DEBUG] snarkJS: spliting buffer: 910000/1048576
+[DEBUG] snarkJS: spliting buffer: 920000/1048576
+[DEBUG] snarkJS: spliting buffer: 930000/1048576
+[DEBUG] snarkJS: spliting buffer: 940000/1048576
+[DEBUG] snarkJS: spliting buffer: 950000/1048576
+[DEBUG] snarkJS: spliting buffer: 960000/1048576
+[DEBUG] snarkJS: spliting buffer: 970000/1048576
+[DEBUG] snarkJS: spliting buffer: 980000/1048576
+[DEBUG] snarkJS: spliting buffer: 990000/1048576
+[DEBUG] snarkJS: spliting buffer: 1000000/1048576
+[DEBUG] snarkJS: spliting buffer: 1010000/1048576
+[DEBUG] snarkJS: spliting buffer: 1020000/1048576
+[DEBUG] snarkJS: spliting buffer: 1030000/1048576
+[DEBUG] snarkJS: spliting buffer: 1040000/1048576
+[DEBUG] snarkJS: HashingHPoints: 0/1048576
+[DEBUG] snarkJS: HashingHPoints: 16384/1048576
+[DEBUG] snarkJS: HashingHPoints: 32768/1048576
+[DEBUG] snarkJS: HashingHPoints: 49152/1048576
+[DEBUG] snarkJS: HashingHPoints: 65536/1048576
+[DEBUG] snarkJS: HashingHPoints: 81920/1048576
+[DEBUG] snarkJS: HashingHPoints: 98304/1048576
+[DEBUG] snarkJS: HashingHPoints: 114688/1048576
+[DEBUG] snarkJS: HashingHPoints: 131072/1048576
+[DEBUG] snarkJS: HashingHPoints: 147456/1048576
+[DEBUG] snarkJS: HashingHPoints: 163840/1048576
+[DEBUG] snarkJS: HashingHPoints: 180224/1048576
+[DEBUG] snarkJS: HashingHPoints: 196608/1048576
+[DEBUG] snarkJS: HashingHPoints: 212992/1048576
+[DEBUG] snarkJS: HashingHPoints: 229376/1048576
+[DEBUG] snarkJS: HashingHPoints: 245760/1048576
+[DEBUG] snarkJS: HashingHPoints: 262144/1048576
+[DEBUG] snarkJS: HashingHPoints: 278528/1048576
+[DEBUG] snarkJS: HashingHPoints: 294912/1048576
+[DEBUG] snarkJS: HashingHPoints: 311296/1048576
+[DEBUG] snarkJS: HashingHPoints: 327680/1048576
+[DEBUG] snarkJS: HashingHPoints: 344064/1048576
+[DEBUG] snarkJS: HashingHPoints: 360448/1048576
+[DEBUG] snarkJS: HashingHPoints: 376832/1048576
+[DEBUG] snarkJS: HashingHPoints: 393216/1048576
+[DEBUG] snarkJS: HashingHPoints: 409600/1048576
+[DEBUG] snarkJS: HashingHPoints: 425984/1048576
+[DEBUG] snarkJS: HashingHPoints: 442368/1048576
+[DEBUG] snarkJS: HashingHPoints: 458752/1048576
+[DEBUG] snarkJS: HashingHPoints: 475136/1048576
+[DEBUG] snarkJS: HashingHPoints: 491520/1048576
+[DEBUG] snarkJS: HashingHPoints: 507904/1048576
+[DEBUG] snarkJS: HashingHPoints: 524288/1048576
+[DEBUG] snarkJS: HashingHPoints: 540672/1048576
+[DEBUG] snarkJS: HashingHPoints: 557056/1048576
+[DEBUG] snarkJS: HashingHPoints: 573440/1048576
+[DEBUG] snarkJS: HashingHPoints: 589824/1048576
+[DEBUG] snarkJS: HashingHPoints: 606208/1048576
+[DEBUG] snarkJS: HashingHPoints: 622592/1048576
+[DEBUG] snarkJS: HashingHPoints: 638976/1048576
+[DEBUG] snarkJS: HashingHPoints: 655360/1048576
+[DEBUG] snarkJS: HashingHPoints: 671744/1048576
+[DEBUG] snarkJS: HashingHPoints: 688128/1048576
+[DEBUG] snarkJS: HashingHPoints: 704512/1048576
+[DEBUG] snarkJS: HashingHPoints: 720896/1048576
+[DEBUG] snarkJS: HashingHPoints: 737280/1048576
+[DEBUG] snarkJS: HashingHPoints: 753664/1048576
+[DEBUG] snarkJS: HashingHPoints: 770048/1048576
+[DEBUG] snarkJS: HashingHPoints: 786432/1048576
+[DEBUG] snarkJS: HashingHPoints: 802816/1048576
+[DEBUG] snarkJS: HashingHPoints: 819200/1048576
+[DEBUG] snarkJS: HashingHPoints: 835584/1048576
+[DEBUG] snarkJS: HashingHPoints: 851968/1048576
+[DEBUG] snarkJS: HashingHPoints: 868352/1048576
+[DEBUG] snarkJS: HashingHPoints: 884736/1048576
+[DEBUG] snarkJS: HashingHPoints: 901120/1048576
+[DEBUG] snarkJS: HashingHPoints: 917504/1048576
+[DEBUG] snarkJS: HashingHPoints: 933888/1048576
+[DEBUG] snarkJS: HashingHPoints: 950272/1048576
+[DEBUG] snarkJS: HashingHPoints: 966656/1048576
+[DEBUG] snarkJS: HashingHPoints: 983040/1048576
+[DEBUG] snarkJS: HashingHPoints: 999424/1048576
+[DEBUG] snarkJS: HashingHPoints: 1015808/1048576
+[DEBUG] snarkJS: HashingHPoints: 1032192/1048576
+[DEBUG] snarkJS: Writing points start C: 0/612480
+[DEBUG] snarkJS: Writing points start C: 11940/612480
+[DEBUG] snarkJS: Writing points start C: 22917/612480
+[DEBUG] snarkJS: Writing points start C: 36364/612480
+[DEBUG] snarkJS: Writing points start C: 49808/612480
+[DEBUG] snarkJS: Writing points start C: 63275/612480
+[DEBUG] snarkJS: Writing points start C: 76750/612480
+[DEBUG] snarkJS: Writing points start C: 89168/612480
+[DEBUG] snarkJS: Writing points end C: 11940/612480
+[DEBUG] snarkJS: Writing points end C: 0/612480
+[DEBUG] snarkJS: Writing points end C: 76750/612480
+[DEBUG] snarkJS: Writing points end C: 36364/612480
+[DEBUG] snarkJS: Writing points end C: 49808/612480
+[DEBUG] snarkJS: Writing points end C: 22917/612480
+[DEBUG] snarkJS: Writing points end C: 63275/612480
+[DEBUG] snarkJS: Writing points end C: 89168/612480
+[DEBUG] snarkJS: Writing points start C: 102596/612480
+[DEBUG] snarkJS: Writing points start C: 116221/612480
+[DEBUG] snarkJS: Writing points start C: 129870/612480
+[DEBUG] snarkJS: Writing points start C: 143532/612480
+[DEBUG] snarkJS: Writing points start C: 156962/612480
+[DEBUG] snarkJS: Writing points start C: 169973/612480
+[DEBUG] snarkJS: Writing points start C: 183003/612480
+[DEBUG] snarkJS: Writing points start C: 195979/612480
+[DEBUG] snarkJS: Writing points end C: 195979/612480
+[DEBUG] snarkJS: Writing points end C: 169973/612480
+[DEBUG] snarkJS: Writing points end C: 156962/612480
+[DEBUG] snarkJS: Writing points end C: 102596/612480
+[DEBUG] snarkJS: Writing points end C: 183003/612480
+[DEBUG] snarkJS: Writing points end C: 143532/612480
+[DEBUG] snarkJS: Writing points end C: 129870/612480
+[DEBUG] snarkJS: Writing points end C: 116221/612480
+[DEBUG] snarkJS: Writing points start C: 208487/612480
+[DEBUG] snarkJS: Writing points start C: 220145/612480
+[DEBUG] snarkJS: Writing points start C: 232017/612480
+[DEBUG] snarkJS: Writing points start C: 245478/612480
+[DEBUG] snarkJS: Writing points start C: 258956/612480
+[DEBUG] snarkJS: Writing points start C: 272402/612480
+[DEBUG] snarkJS: Writing points start C: 285583/612480
+[DEBUG] snarkJS: Writing points start C: 298125/612480
+[DEBUG] snarkJS: Writing points end C: 208487/612480
+[DEBUG] snarkJS: Writing points end C: 220145/612480
+[DEBUG] snarkJS: Writing points end C: 285583/612480
+[DEBUG] snarkJS: Writing points end C: 258956/612480
+[DEBUG] snarkJS: Writing points end C: 232017/612480
+[DEBUG] snarkJS: Writing points end C: 272402/612480
+[DEBUG] snarkJS: Writing points end C: 245478/612480
+[DEBUG] snarkJS: Writing points end C: 298125/612480
+[DEBUG] snarkJS: Writing points start C: 311778/612480
+[DEBUG] snarkJS: Writing points start C: 325420/612480
+[DEBUG] snarkJS: Writing points start C: 339062/612480
+[DEBUG] snarkJS: Writing points start C: 352736/612480
+[DEBUG] snarkJS: Writing points start C: 365913/612480
+[DEBUG] snarkJS: Writing points start C: 378922/612480
+[DEBUG] snarkJS: Writing points start C: 391955/612480
+[DEBUG] snarkJS: Writing points start C: 404929/612480
+[DEBUG] snarkJS: Writing points end C: 404929/612480
+[DEBUG] snarkJS: Writing points end C: 365913/612480
+[DEBUG] snarkJS: Writing points end C: 311778/612480
+[DEBUG] snarkJS: Writing points end C: 339062/612480
+[DEBUG] snarkJS: Writing points end C: 352736/612480
+[DEBUG] snarkJS: Writing points end C: 391955/612480
+[DEBUG] snarkJS: Writing points end C: 325420/612480
+[DEBUG] snarkJS: Writing points end C: 378922/612480
+[DEBUG] snarkJS: Writing points start C: 416792/612480
+[DEBUG] snarkJS: Writing points start C: 428088/612480
+[DEBUG] snarkJS: Writing points start C: 441149/612480
+[DEBUG] snarkJS: Writing points start C: 454611/612480
+[DEBUG] snarkJS: Writing points start C: 468069/612480
+[DEBUG] snarkJS: Writing points start C: 481531/612480
+[DEBUG] snarkJS: Writing points start C: 494261/612480
+[DEBUG] snarkJS: Writing points start C: 507320/612480
+[DEBUG] snarkJS: Writing points end C: 416792/612480
+[DEBUG] snarkJS: Writing points end C: 481531/612480
+[DEBUG] snarkJS: Writing points end C: 494261/612480
+[DEBUG] snarkJS: Writing points end C: 428088/612480
+[DEBUG] snarkJS: Writing points end C: 454611/612480
+[DEBUG] snarkJS: Writing points end C: 441149/612480
+[DEBUG] snarkJS: Writing points end C: 507320/612480
+[DEBUG] snarkJS: Writing points end C: 468069/612480
+[DEBUG] snarkJS: Writing points start C: 520978/612480
+[DEBUG] snarkJS: Writing points start C: 534620/612480
+[DEBUG] snarkJS: Writing points start C: 548278/612480
+[DEBUG] snarkJS: Writing points start C: 561872/612480
+[DEBUG] snarkJS: Writing points start C: 574863/612480
+[DEBUG] snarkJS: Writing points start C: 587869/612480
+[DEBUG] snarkJS: Writing points start C: 600907/612480
+[DEBUG] snarkJS: Writing points end C: 600907/612480
+[DEBUG] snarkJS: Writing points end C: 561872/612480
+[DEBUG] snarkJS: Writing points end C: 520978/612480
+[DEBUG] snarkJS: Writing points end C: 574863/612480
+[DEBUG] snarkJS: Writing points end C: 587869/612480
+[DEBUG] snarkJS: Writing points end C: 534620/612480
+[DEBUG] snarkJS: Writing points end C: 548278/612480
+[DEBUG] snarkJS: Writing points start A: 0/612482
+[DEBUG] snarkJS: Configuring big array A: 10000/54220
+[DEBUG] snarkJS: Configuring big array A: 20000/54220
+[DEBUG] snarkJS: Configuring big array A: 30000/54220
+[DEBUG] snarkJS: Configuring big array A: 40000/54220
+[DEBUG] snarkJS: Configuring big array A: 50000/54220
+[DEBUG] snarkJS: Multiexp start: A: 0/54220
+[DEBUG] snarkJS: Writing points start A: 1/612482
+[DEBUG] snarkJS: Writing points start A: 32769/612482
+[DEBUG] snarkJS: Writing points start A: 65537/612482
+[DEBUG] snarkJS: Writing points start A: 98305/612482
+[DEBUG] snarkJS: Writing points start A: 131073/612482
+[DEBUG] snarkJS: Writing points start A: 163841/612482
+[DEBUG] snarkJS: Writing points start A: 196609/612482
+[DEBUG] snarkJS: Multiexp end: A: 0/54220
+[DEBUG] snarkJS: Writing points end A: 0/612482
+[DEBUG] snarkJS: Writing points end A: 1/612482
+[DEBUG] snarkJS: Writing points end A: 196609/612482
+[DEBUG] snarkJS: Writing points end A: 65537/612482
+[DEBUG] snarkJS: Writing points end A: 98305/612482
+[DEBUG] snarkJS: Writing points end A: 32769/612482
+[DEBUG] snarkJS: Writing points end A: 131073/612482
+[DEBUG] snarkJS: Writing points end A: 163841/612482
+[DEBUG] snarkJS: Writing points start A: 229377/612482
+[DEBUG] snarkJS: Writing points start A: 262145/612482
+[DEBUG] snarkJS: Writing points start A: 294913/612482
+[DEBUG] snarkJS: Writing points start A: 327681/612482
+[DEBUG] snarkJS: Writing points start A: 360449/612482
+[DEBUG] snarkJS: Writing points start A: 393217/612482
+[DEBUG] snarkJS: Writing points start A: 425985/612482
+[DEBUG] snarkJS: Writing points start A: 458753/612482
+[DEBUG] snarkJS: Writing points end A: 262145/612482
+[DEBUG] snarkJS: Writing points end A: 294913/612482
+[DEBUG] snarkJS: Writing points end A: 393217/612482
+[DEBUG] snarkJS: Writing points end A: 229377/612482
+[DEBUG] snarkJS: Writing points end A: 327681/612482
+[DEBUG] snarkJS: Writing points end A: 425985/612482
+[DEBUG] snarkJS: Writing points end A: 458753/612482
+[DEBUG] snarkJS: Writing points end A: 360449/612482
+[DEBUG] snarkJS: Writing points start A: 491521/612482
+[DEBUG] snarkJS: Writing points start A: 524289/612482
+[DEBUG] snarkJS: Writing points start A: 557057/612482
+[DEBUG] snarkJS: Writing points start A: 589825/612482
+[DEBUG] snarkJS: Writing points end A: 491521/612482
+[DEBUG] snarkJS: Writing points end A: 524289/612482
+[DEBUG] snarkJS: Writing points end A: 589825/612482
+[DEBUG] snarkJS: Writing points end A: 557057/612482
+[DEBUG] snarkJS: Writing points start B1: 0/612482
+[DEBUG] snarkJS: Writing points start B1: 32768/612482
+[DEBUG] snarkJS: Writing points start B1: 65536/612482
+[DEBUG] snarkJS: Writing points start B1: 98304/612482
+[DEBUG] snarkJS: Writing points start B1: 131072/612482
+[DEBUG] snarkJS: Writing points start B1: 163840/612482
+[DEBUG] snarkJS: Writing points start B1: 196608/612482
+[DEBUG] snarkJS: Writing points start B1: 229376/612482
+[DEBUG] snarkJS: Writing points end B1: 0/612482
+[DEBUG] snarkJS: Writing points end B1: 32768/612482
+[DEBUG] snarkJS: Writing points end B1: 65536/612482
+[DEBUG] snarkJS: Writing points end B1: 98304/612482
+[DEBUG] snarkJS: Writing points end B1: 131072/612482
+[DEBUG] snarkJS: Writing points end B1: 163840/612482
+[DEBUG] snarkJS: Writing points end B1: 196608/612482
+[DEBUG] snarkJS: Writing points end B1: 229376/612482
+[DEBUG] snarkJS: Writing points start B1: 262144/612482
+[DEBUG] snarkJS: Writing points start B1: 294912/612482
+[DEBUG] snarkJS: Writing points start B1: 327680/612482
+[DEBUG] snarkJS: Writing points start B1: 360448/612482
+[DEBUG] snarkJS: Writing points start B1: 393216/612482
+[DEBUG] snarkJS: Writing points start B1: 425984/612482
+[DEBUG] snarkJS: Writing points start B1: 458752/612482
+[DEBUG] snarkJS: Writing points start B1: 491520/612482
+[DEBUG] snarkJS: Writing points end B1: 262144/612482
+[DEBUG] snarkJS: Writing points end B1: 294912/612482
+[DEBUG] snarkJS: Writing points end B1: 327680/612482
+[DEBUG] snarkJS: Writing points end B1: 360448/612482
+[DEBUG] snarkJS: Writing points end B1: 393216/612482
+[DEBUG] snarkJS: Writing points end B1: 425984/612482
+[DEBUG] snarkJS: Writing points end B1: 458752/612482
+[DEBUG] snarkJS: Writing points end B1: 491520/612482
+[DEBUG] snarkJS: Writing points start B1: 524288/612482
+[DEBUG] snarkJS: Writing points start B1: 557056/612482
+[DEBUG] snarkJS: Writing points start B1: 589824/612482
+[DEBUG] snarkJS: Writing points end B1: 524288/612482
+[DEBUG] snarkJS: Writing points end B1: 557056/612482
+[DEBUG] snarkJS: Writing points end B1: 589824/612482
+[DEBUG] snarkJS: Writing points start B2: 0/612482
+[DEBUG] snarkJS: Writing points start B2: 32768/612482
+[DEBUG] snarkJS: Writing points start B2: 65536/612482
+[DEBUG] snarkJS: Writing points start B2: 98304/612482
+[DEBUG] snarkJS: Writing points start B2: 131072/612482
+[DEBUG] snarkJS: Writing points start B2: 163840/612482
+[DEBUG] snarkJS: Writing points start B2: 196608/612482
+[DEBUG] snarkJS: Writing points start B2: 229376/612482
+[DEBUG] snarkJS: Writing points end B2: 131072/612482
+[DEBUG] snarkJS: Writing points end B2: 0/612482
+[DEBUG] snarkJS: Writing points end B2: 32768/612482
+[DEBUG] snarkJS: Writing points end B2: 65536/612482
+[DEBUG] snarkJS: Writing points end B2: 98304/612482
+[DEBUG] snarkJS: Writing points end B2: 163840/612482
+[DEBUG] snarkJS: Writing points end B2: 196608/612482
+[DEBUG] snarkJS: Writing points end B2: 229376/612482
+[DEBUG] snarkJS: Writing points start B2: 262144/612482
+[DEBUG] snarkJS: Writing points start B2: 294912/612482
+[DEBUG] snarkJS: Writing points start B2: 327680/612482
+[DEBUG] snarkJS: Writing points start B2: 360448/612482
+[DEBUG] snarkJS: Writing points start B2: 393216/612482
+[DEBUG] snarkJS: Writing points start B2: 425984/612482
+[DEBUG] snarkJS: Writing points start B2: 458752/612482
+[DEBUG] snarkJS: Writing points start B2: 491520/612482
+[DEBUG] snarkJS: Writing points end B2: 262144/612482
+[DEBUG] snarkJS: Writing points end B2: 294912/612482
+[DEBUG] snarkJS: Writing points end B2: 327680/612482
+[DEBUG] snarkJS: Writing points end B2: 360448/612482
+[DEBUG] snarkJS: Writing points end B2: 393216/612482
+[DEBUG] snarkJS: Writing points end B2: 425984/612482
+[DEBUG] snarkJS: Writing points end B2: 458752/612482
+[DEBUG] snarkJS: Writing points end B2: 491520/612482
+[DEBUG] snarkJS: Writing points start B2: 524288/612482
+[DEBUG] snarkJS: Writing points start B2: 557056/612482
+[DEBUG] snarkJS: Writing points start B2: 589824/612482
+[DEBUG] snarkJS: Writing points end B2: 524288/612482
+[DEBUG] snarkJS: Writing points end B2: 589824/612482
+[DEBUG] snarkJS: Writing points end B2: 557056/612482
+[INFO]  snarkJS: Circuit hash:
+                510e534b f6e2f080 73994ffe f9ee89fa
+                18288e22 6aaaf25e 9828497a a1cf1c30
+                04d67c69 8604dcbb a15ed5e6 d42fbf62
+                3379d7fd beee3766 d5383ad7 b2558049
+[DEBUG] snarkJS: Same ratio check L section:  0/612480
+[DEBUG] snarkJS: H Verificaition(tau):  0/1048576
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/1048576
+[INFO]  snarkJS: Circuit Hash:
+                510e534b f6e2f080 73994ffe f9ee89fa
+                18288e22 6aaaf25e 9828497a a1cf1c30
+                04d67c69 8604dcbb a15ed5e6 d42fbf62
+                3379d7fd beee3766 d5383ad7 b2558049
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                5bd456f0 80e10ea1 5e9cd4e2 eb04470d
+                791d6048 02b66961 d40bb596 77febfae
+                38ee14f5 3c8c90c7 d74c97c0 d93b9c32
+                eb487253 ea87bd6a f57ea263 753006e3
+[INFO]  snarkJS: Beacon generator: 3ed6df7d7213ae46ffbb
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                5adb3878 7c999622 31f63c50 beb61336
+                79165a02 447fde29 e4957533 04ce0b1b
+                6127cae9 4e7bb7a0 e4b3c168 42ea09cc
+                d75139a5 990326ee 6eab52b1 5b77b834
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                ae03099d 02160043 804154bd 1deffb8e
+                53a9bac1 85400ab4 5227dfe5 9b601eeb
+                3880f5ba babdbc83 636ab72f 41e3341b
+                dbb46df6 47e3b58b 566f9008 101cf69e
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                532346a3 5fae5284 c3a04e6c 7f617578
+                dcbdab8e 40dfda5d 7c179d6b 682c7ff3
+                098c73cc 2c4bfbeb c304255a 94adef10
+                182d04ee 06a7f4ef 9bf2a7e2 9c351570
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 986.11s.
+yarn run v1.22.19
+$ node scripts/createProof.js evaluateMerkleTreeSHA2 circuits/data/input2.json
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 fullprove circuits/data/input2.json artifacts/evaluateMerkleTreeSHA2_js/evaluateMerkleTreeSHA2.wasm circuits/zkey/evaluateMerkleTreeSHA2_final.zkey circuits/data/evaluateMerkleTreeSHA2_proof.json circuits/data/evaluateMerkleTreeSHA2_public.json -v
+0
+1
+2217938782754290897867090622202116237457774222721308308031608509
+[DEBUG] snarkJS: Reading Wtns
+[DEBUG] snarkJS: Reading Coeffs
+[DEBUG] snarkJS: Building ABC
+[DEBUG] snarkJS: QAP AB: 0/101331
+[DEBUG] snarkJS: QAP C: 0/262144
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 0/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 1/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 2/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 3/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 4/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 5/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 6/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 7/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 8/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 9/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 10/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 11/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 12/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 13/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 14/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 15/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 0/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 2/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 1/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 4/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 5/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 6/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 3/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 7/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 11/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 9/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 12/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 8/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 14/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 13/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 10/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 15/16
+[DEBUG] snarkJS: IFFT_A: fft  18  join: 15/18
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft  18  join: 16/18
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: IFFT_A: fft  18  join: 17/18
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: IFFT_A: fft  18  join: 18/18
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 0/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 1/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 2/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 3/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 4/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 5/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 6/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 7/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 8/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 9/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 10/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 11/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 12/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 13/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 14/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 15/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 1/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 2/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 3/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 4/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 5/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 0/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 6/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 7/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 8/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 11/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 13/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 12/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 10/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 9/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 15/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 14/16
+[DEBUG] snarkJS: FFT_A: fft  18  join: 15/18
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: FFT_A: fft  18  join: 16/18
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: FFT_A: fft  18  join: 17/18
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: FFT_A: fft  18  join: 18/18
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 0/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 1/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 2/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 3/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 4/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 5/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 6/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 7/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 8/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 9/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 10/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 11/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 12/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 13/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 14/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 15/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 0/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 3/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 1/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 4/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 5/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 6/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 2/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 7/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 8/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 11/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 12/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 9/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 10/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 13/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 14/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 15/16
+[DEBUG] snarkJS: IFFT_B: fft  18  join: 15/18
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft  18  join: 16/18
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: IFFT_B: fft  18  join: 17/18
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: IFFT_B: fft  18  join: 18/18
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 0/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 1/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 2/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 3/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 4/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 5/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 6/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 7/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 8/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 9/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 10/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 11/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 12/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 13/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 14/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 15/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 0/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 1/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 2/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 3/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 4/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 5/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 6/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 7/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 8/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 10/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 14/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 11/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 9/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 12/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 15/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 13/16
+[DEBUG] snarkJS: FFT_B: fft  18  join: 15/18
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: FFT_B: fft  18  join: 16/18
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: FFT_B: fft  18  join: 17/18
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: FFT_B: fft  18  join: 18/18
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 0/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 1/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 2/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 3/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 4/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 5/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 6/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 7/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 8/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 9/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 10/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 11/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 12/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 13/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 14/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 15/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 5/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 3/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 0/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 4/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 6/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 2/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 7/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 1/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 9/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 12/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 10/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 8/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 11/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 13/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 14/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 15/16
+[DEBUG] snarkJS: IFFT_C: fft  18  join: 15/18
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft  18  join: 16/18
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: IFFT_C: fft  18  join: 17/18
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: IFFT_C: fft  18  join: 18/18
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 0/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 1/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 2/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 3/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 4/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 5/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 6/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 7/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 8/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 9/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 10/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 11/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 12/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 13/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 14/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 15/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 3/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 6/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 4/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 0/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 2/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 5/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 8/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 10/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 1/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 12/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 13/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 9/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 7/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 11/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 14/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 15/16
+[DEBUG] snarkJS: FFT_C: fft  18  join: 15/18
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: FFT_C: fft  18  join: 16/18
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: FFT_C: fft  18  join: 17/18
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: FFT_C: fft  18  join: 18/18
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: Join ABC
+[DEBUG] snarkJS: JoinABC: 0/262144
+[DEBUG] snarkJS: Reading A Points
+[DEBUG] snarkJS: Multiexp start: multiexp A: 0/204164
+[DEBUG] snarkJS: Multiexp end: multiexp A: 0/204164
+[DEBUG] snarkJS: Reading B1 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B1: 0/204164
+[DEBUG] snarkJS: Multiexp end: multiexp B1: 0/204164
+[DEBUG] snarkJS: Reading B2 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B2: 0/204164
+[DEBUG] snarkJS: Multiexp end: multiexp B2: 0/204164
+[DEBUG] snarkJS: Reading C Points
+[DEBUG] snarkJS: Multiexp start: multiexp C: 0/204162
+[DEBUG] snarkJS: Multiexp end: multiexp C: 0/204162
+[DEBUG] snarkJS: Reading H Points
+[DEBUG] snarkJS: Multiexp start: multiexp H: 0/262144
+[DEBUG] snarkJS: Multiexp end: multiexp H: 0/262144
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export verificationkey circuits/zkey/evaluateMerkleTreeSHA2_final.zkey circuits/zkey/evaluateMerkleTreeSHA2_verification_key.json -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 verify circuits/zkey/evaluateMerkleTreeSHA2_verification_key.json circuits/data/evaluateMerkleTreeSHA2_public.json circuits/data/evaluateMerkleTreeSHA2_proof.json -v
+[INFO]  snarkJS: OK!
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export solidityverifier circuits/zkey/evaluateMerkleTreeSHA2_final.zkey contracts/evaluateMerkleTreeSHA2_verifier.sol -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export soliditycalldata circuits/data/evaluateMerkleTreeSHA2_public.json circuits/data/evaluateMerkleTreeSHA2_proof.json -v
+["0x05f6c213f1c7f88dd20e6b9bca5630b75afe6be586a376595d8d1fa0e76f244c", "0x033f714fee34227457b4ed661b9535f6f46f3a4116ceff5c465d18f14574026c"],[["0x0ab921dd7438715f22fb0e09c4d544c3ea8ce70e779e1004dc1dc6845f9359e2", "0x16d8e2fd7d3d6e6515cb646dabc19be1ec57f6fad8b636158432b9bc4cfef523"],["0x09a1fbea605753272a994dfc594aecb9e561f06530bcb1cfe81838eec7f70645", "0x1228b274de7ded9e54a9eaa5972978036c4fa2ebfcc1099148909b87b8978e8c"]],["0x2469dc7436c494ccfc2637850780f110adac811f5492fad20ed81e57b3eceb0f", "0x2ac89f53614aa253e36c7fb976b987da566e16f29211bba2c11c469b720504d5"],["0x938db8c9f82c8cb58d3f3ef4fd250036a48d26a712753d2fde5abd03a85cabf4"]
+
+Done in 26.52s.
+yarn run v1.22.19
+$ node scripts/createProof.js evaluateMerkleTreeSHA4 circuits/data/input4.json
+Error: Command failed: yarn snarkjs groth16 fullprove circuits/data/input4.json artifacts/evaluateMerkleTreeSHA4_js/evaluateMerkleTreeSHA4.wasm circuits/zkey/evaluateMerkleTreeSHA4_final.zkey circuits/data/evaluateMerkleTreeSHA4_proof.json circuits/data/evaluateMerkleTreeSHA4_public.json -v
+ERROR:  4 Error in template Num2Bits_2 line: 38
+Error in template Sha256_2_101 line: 40
+Error in template MerkleTree_102 line: 35
+Error in template Main_103 line: 62
+
+error Command failed with exit code 1.
+
+    at ChildProcess.exithandler (node:child_process:402:12)
+    at ChildProcess.emit (node:events:513:28)
+    at maybeClose (node:internal/child_process:1100:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:304:5) {
+  code: 1,
+  killed: false,
+  signal: null,
+  cmd: 'yarn snarkjs groth16 fullprove circuits/data/input4.json artifacts/evaluateMerkleTreeSHA4_js/evaluateMerkleTreeSHA4.wasm circuits/zkey/evaluateMerkleTreeSHA4_final.zkey circuits/data/evaluateMerkleTreeSHA4_proof.json circuits/data/evaluateMerkleTreeSHA4_public.json -v',
+  stdout: '$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 fullprove circuits/data/input4.json artifacts/evaluateMerkleTreeSHA4_js/evaluateMerkleTreeSHA4.wasm circuits/zkey/evaluateMerkleTreeSHA4_final.zkey circuits/data/evaluateMerkleTreeSHA4_proof.json circuits/data/evaluateMerkleTreeSHA4_public.json -v\n' +
+    '\x1B[31;22m[ERROR] \x1B[39;1msnarkJS\x1B[0m: Error: Error: Assert Failed. Error in template Num2Bits_2 line: 38\n' +
+    'Error in template Sha256_2_101 line: 40\n' +
+    'Error in template MerkleTree_102 line: 35\n' +
+    'Error in template Main_103 line: 62\n' +
+    '\n' +
+    '    at /mnt/d/snarkjs-example/node_modules/circom_runtime/build/main.cjs:485:27\n' +
+    '    at Array.forEach (<anonymous>)\n' +
+    '    at WitnessCalculatorCircom2._doCalculateWitness (/mnt/d/snarkjs-example/node_modules/circom_runtime/build/main.cjs:470:14)\n' +
+    '    at WitnessCalculatorCircom2.calculateWTNSBin (/mnt/d/snarkjs-example/node_modules/circom_runtime/build/main.cjs:515:20)\n' +
+    '    at wtnsCalculate$1 (/mnt/d/snarkjs-example/node_modules/snarkjs/build/cli.cjs:5867:28)\n' +
+    '    at async groth16FullProve$1 (/mnt/d/snarkjs-example/node_modules/snarkjs/build/cli.cjs:5900:5)\n' +
+    '    at async Object.groth16FullProve [as action] (/mnt/d/snarkjs-example/node_modules/snarkjs/build/cli.cjs:8480:36)\n' +
+    '    at async clProcessor (/mnt/d/snarkjs-example/node_modules/snarkjs/build/cli.cjs:454:27)\n' +
+    'info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.\n',
+  stderr: 'ERROR:  4 Error in template Num2Bits_2 line: 38\n' +
+    'Error in template Sha256_2_101 line: 40\n' +
+    'Error in template MerkleTree_102 line: 35\n' +
+    'Error in template Main_103 line: 62\n' +
+    '\n' +
+    'error Command failed with exit code 1.\n'
+}
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMerkleTreeSHA16
+
+[Compile]
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+template instances: 104
+non-linear constraints: 470805
+linear constraints: 2596277
+public inputs: 1
+public outputs: 0
+private inputs: 31
+private outputs: 0
+wires: 3062390
+labels: 3062390
+Written successfully: artifacts/evaluateMerkleTreeSHA16.r1cs
+Constraints written in: artifacts/evaluateMerkleTreeSHA16_constraints.json
+Written successfully: artifacts/evaluateMerkleTreeSHA16_js/evaluateMerkleTreeSHA16.wasm
+Everything went okay, circom safe
+Done in 4229.52s.
+[04:53:09] a2468834@WSL:/mnt/d/snarkjs-example$

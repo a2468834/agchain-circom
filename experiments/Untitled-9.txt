@@ -1,0 +1,134 @@
+[06:42:42] a2468834@WSL:/mnt/d/snarkjs-example$ git add .
+[06:43:08] a2468834@WSL:/mnt/d/snarkjs-example$ yarn compile evaluateMainCktttt
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCktttt
+
+[Compile]
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+template instances: 6
+non-linear constraints: 6
+linear constraints: 24
+public inputs: 12
+public outputs: 0
+private inputs: 0
+private outputs: 0
+wires: 38
+labels: 38
+Written successfully: artifacts/evaluateMainCktttt.r1cs
+Constraints written in: artifacts/evaluateMainCktttt_constraints.json
+Written successfully: artifacts/evaluateMainCktttt_js/evaluateMainCktttt.wasm
+Everything went okay, circom safe
+Done in 0.67s.
+[06:56:48] a2468834@WSL:/mnt/d/snarkjs-example$ yarn compile evaluateMainCktttt
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCktttt
+
+[Compile]
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+template instances: 6
+non-linear constraints: 18
+linear constraints: 42
+public inputs: 18
+public outputs: 0
+private inputs: 0
+private outputs: 0
+wires: 80
+labels: 80
+Written successfully: artifacts/evaluateMainCktttt.r1cs
+Constraints written in: artifacts/evaluateMainCktttt_constraints.json
+Written successfully: artifacts/evaluateMainCktttt_js/evaluateMainCktttt.wasm
+Everything went okay, circom safe
+Done in 0.93s.
+[07:02:15] a2468834@WSL:/mnt/d/snarkjs-example$ yarn compile evaluateMainCktttt
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCktttt
+
+[Compile]
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+template instances: 6
+non-linear constraints: 43214
+linear constraints: 172826
+public inputs: 86410
+public outputs: 0
+private inputs: 0
+private outputs: 0
+wires: 259256
+labels: 259256
+Written successfully: artifacts/evaluateMainCktttt.r1cs
+Constraints written in: artifacts/evaluateMainCktttt_constraints.json
+Written successfully: artifacts/evaluateMainCktttt_js/evaluateMainCktttt.wasm
+Everything went okay, circom safe
+Done in 2189.33s.
+[07:39:37] a2468834@WSL:/mnt/d/snarkjs-example$ yarn compile evaluateMainCktttt
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCktttt
+
+[Compile]
+error[T2021]: Undeclared symbol
+   ┌─ "circuits/evaluateMainCktttt.circom":72:27
+   │
+72 │     equal.in[0] <-- score[i];
+   │                           ^ Using unknown symbol
+
+previous errors were found
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+[15:37:56] a2468834@WSL:/mnt/d/snarkjs-example$ yarn compile evaluateMainCktttt
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCktttt
+
+[Compile]
+Unknown
+template instances: 6
+non-linear constraints: 6
+linear constraints: 24
+public inputs: 12
+public outputs: 0
+private inputs: 0
+private outputs: 0
+wires: 38
+labels: 38
+Written successfully: artifacts/evaluateMainCktttt.r1cs
+Constraints written in: artifacts/evaluateMainCktttt_constraints.json
+Written successfully: artifacts/evaluateMainCktttt_js/evaluateMainCktttt.wasm
+Everything went okay, circom safe
+Done in 0.44s.
+[15:38:09] a2468834@WSL:/mnt/d/snarkjs-example$ yarn compile evaluateMainCkt
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCkt
+
+[Compile]
+Unknown
+template instances: 6
+non-linear constraints: 6
+linear constraints: 24
+public inputs: 12
+public outputs: 0
+private inputs: 0
+private outputs: 0
+wires: 38
+labels: 38
+Written successfully: artifacts/evaluateMainCkt.r1cs
+Constraints written in: artifacts/evaluateMainCkt_constraints.json
+Written successfully: artifacts/evaluateMainCkt_js/evaluateMainCkt.wasm
+Everything went okay, circom safe
+Done in 0.73s.
+[15:41:59] a2468834@WSL:/mnt/d/snarkjs-example$

@@ -1,0 +1,79 @@
+[18:33:27] a2468834@WSL:/mnt/d/snarkjs-example$
+(yarn compile evaluateTime10;
+yarn compile evaluateTime100;
+yarn compile evaluateTime1000;
+yarn compile evaluateTime10000;)
+
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateTime10
+
+[Compile]
+template instances: 72
+non-linear constraints: 2430
+linear constraints: 5241
+public inputs: 11
+public outputs: 1
+private inputs: 0
+private outputs: 0
+wires: 7683
+labels: 7683
+Written successfully: artifacts/evaluateTime10.r1cs
+Constraints written in: artifacts/evaluateTime10_constraints.json
+Written successfully: artifacts/evaluateTime10_js/evaluateTime10.wasm
+Everything went okay, circom safe
+Done in 10.78s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateTime100
+
+[Compile]
+template instances: 72
+non-linear constraints: 24300
+linear constraints: 52401
+public inputs: 101
+public outputs: 1
+private inputs: 0
+private outputs: 0
+wires: 76803
+labels: 76803
+Written successfully: artifacts/evaluateTime100.r1cs
+Constraints written in: artifacts/evaluateTime100_constraints.json
+Written successfully: artifacts/evaluateTime100_js/evaluateTime100.wasm
+Everything went okay, circom safe
+Done in 109.09s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateTime1000
+
+[Compile]
+template instances: 72
+non-linear constraints: 243000
+linear constraints: 524001
+public inputs: 1001
+public outputs: 1
+private inputs: 0
+private outputs: 0
+wires: 768003
+labels: 768003
+Written successfully: artifacts/evaluateTime1000.r1cs
+Constraints written in: artifacts/evaluateTime1000_constraints.json
+Written successfully: artifacts/evaluateTime1000_js/evaluateTime1000.wasm
+Everything went okay, circom safe
+Done in 1127.81s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateTime10000
+
+[Compile]
+template instances: 72
+non-linear constraints: 2430000
+linear constraints: 5240001
+public inputs: 10001
+public outputs: 1
+private inputs: 0
+private outputs: 0
+wires: 7680003
+labels: 7680003
+Written successfully: artifacts/evaluateTime10000.r1cs
+Constraints written in: artifacts/evaluateTime10000_constraints.json
+Written successfully: artifacts/evaluateTime10000_js/evaluateTime10000.wasm
+Everything went okay, circom safe
+Done in 11508.58s.
+[22:06:30] a2468834@WSL:/mnt/d/snarkjs-example$

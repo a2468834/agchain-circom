@@ -1,0 +1,34 @@
+{
+    "_levels": 24,
+    "_zeroElement": {
+        "0": 0
+    },
+    "_zeros": [
+        {
+            "0": 0
+        },
+        "0x2098f5fb9e239eab3ceac3f27b81e481dc3124d55ffed523a839ee8446b64864",
+        "0x1069673dcdb12263df301a6ff584a7ec261a44cb9dc68df067a4774460b1f1e1",
+        ...
+    ],
+    "_layers": [
+        {
+            "type": "Buffer",
+            "data": [
+                ...
+            ]
+        },
+        [
+            "0x0990f2cc3d54de5d400f589386dab2964331d41cee47d5eb5c6efab110520223",
+            "0x035a9774b5ffe19b8b270fd42de9fa022bed0e1133c4962582bd25d066788aae",
+            ...
+        ],
+        ...
+        [
+            "0x2749f327abb2856ce0e1aa50b1f1e326045b459719b78d8cd35acfd7262ed051"
+        ]
+    ],
+    "_isInit": true,
+    "_enablePoseidon": true
+}
+

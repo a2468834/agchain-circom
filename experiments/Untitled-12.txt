@@ -1,0 +1,1303 @@
+[03:33:07] a2468834@WSL:/mnt/d/snarkjs-example$ (yarn zkey evaluateMainCkt2 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMainCkt4 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMainCkt8 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMainCkt16 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMainCkt30 powers-of-tau/powersOfTau28_hez_final_25.ptau)
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMainCkt2 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMainCkt2.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt2_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                a1bd6e96 6c6bc234 969cf701 7a5529aa
+                7352b011 2b256bb5 85101eb2 ac63cad8
+                f2c6f02b f690440c dc1f01c7 a32a339e
+                94a50cba 4525047c 6066a420 553190af
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt2_00.zkey circuits/zkey/evaluateMainCkt2_01.zkey -e=f2255e8fca4118c56968 '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/34583
+[DEBUG] snarkJS: Applying key: H Section: 0/32768
+[INFO]  snarkJS: Circuit Hash:
+                a1bd6e96 6c6bc234 969cf701 7a5529aa
+                7352b011 2b256bb5 85101eb2 ac63cad8
+                f2c6f02b f690440c dc1f01c7 a32a339e
+                94a50cba 4525047c 6066a420 553190af
+[INFO]  snarkJS: Contribution Hash:
+                c6581808 f6875f4a 7c3f3e97 e69a4b76
+                fa9a24fa a28066f6 394994ac 7939700d
+                9b29fcb8 d38d9330 0898b8dc 48ab1540
+                2edd3929 9efdddd3 f248c6e9 3a0766be
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt2_01.zkey circuits/zkey/evaluateMainCkt2_02.zkey -e=96b6a7a5012593220ef0 '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/34583
+[DEBUG] snarkJS: Applying key: H Section: 0/32768
+[INFO]  snarkJS: Circuit Hash:
+                a1bd6e96 6c6bc234 969cf701 7a5529aa
+                7352b011 2b256bb5 85101eb2 ac63cad8
+                f2c6f02b f690440c dc1f01c7 a32a339e
+                94a50cba 4525047c 6066a420 553190af
+[INFO]  snarkJS: Contribution Hash:
+                7d6962a7 8731b3be b0c635f8 6797ba9f
+                6b2c3e25 b26079ce 35aca280 659db07d
+                c108770c 8730e9a6 c62cd021 56d1903f
+                0ab585e7 fe62ea0c 6f2ca836 8ddb6a41
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt2_02.zkey circuits/zkey/evaluateMainCkt2_03.zkey -e=172c2357d8bef8112471 '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/34583
+[DEBUG] snarkJS: Applying key: H Section: 0/32768
+[INFO]  snarkJS: Circuit Hash:
+                a1bd6e96 6c6bc234 969cf701 7a5529aa
+                7352b011 2b256bb5 85101eb2 ac63cad8
+                f2c6f02b f690440c dc1f01c7 a32a339e
+                94a50cba 4525047c 6066a420 553190af
+[INFO]  snarkJS: Contribution Hash:
+                36a0faa9 461fffaf 8b05247c 9f201390
+                cfe269cf f1544766 89a353bb 47ce13c6
+                29b87720 b79fc5e8 f62207d3 41de1dfb
+                bc3f8d92 9b27434f e8d063cf 9d9d4ac4
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMainCkt2_03.zkey circuits/zkey/evaluateMainCkt2_final.zkey 6a153124318fd4452e07 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/34583
+[DEBUG] snarkJS: Applying key: H Section: 0/32768
+[INFO]  snarkJS: Contribution Hash:
+                b3b777a3 9ba6e931 d3aceff3 c9484dba
+                3a898f9c c587789e 3420183e 7fad4c7c
+                4b503c66 801d1f53 e4592c31 d44b98cf
+                21ca13a3 007ea645 1d09affd 0342882c
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMainCkt2.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt2_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/25938
+[DEBUG] snarkJS: processing constraints: 10000/25938
+[DEBUG] snarkJS: processing constraints: 20000/25938
+[DEBUG] snarkJS: writing coeffs: 0/11535
+[DEBUG] snarkJS: Writing points start IC: 0/3
+[DEBUG] snarkJS: Writing points end IC: 0/3
+[DEBUG] snarkJS: spliting buffer: 0/32768
+[DEBUG] snarkJS: spliting buffer: 10000/32768
+[DEBUG] snarkJS: spliting buffer: 20000/32768
+[DEBUG] snarkJS: spliting buffer: 30000/32768
+[DEBUG] snarkJS: HashingHPoints: 0/32768
+[DEBUG] snarkJS: HashingHPoints: 16384/32768
+[DEBUG] snarkJS: Writing points start C: 0/34583
+[DEBUG] snarkJS: Writing points start C: 21278/34583
+[DEBUG] snarkJS: Writing points end C: 21278/34583
+[DEBUG] snarkJS: Writing points end C: 0/34583
+[DEBUG] snarkJS: Writing points start A: 0/34586
+[DEBUG] snarkJS: Writing points start A: 32768/34586
+[DEBUG] snarkJS: Writing points end A: 32768/34586
+[DEBUG] snarkJS: Writing points end A: 0/34586
+[DEBUG] snarkJS: Writing points start B1: 0/34586
+[DEBUG] snarkJS: Writing points start B1: 32768/34586
+[DEBUG] snarkJS: Writing points end B1: 32768/34586
+[DEBUG] snarkJS: Writing points end B1: 0/34586
+[DEBUG] snarkJS: Writing points start B2: 0/34586
+[DEBUG] snarkJS: Writing points start B2: 32768/34586
+[DEBUG] snarkJS: Writing points end B2: 32768/34586
+[DEBUG] snarkJS: Writing points end B2: 0/34586
+[INFO]  snarkJS: Circuit hash:
+                a1bd6e96 6c6bc234 969cf701 7a5529aa
+                7352b011 2b256bb5 85101eb2 ac63cad8
+                f2c6f02b f690440c dc1f01c7 a32a339e
+                94a50cba 4525047c 6066a420 553190af
+[DEBUG] snarkJS: Same ratio check L section:  0/34583
+[DEBUG] snarkJS: H Verificaition(tau):  0/32768
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/32768
+[INFO]  snarkJS: Circuit Hash:
+                a1bd6e96 6c6bc234 969cf701 7a5529aa
+                7352b011 2b256bb5 85101eb2 ac63cad8
+                f2c6f02b f690440c dc1f01c7 a32a339e
+                94a50cba 4525047c 6066a420 553190af
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                b3b777a3 9ba6e931 d3aceff3 c9484dba
+                3a898f9c c587789e 3420183e 7fad4c7c
+                4b503c66 801d1f53 e4592c31 d44b98cf
+                21ca13a3 007ea645 1d09affd 0342882c
+[INFO]  snarkJS: Beacon generator: 6a153124318fd4452e07
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                36a0faa9 461fffaf 8b05247c 9f201390
+                cfe269cf f1544766 89a353bb 47ce13c6
+                29b87720 b79fc5e8 f62207d3 41de1dfb
+                bc3f8d92 9b27434f e8d063cf 9d9d4ac4
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                7d6962a7 8731b3be b0c635f8 6797ba9f
+                6b2c3e25 b26079ce 35aca280 659db07d
+                c108770c 8730e9a6 c62cd021 56d1903f
+                0ab585e7 fe62ea0c 6f2ca836 8ddb6a41
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                c6581808 f6875f4a 7c3f3e97 e69a4b76
+                fa9a24fa a28066f6 394994ac 7939700d
+                9b29fcb8 d38d9330 0898b8dc 48ab1540
+                2edd3929 9efdddd3 f248c6e9 3a0766be
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 57.87s.
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMainCkt4 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMainCkt4.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt4_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                c28d65a0 e02a554e 6169801d 3427fc24
+                8dfdb651 e46ed8f9 ab302800 925f1bb5
+                e423be04 ff1ef23a d9238735 21aceb85
+                3634483b 6ab728a6 48e8151f 3f93c1b9
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt4_00.zkey circuits/zkey/evaluateMainCkt4_01.zkey -e=4ec909dc29d694da1a2b '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/69143
+[DEBUG] snarkJS: Applying key: L Section: 65536/69143
+[DEBUG] snarkJS: Applying key: H Section: 0/65536
+[INFO]  snarkJS: Circuit Hash:
+                c28d65a0 e02a554e 6169801d 3427fc24
+                8dfdb651 e46ed8f9 ab302800 925f1bb5
+                e423be04 ff1ef23a d9238735 21aceb85
+                3634483b 6ab728a6 48e8151f 3f93c1b9
+[INFO]  snarkJS: Contribution Hash:
+                a507c5f1 3d856534 85e51a92 38241ac9
+                7a7b31bc 64bf9271 c54ae8fc 24013a95
+                a530e4b6 f452230b 435d25d5 6398ce67
+                79a018c6 f234512b 768c8d00 8fd609e5
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt4_01.zkey circuits/zkey/evaluateMainCkt4_02.zkey -e=f75f814e73e62f12c2ba '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/69143
+[DEBUG] snarkJS: Applying key: L Section: 65536/69143
+[DEBUG] snarkJS: Applying key: H Section: 0/65536
+[INFO]  snarkJS: Circuit Hash:
+                c28d65a0 e02a554e 6169801d 3427fc24
+                8dfdb651 e46ed8f9 ab302800 925f1bb5
+                e423be04 ff1ef23a d9238735 21aceb85
+                3634483b 6ab728a6 48e8151f 3f93c1b9
+[INFO]  snarkJS: Contribution Hash:
+                f9ee9cad 8ff17a80 e64eda95 32f49cf7
+                9f9df30c 2f088ec1 65118223 8283cc4c
+                8d00a72a 78f95eb2 9e0beec2 27939c17
+                0fb8330a 3e644dac e70f6bad 67cc4f20
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt4_02.zkey circuits/zkey/evaluateMainCkt4_03.zkey -e=e5e4a42d6f95eacdb9e3 '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/69143
+[DEBUG] snarkJS: Applying key: L Section: 65536/69143
+[DEBUG] snarkJS: Applying key: H Section: 0/65536
+[INFO]  snarkJS: Circuit Hash:
+                c28d65a0 e02a554e 6169801d 3427fc24
+                8dfdb651 e46ed8f9 ab302800 925f1bb5
+                e423be04 ff1ef23a d9238735 21aceb85
+                3634483b 6ab728a6 48e8151f 3f93c1b9
+[INFO]  snarkJS: Contribution Hash:
+                a11cec7c b0630708 f2d75ff8 7dc02f50
+                da4fecbe c64636bc 41bc4084 03c4b1ae
+                5944a16a e3e506d1 4457ebc8 b7756fd2
+                726b3631 f074cae5 4dde8edc 6d04236d
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMainCkt4_03.zkey circuits/zkey/evaluateMainCkt4_final.zkey f4400c683488de1d84c5 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/69143
+[DEBUG] snarkJS: Applying key: L Section: 65536/69143
+[DEBUG] snarkJS: Applying key: H Section: 0/65536
+[INFO]  snarkJS: Contribution Hash:
+                b3c06acd a4bee22d 1e0581bd e5383873
+                88cd8f07 5b0e732f 86a0ff6d 41f5b55a
+                45c1135a 8fbf2f0d ef698c9a 07fa048e
+                9de9a4c8 18ccb2bc 2810b753 1c3e24eb
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMainCkt4.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt4_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/51858
+[DEBUG] snarkJS: processing constraints: 10000/51858
+[DEBUG] snarkJS: processing constraints: 20000/51858
+[DEBUG] snarkJS: processing constraints: 30000/51858
+[DEBUG] snarkJS: processing constraints: 40000/51858
+[DEBUG] snarkJS: processing constraints: 50000/51858
+[DEBUG] snarkJS: writing coeffs: 0/23055
+[DEBUG] snarkJS: Writing points start IC: 0/3
+[DEBUG] snarkJS: Configuring big array IC: 10000/11527
+[DEBUG] snarkJS: Writing points end IC: 0/3
+[DEBUG] snarkJS: spliting buffer: 0/65536
+[DEBUG] snarkJS: spliting buffer: 10000/65536
+[DEBUG] snarkJS: spliting buffer: 20000/65536
+[DEBUG] snarkJS: spliting buffer: 30000/65536
+[DEBUG] snarkJS: spliting buffer: 40000/65536
+[DEBUG] snarkJS: spliting buffer: 50000/65536
+[DEBUG] snarkJS: spliting buffer: 60000/65536
+[DEBUG] snarkJS: HashingHPoints: 0/65536
+[DEBUG] snarkJS: HashingHPoints: 16384/65536
+[DEBUG] snarkJS: HashingHPoints: 32768/65536
+[DEBUG] snarkJS: HashingHPoints: 49152/65536
+[DEBUG] snarkJS: Writing points start C: 0/69143
+[DEBUG] snarkJS: Writing points start C: 21241/69143
+[DEBUG] snarkJS: Writing points start C: 42554/69143
+[DEBUG] snarkJS: Writing points start C: 60427/69143
+[DEBUG] snarkJS: Writing points end C: 60427/69143
+[DEBUG] snarkJS: Writing points end C: 0/69143
+[DEBUG] snarkJS: Writing points end C: 42554/69143
+[DEBUG] snarkJS: Writing points end C: 21241/69143
+[DEBUG] snarkJS: Writing points start A: 0/69146
+[DEBUG] snarkJS: Writing points start A: 32768/69146
+[DEBUG] snarkJS: Writing points start A: 65536/69146
+[DEBUG] snarkJS: Writing points end A: 0/69146
+[DEBUG] snarkJS: Writing points end A: 65536/69146
+[DEBUG] snarkJS: Writing points end A: 32768/69146
+[DEBUG] snarkJS: Writing points start B1: 0/69146
+[DEBUG] snarkJS: Writing points start B1: 32768/69146
+[DEBUG] snarkJS: Writing points start B1: 65536/69146
+[DEBUG] snarkJS: Writing points end B1: 0/69146
+[DEBUG] snarkJS: Writing points end B1: 65536/69146
+[DEBUG] snarkJS: Writing points end B1: 32768/69146
+[DEBUG] snarkJS: Writing points start B2: 0/69146
+[DEBUG] snarkJS: Writing points start B2: 32768/69146
+[DEBUG] snarkJS: Writing points start B2: 65536/69146
+[DEBUG] snarkJS: Writing points end B2: 0/69146
+[DEBUG] snarkJS: Writing points end B2: 65536/69146
+[DEBUG] snarkJS: Writing points end B2: 32768/69146
+[INFO]  snarkJS: Circuit hash:
+                c28d65a0 e02a554e 6169801d 3427fc24
+                8dfdb651 e46ed8f9 ab302800 925f1bb5
+                e423be04 ff1ef23a d9238735 21aceb85
+                3634483b 6ab728a6 48e8151f 3f93c1b9
+[DEBUG] snarkJS: Same ratio check L section:  0/69143
+[DEBUG] snarkJS: H Verificaition(tau):  0/65536
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/65536
+[INFO]  snarkJS: Circuit Hash:
+                c28d65a0 e02a554e 6169801d 3427fc24
+                8dfdb651 e46ed8f9 ab302800 925f1bb5
+                e423be04 ff1ef23a d9238735 21aceb85
+                3634483b 6ab728a6 48e8151f 3f93c1b9
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                b3c06acd a4bee22d 1e0581bd e5383873
+                88cd8f07 5b0e732f 86a0ff6d 41f5b55a
+                45c1135a 8fbf2f0d ef698c9a 07fa048e
+                9de9a4c8 18ccb2bc 2810b753 1c3e24eb
+[INFO]  snarkJS: Beacon generator: f4400c683488de1d84c5
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                a11cec7c b0630708 f2d75ff8 7dc02f50
+                da4fecbe c64636bc 41bc4084 03c4b1ae
+                5944a16a e3e506d1 4457ebc8 b7756fd2
+                726b3631 f074cae5 4dde8edc 6d04236d
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                f9ee9cad 8ff17a80 e64eda95 32f49cf7
+                9f9df30c 2f088ec1 65118223 8283cc4c
+                8d00a72a 78f95eb2 9e0beec2 27939c17
+                0fb8330a 3e644dac e70f6bad 67cc4f20
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                a507c5f1 3d856534 85e51a92 38241ac9
+                7a7b31bc 64bf9271 c54ae8fc 24013a95
+                a530e4b6 f452230b 435d25d5 6398ce67
+                79a018c6 f234512b 768c8d00 8fd609e5
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 102.27s.
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMainCkt8 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMainCkt8.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt8_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                e9a6b0af 7c603b42 6ae723d6 62c23159
+                1daa25bf 482abd40 d75073de 88954433
+                1309c80c d9076112 b0acfcb5 838527e9
+                2f5c0d46 fc5dd26e 5fda9721 28e2af69
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt8_00.zkey circuits/zkey/evaluateMainCkt8_01.zkey -e=c028b7a46525e5aa4abc '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/138263
+[DEBUG] snarkJS: Applying key: L Section: 65536/138263
+[DEBUG] snarkJS: Applying key: L Section: 131072/138263
+[DEBUG] snarkJS: Applying key: H Section: 0/131072
+[DEBUG] snarkJS: Applying key: H Section: 65536/131072
+[INFO]  snarkJS: Circuit Hash:
+                e9a6b0af 7c603b42 6ae723d6 62c23159
+                1daa25bf 482abd40 d75073de 88954433
+                1309c80c d9076112 b0acfcb5 838527e9
+                2f5c0d46 fc5dd26e 5fda9721 28e2af69
+[INFO]  snarkJS: Contribution Hash:
+                8391f694 35261e38 1a2270f2 aac9b6ef
+                76d05a25 17cac6c4 b0109cb8 546476e2
+                1cc26e67 ffbf777c a72a579e 9e19793e
+                db23868e aaa39374 54ae9171 6df9fd93
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt8_01.zkey circuits/zkey/evaluateMainCkt8_02.zkey -e=68724916fc9a6f9230cb '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/138263
+[DEBUG] snarkJS: Applying key: L Section: 65536/138263
+[DEBUG] snarkJS: Applying key: L Section: 131072/138263
+[DEBUG] snarkJS: Applying key: H Section: 0/131072
+[DEBUG] snarkJS: Applying key: H Section: 65536/131072
+[INFO]  snarkJS: Circuit Hash:
+                e9a6b0af 7c603b42 6ae723d6 62c23159
+                1daa25bf 482abd40 d75073de 88954433
+                1309c80c d9076112 b0acfcb5 838527e9
+                2f5c0d46 fc5dd26e 5fda9721 28e2af69
+[INFO]  snarkJS: Contribution Hash:
+                1973b35a 0f35c033 8d5741ec 826eda64
+                1ef5ec7f 06acfcd4 38517986 32dc843c
+                c96407f5 75c81edf 7001ad91 8ec1332d
+                988df4a0 3d734990 074db99a 54852adc
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt8_02.zkey circuits/zkey/evaluateMainCkt8_03.zkey -e=ff22f3419fe145d01840 '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/138263
+[DEBUG] snarkJS: Applying key: L Section: 65536/138263
+[DEBUG] snarkJS: Applying key: L Section: 131072/138263
+[DEBUG] snarkJS: Applying key: H Section: 0/131072
+[DEBUG] snarkJS: Applying key: H Section: 65536/131072
+[INFO]  snarkJS: Circuit Hash:
+                e9a6b0af 7c603b42 6ae723d6 62c23159
+                1daa25bf 482abd40 d75073de 88954433
+                1309c80c d9076112 b0acfcb5 838527e9
+                2f5c0d46 fc5dd26e 5fda9721 28e2af69
+[INFO]  snarkJS: Contribution Hash:
+                87410f22 8920423a babab0ed 13b0a317
+                9dd540c2 6562c301 8fa6c757 9fcc5ead
+                858254ce eea11461 b4391431 5db4f3c2
+                d28eb808 8f0a0a8b f082b89c af823d8c
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMainCkt8_03.zkey circuits/zkey/evaluateMainCkt8_final.zkey 901afb8dc1a12bd896e3 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/138263
+[DEBUG] snarkJS: Applying key: L Section: 65536/138263
+[DEBUG] snarkJS: Applying key: L Section: 131072/138263
+[DEBUG] snarkJS: Applying key: H Section: 0/131072
+[DEBUG] snarkJS: Applying key: H Section: 65536/131072
+[INFO]  snarkJS: Contribution Hash:
+                d03d8fc5 5f4f81d0 b4c59c7e 8862cd52
+                2e4e303a 966cce11 4dd0e5ca 2f05b6c3
+                385dda4a 873fcab1 3ac5fb66 0ee5ef83
+                004916f2 375b4444 29984144 f94788d9
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMainCkt8.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt8_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/103698
+[DEBUG] snarkJS: processing constraints: 10000/103698
+[DEBUG] snarkJS: processing constraints: 20000/103698
+[DEBUG] snarkJS: processing constraints: 30000/103698
+[DEBUG] snarkJS: processing constraints: 40000/103698
+[DEBUG] snarkJS: processing constraints: 50000/103698
+[DEBUG] snarkJS: processing constraints: 60000/103698
+[DEBUG] snarkJS: processing constraints: 70000/103698
+[DEBUG] snarkJS: processing constraints: 80000/103698
+[DEBUG] snarkJS: processing constraints: 90000/103698
+[DEBUG] snarkJS: processing constraints: 100000/103698
+[DEBUG] snarkJS: writing coeffs: 0/46095
+[DEBUG] snarkJS: Writing points start IC: 0/3
+[DEBUG] snarkJS: Configuring big array IC: 10000/23047
+[DEBUG] snarkJS: Configuring big array IC: 20000/23047
+[DEBUG] snarkJS: Writing points end IC: 0/3
+[DEBUG] snarkJS: spliting buffer: 0/131072
+[DEBUG] snarkJS: spliting buffer: 10000/131072
+[DEBUG] snarkJS: spliting buffer: 20000/131072
+[DEBUG] snarkJS: spliting buffer: 30000/131072
+[DEBUG] snarkJS: spliting buffer: 40000/131072
+[DEBUG] snarkJS: spliting buffer: 50000/131072
+[DEBUG] snarkJS: spliting buffer: 60000/131072
+[DEBUG] snarkJS: spliting buffer: 70000/131072
+[DEBUG] snarkJS: spliting buffer: 80000/131072
+[DEBUG] snarkJS: spliting buffer: 90000/131072
+[DEBUG] snarkJS: spliting buffer: 100000/131072
+[DEBUG] snarkJS: spliting buffer: 110000/131072
+[DEBUG] snarkJS: spliting buffer: 120000/131072
+[DEBUG] snarkJS: spliting buffer: 130000/131072
+[DEBUG] snarkJS: HashingHPoints: 0/131072
+[DEBUG] snarkJS: HashingHPoints: 16384/131072
+[DEBUG] snarkJS: HashingHPoints: 32768/131072
+[DEBUG] snarkJS: HashingHPoints: 49152/131072
+[DEBUG] snarkJS: HashingHPoints: 65536/131072
+[DEBUG] snarkJS: HashingHPoints: 81920/131072
+[DEBUG] snarkJS: HashingHPoints: 98304/131072
+[DEBUG] snarkJS: HashingHPoints: 114688/131072
+[DEBUG] snarkJS: Writing points start C: 0/138263
+[DEBUG] snarkJS: Writing points start C: 16384/138263
+[DEBUG] snarkJS: Writing points start C: 42488/138263
+[DEBUG] snarkJS: Writing points start C: 67234/138263
+[DEBUG] snarkJS: Writing points start C: 85106/138263
+[DEBUG] snarkJS: Writing points start C: 102979/138263
+[DEBUG] snarkJS: Writing points start C: 120851/138263
+[DEBUG] snarkJS: Writing points end C: 0/138263
+[DEBUG] snarkJS: Writing points end C: 67234/138263
+[DEBUG] snarkJS: Writing points end C: 102979/138263
+[DEBUG] snarkJS: Writing points end C: 85106/138263
+[DEBUG] snarkJS: Writing points end C: 120851/138263
+[DEBUG] snarkJS: Writing points end C: 16384/138263
+[DEBUG] snarkJS: Writing points end C: 42488/138263
+[DEBUG] snarkJS: Writing points start A: 0/138266
+[DEBUG] snarkJS: Writing points start A: 32768/138266
+[DEBUG] snarkJS: Writing points start A: 65536/138266
+[DEBUG] snarkJS: Writing points start A: 98304/138266
+[DEBUG] snarkJS: Writing points start A: 131072/138266
+[DEBUG] snarkJS: Writing points end A: 0/138266
+[DEBUG] snarkJS: Writing points end A: 32768/138266
+[DEBUG] snarkJS: Writing points end A: 131072/138266
+[DEBUG] snarkJS: Writing points end A: 65536/138266
+[DEBUG] snarkJS: Writing points end A: 98304/138266
+[DEBUG] snarkJS: Writing points start B1: 0/138266
+[DEBUG] snarkJS: Writing points start B1: 32768/138266
+[DEBUG] snarkJS: Writing points start B1: 65536/138266
+[DEBUG] snarkJS: Writing points start B1: 98304/138266
+[DEBUG] snarkJS: Writing points start B1: 131072/138266
+[DEBUG] snarkJS: Writing points end B1: 0/138266
+[DEBUG] snarkJS: Writing points end B1: 32768/138266
+[DEBUG] snarkJS: Writing points end B1: 131072/138266
+[DEBUG] snarkJS: Writing points end B1: 65536/138266
+[DEBUG] snarkJS: Writing points end B1: 98304/138266
+[DEBUG] snarkJS: Writing points start B2: 0/138266
+[DEBUG] snarkJS: Writing points start B2: 32768/138266
+[DEBUG] snarkJS: Writing points start B2: 65536/138266
+[DEBUG] snarkJS: Writing points start B2: 98304/138266
+[DEBUG] snarkJS: Writing points start B2: 131072/138266
+[DEBUG] snarkJS: Writing points end B2: 0/138266
+[DEBUG] snarkJS: Writing points end B2: 32768/138266
+[DEBUG] snarkJS: Writing points end B2: 131072/138266
+[DEBUG] snarkJS: Writing points end B2: 65536/138266
+[DEBUG] snarkJS: Writing points end B2: 98304/138266
+[INFO]  snarkJS: Circuit hash:
+                e9a6b0af 7c603b42 6ae723d6 62c23159
+                1daa25bf 482abd40 d75073de 88954433
+                1309c80c d9076112 b0acfcb5 838527e9
+                2f5c0d46 fc5dd26e 5fda9721 28e2af69
+[DEBUG] snarkJS: Same ratio check L section:  0/138263
+[DEBUG] snarkJS: H Verificaition(tau):  0/131072
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/131072
+[INFO]  snarkJS: Circuit Hash:
+                e9a6b0af 7c603b42 6ae723d6 62c23159
+                1daa25bf 482abd40 d75073de 88954433
+                1309c80c d9076112 b0acfcb5 838527e9
+                2f5c0d46 fc5dd26e 5fda9721 28e2af69
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                d03d8fc5 5f4f81d0 b4c59c7e 8862cd52
+                2e4e303a 966cce11 4dd0e5ca 2f05b6c3
+                385dda4a 873fcab1 3ac5fb66 0ee5ef83
+                004916f2 375b4444 29984144 f94788d9
+[INFO]  snarkJS: Beacon generator: 901afb8dc1a12bd896e3
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                87410f22 8920423a babab0ed 13b0a317
+                9dd540c2 6562c301 8fa6c757 9fcc5ead
+                858254ce eea11461 b4391431 5db4f3c2
+                d28eb808 8f0a0a8b f082b89c af823d8c
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                1973b35a 0f35c033 8d5741ec 826eda64
+                1ef5ec7f 06acfcd4 38517986 32dc843c
+                c96407f5 75c81edf 7001ad91 8ec1332d
+                988df4a0 3d734990 074db99a 54852adc
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                8391f694 35261e38 1a2270f2 aac9b6ef
+                76d05a25 17cac6c4 b0109cb8 546476e2
+                1cc26e67 ffbf777c a72a579e 9e19793e
+                db23868e aaa39374 54ae9171 6df9fd93
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 180.23s.
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMainCkt16 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMainCkt16.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt16_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                b60154dd 01edc1bf e5424463 76473788
+                5cfd57ae d9622e16 1b399138 6ac48abe
+                2073afdf 3183dac7 c994bed8 16f2266e
+                b12db5a6 7b1dcc11 a45cef48 386429a1
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt16_00.zkey circuits/zkey/evaluateMainCkt16_01.zkey -e=c6ba4c5149017ed900d0 '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/276503
+[DEBUG] snarkJS: Applying key: L Section: 65536/276503
+[DEBUG] snarkJS: Applying key: L Section: 131072/276503
+[DEBUG] snarkJS: Applying key: L Section: 196608/276503
+[DEBUG] snarkJS: Applying key: L Section: 262144/276503
+[DEBUG] snarkJS: Applying key: H Section: 0/262144
+[DEBUG] snarkJS: Applying key: H Section: 65536/262144
+[DEBUG] snarkJS: Applying key: H Section: 131072/262144
+[DEBUG] snarkJS: Applying key: H Section: 196608/262144
+[INFO]  snarkJS: Circuit Hash:
+                b60154dd 01edc1bf e5424463 76473788
+                5cfd57ae d9622e16 1b399138 6ac48abe
+                2073afdf 3183dac7 c994bed8 16f2266e
+                b12db5a6 7b1dcc11 a45cef48 386429a1
+[INFO]  snarkJS: Contribution Hash:
+                1803fee7 25b78b59 03db9706 a89bc51c
+                81d6a2c4 de82b8f5 80c59cc8 d405d300
+                e82d5cdf 46a7cad4 6bab64b4 2466e8d7
+                c6d5de71 cbe02d47 cf1badaf 004ca986
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt16_01.zkey circuits/zkey/evaluateMainCkt16_02.zkey -e=cd21a129adfce3fee6f0 '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/276503
+[DEBUG] snarkJS: Applying key: L Section: 65536/276503
+[DEBUG] snarkJS: Applying key: L Section: 131072/276503
+[DEBUG] snarkJS: Applying key: L Section: 196608/276503
+[DEBUG] snarkJS: Applying key: L Section: 262144/276503
+[DEBUG] snarkJS: Applying key: H Section: 0/262144
+[DEBUG] snarkJS: Applying key: H Section: 65536/262144
+[DEBUG] snarkJS: Applying key: H Section: 131072/262144
+[DEBUG] snarkJS: Applying key: H Section: 196608/262144
+[INFO]  snarkJS: Circuit Hash:
+                b60154dd 01edc1bf e5424463 76473788
+                5cfd57ae d9622e16 1b399138 6ac48abe
+                2073afdf 3183dac7 c994bed8 16f2266e
+                b12db5a6 7b1dcc11 a45cef48 386429a1
+[INFO]  snarkJS: Contribution Hash:
+                9e5c6645 0a4d9b3c 4aa67ed4 c6798ead
+                0b9bcb1f 5092e69c 3e77bf4f fd538720
+                b32505ea c3c8d6df 05bebac5 749c48a9
+                25140d48 c6d7efe8 0fffc768 037dc753
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt16_02.zkey circuits/zkey/evaluateMainCkt16_03.zkey -e=ce8cb81c2d8d4131e73e '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/276503
+[DEBUG] snarkJS: Applying key: L Section: 65536/276503
+[DEBUG] snarkJS: Applying key: L Section: 131072/276503
+[DEBUG] snarkJS: Applying key: L Section: 196608/276503
+[DEBUG] snarkJS: Applying key: L Section: 262144/276503
+[DEBUG] snarkJS: Applying key: H Section: 0/262144
+[DEBUG] snarkJS: Applying key: H Section: 65536/262144
+[DEBUG] snarkJS: Applying key: H Section: 131072/262144
+[DEBUG] snarkJS: Applying key: H Section: 196608/262144
+[INFO]  snarkJS: Circuit Hash:
+                b60154dd 01edc1bf e5424463 76473788
+                5cfd57ae d9622e16 1b399138 6ac48abe
+                2073afdf 3183dac7 c994bed8 16f2266e
+                b12db5a6 7b1dcc11 a45cef48 386429a1
+[INFO]  snarkJS: Contribution Hash:
+                780356cd fe816b5e b8befccb 91f0ce9c
+                4c3ec1a6 56e858b1 b0fbd32b dd05754b
+                df966715 cb84af97 a060ff59 5fa5697c
+                a878eaac 19aeca45 5dfd9620 bfc0bf55
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMainCkt16_03.zkey circuits/zkey/evaluateMainCkt16_final.zkey 13901bbcada21aca2ac7 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/276503
+[DEBUG] snarkJS: Applying key: L Section: 65536/276503
+[DEBUG] snarkJS: Applying key: L Section: 131072/276503
+[DEBUG] snarkJS: Applying key: L Section: 196608/276503
+[DEBUG] snarkJS: Applying key: L Section: 262144/276503
+[DEBUG] snarkJS: Applying key: H Section: 0/262144
+[DEBUG] snarkJS: Applying key: H Section: 65536/262144
+[DEBUG] snarkJS: Applying key: H Section: 131072/262144
+[DEBUG] snarkJS: Applying key: H Section: 196608/262144
+[INFO]  snarkJS: Contribution Hash:
+                238822bc c58e4d75 8d04ee95 56481d91
+                3ed7d6c2 79221b02 29d66b85 1efae996
+                8d09a611 31a4866c a0585ee2 b34e6a05
+                02e3a0b0 5fb5474b bdb59ddf 802ebaea
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMainCkt16.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt16_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/207378
+[DEBUG] snarkJS: processing constraints: 10000/207378
+[DEBUG] snarkJS: processing constraints: 20000/207378
+[DEBUG] snarkJS: processing constraints: 30000/207378
+[DEBUG] snarkJS: processing constraints: 40000/207378
+[DEBUG] snarkJS: processing constraints: 50000/207378
+[DEBUG] snarkJS: processing constraints: 60000/207378
+[DEBUG] snarkJS: processing constraints: 70000/207378
+[DEBUG] snarkJS: processing constraints: 80000/207378
+[DEBUG] snarkJS: processing constraints: 90000/207378
+[DEBUG] snarkJS: processing constraints: 100000/207378
+[DEBUG] snarkJS: processing constraints: 110000/207378
+[DEBUG] snarkJS: processing constraints: 120000/207378
+[DEBUG] snarkJS: processing constraints: 130000/207378
+[DEBUG] snarkJS: processing constraints: 140000/207378
+[DEBUG] snarkJS: processing constraints: 150000/207378
+[DEBUG] snarkJS: processing constraints: 160000/207378
+[DEBUG] snarkJS: processing constraints: 170000/207378
+[DEBUG] snarkJS: processing constraints: 180000/207378
+[DEBUG] snarkJS: processing constraints: 190000/207378
+[DEBUG] snarkJS: processing constraints: 200000/207378
+[DEBUG] snarkJS: writing coeffs: 0/92175
+[DEBUG] snarkJS: Writing points start IC: 0/3
+[DEBUG] snarkJS: Configuring big array IC: 10000/46087
+[DEBUG] snarkJS: Configuring big array IC: 20000/46087
+[DEBUG] snarkJS: Configuring big array IC: 30000/46087
+[DEBUG] snarkJS: Configuring big array IC: 40000/46087
+[DEBUG] snarkJS: Multiexp start: IC: 0/46087
+[DEBUG] snarkJS: Writing points start IC: 1/3
+[DEBUG] snarkJS: Writing points end IC: 1/3
+[DEBUG] snarkJS: Multiexp end: IC: 0/46087
+[DEBUG] snarkJS: Writing points end IC: 0/3
+[DEBUG] snarkJS: spliting buffer: 0/262144
+[DEBUG] snarkJS: spliting buffer: 10000/262144
+[DEBUG] snarkJS: spliting buffer: 20000/262144
+[DEBUG] snarkJS: spliting buffer: 30000/262144
+[DEBUG] snarkJS: spliting buffer: 40000/262144
+[DEBUG] snarkJS: spliting buffer: 50000/262144
+[DEBUG] snarkJS: spliting buffer: 60000/262144
+[DEBUG] snarkJS: spliting buffer: 70000/262144
+[DEBUG] snarkJS: spliting buffer: 80000/262144
+[DEBUG] snarkJS: spliting buffer: 90000/262144
+[DEBUG] snarkJS: spliting buffer: 100000/262144
+[DEBUG] snarkJS: spliting buffer: 110000/262144
+[DEBUG] snarkJS: spliting buffer: 120000/262144
+[DEBUG] snarkJS: spliting buffer: 130000/262144
+[DEBUG] snarkJS: spliting buffer: 140000/262144
+[DEBUG] snarkJS: spliting buffer: 150000/262144
+[DEBUG] snarkJS: spliting buffer: 160000/262144
+[DEBUG] snarkJS: spliting buffer: 170000/262144
+[DEBUG] snarkJS: spliting buffer: 180000/262144
+[DEBUG] snarkJS: spliting buffer: 190000/262144
+[DEBUG] snarkJS: spliting buffer: 200000/262144
+[DEBUG] snarkJS: spliting buffer: 210000/262144
+[DEBUG] snarkJS: spliting buffer: 220000/262144
+[DEBUG] snarkJS: spliting buffer: 230000/262144
+[DEBUG] snarkJS: spliting buffer: 240000/262144
+[DEBUG] snarkJS: spliting buffer: 250000/262144
+[DEBUG] snarkJS: spliting buffer: 260000/262144
+[DEBUG] snarkJS: HashingHPoints: 0/262144
+[DEBUG] snarkJS: HashingHPoints: 16384/262144
+[DEBUG] snarkJS: HashingHPoints: 32768/262144
+[DEBUG] snarkJS: HashingHPoints: 49152/262144
+[DEBUG] snarkJS: HashingHPoints: 65536/262144
+[DEBUG] snarkJS: HashingHPoints: 81920/262144
+[DEBUG] snarkJS: HashingHPoints: 98304/262144
+[DEBUG] snarkJS: HashingHPoints: 114688/262144
+[DEBUG] snarkJS: HashingHPoints: 131072/262144
+[DEBUG] snarkJS: HashingHPoints: 147456/262144
+[DEBUG] snarkJS: HashingHPoints: 163840/262144
+[DEBUG] snarkJS: HashingHPoints: 180224/262144
+[DEBUG] snarkJS: HashingHPoints: 196608/262144
+[DEBUG] snarkJS: HashingHPoints: 212992/262144
+[DEBUG] snarkJS: HashingHPoints: 229376/262144
+[DEBUG] snarkJS: HashingHPoints: 245760/262144
+[DEBUG] snarkJS: Writing points start C: 0/276503
+[DEBUG] snarkJS: Writing points start C: 16384/276503
+[DEBUG] snarkJS: Writing points start C: 32767/276503
+[DEBUG] snarkJS: Writing points start C: 52219/276503
+[DEBUG] snarkJS: Writing points start C: 84981/276503
+[DEBUG] snarkJS: Writing points start C: 116594/276503
+[DEBUG] snarkJS: Writing points start C: 134467/276503
+[DEBUG] snarkJS: Writing points start C: 152339/276503
+[DEBUG] snarkJS: Writing points end C: 0/276503
+[DEBUG] snarkJS: Writing points end C: 16384/276503
+[DEBUG] snarkJS: Writing points end C: 32767/276503
+[DEBUG] snarkJS: Writing points end C: 116594/276503
+[DEBUG] snarkJS: Writing points end C: 134467/276503
+[DEBUG] snarkJS: Writing points end C: 152339/276503
+[DEBUG] snarkJS: Writing points end C: 84981/276503
+[DEBUG] snarkJS: Writing points end C: 52219/276503
+[DEBUG] snarkJS: Writing points start C: 170212/276503
+[DEBUG] snarkJS: Writing points start C: 188084/276503
+[DEBUG] snarkJS: Writing points start C: 205957/276503
+[DEBUG] snarkJS: Writing points start C: 223829/276503
+[DEBUG] snarkJS: Writing points start C: 241702/276503
+[DEBUG] snarkJS: Writing points start C: 264679/276503
+[DEBUG] snarkJS: Writing points end C: 264679/276503
+[DEBUG] snarkJS: Writing points end C: 170212/276503
+[DEBUG] snarkJS: Writing points end C: 188084/276503
+[DEBUG] snarkJS: Writing points end C: 205957/276503
+[DEBUG] snarkJS: Writing points end C: 223829/276503
+[DEBUG] snarkJS: Writing points end C: 241702/276503
+[DEBUG] snarkJS: Writing points start A: 0/276506
+[DEBUG] snarkJS: Writing points start A: 32768/276506
+[DEBUG] snarkJS: Writing points start A: 65536/276506
+[DEBUG] snarkJS: Writing points start A: 98304/276506
+[DEBUG] snarkJS: Writing points start A: 131072/276506
+[DEBUG] snarkJS: Writing points start A: 163840/276506
+[DEBUG] snarkJS: Writing points start A: 196608/276506
+[DEBUG] snarkJS: Writing points start A: 229376/276506
+[DEBUG] snarkJS: Writing points end A: 0/276506
+[DEBUG] snarkJS: Writing points end A: 32768/276506
+[DEBUG] snarkJS: Writing points end A: 65536/276506
+[DEBUG] snarkJS: Writing points end A: 98304/276506
+[DEBUG] snarkJS: Writing points end A: 131072/276506
+[DEBUG] snarkJS: Writing points end A: 163840/276506
+[DEBUG] snarkJS: Writing points end A: 196608/276506
+[DEBUG] snarkJS: Writing points end A: 229376/276506
+[DEBUG] snarkJS: Writing points start A: 262144/276506
+[DEBUG] snarkJS: Writing points end A: 262144/276506
+[DEBUG] snarkJS: Writing points start B1: 0/276506
+[DEBUG] snarkJS: Writing points start B1: 32768/276506
+[DEBUG] snarkJS: Writing points start B1: 65536/276506
+[DEBUG] snarkJS: Writing points start B1: 98304/276506
+[DEBUG] snarkJS: Writing points start B1: 131072/276506
+[DEBUG] snarkJS: Writing points start B1: 163840/276506
+[DEBUG] snarkJS: Writing points start B1: 196608/276506
+[DEBUG] snarkJS: Writing points start B1: 229376/276506
+[DEBUG] snarkJS: Writing points end B1: 0/276506
+[DEBUG] snarkJS: Writing points end B1: 32768/276506
+[DEBUG] snarkJS: Writing points end B1: 65536/276506
+[DEBUG] snarkJS: Writing points end B1: 98304/276506
+[DEBUG] snarkJS: Writing points end B1: 131072/276506
+[DEBUG] snarkJS: Writing points end B1: 163840/276506
+[DEBUG] snarkJS: Writing points end B1: 196608/276506
+[DEBUG] snarkJS: Writing points end B1: 229376/276506
+[DEBUG] snarkJS: Writing points start B1: 262144/276506
+[DEBUG] snarkJS: Writing points end B1: 262144/276506
+[DEBUG] snarkJS: Writing points start B2: 0/276506
+[DEBUG] snarkJS: Writing points start B2: 32768/276506
+[DEBUG] snarkJS: Writing points start B2: 65536/276506
+[DEBUG] snarkJS: Writing points start B2: 98304/276506
+[DEBUG] snarkJS: Writing points start B2: 131072/276506
+[DEBUG] snarkJS: Writing points start B2: 163840/276506
+[DEBUG] snarkJS: Writing points start B2: 196608/276506
+[DEBUG] snarkJS: Writing points start B2: 229376/276506
+[DEBUG] snarkJS: Writing points end B2: 98304/276506
+[DEBUG] snarkJS: Writing points end B2: 131072/276506
+[DEBUG] snarkJS: Writing points end B2: 0/276506
+[DEBUG] snarkJS: Writing points end B2: 32768/276506
+[DEBUG] snarkJS: Writing points end B2: 65536/276506
+[DEBUG] snarkJS: Writing points end B2: 163840/276506
+[DEBUG] snarkJS: Writing points end B2: 196608/276506
+[DEBUG] snarkJS: Writing points end B2: 229376/276506
+[DEBUG] snarkJS: Writing points start B2: 262144/276506
+[DEBUG] snarkJS: Writing points end B2: 262144/276506
+[INFO]  snarkJS: Circuit hash:
+                b60154dd 01edc1bf e5424463 76473788
+                5cfd57ae d9622e16 1b399138 6ac48abe
+                2073afdf 3183dac7 c994bed8 16f2266e
+                b12db5a6 7b1dcc11 a45cef48 386429a1
+[DEBUG] snarkJS: Same ratio check L section:  0/276503
+[DEBUG] snarkJS: H Verificaition(tau):  0/262144
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/262144
+[INFO]  snarkJS: Circuit Hash:
+                b60154dd 01edc1bf e5424463 76473788
+                5cfd57ae d9622e16 1b399138 6ac48abe
+                2073afdf 3183dac7 c994bed8 16f2266e
+                b12db5a6 7b1dcc11 a45cef48 386429a1
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                238822bc c58e4d75 8d04ee95 56481d91
+                3ed7d6c2 79221b02 29d66b85 1efae996
+                8d09a611 31a4866c a0585ee2 b34e6a05
+                02e3a0b0 5fb5474b bdb59ddf 802ebaea
+[INFO]  snarkJS: Beacon generator: 13901bbcada21aca2ac7
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                780356cd fe816b5e b8befccb 91f0ce9c
+                4c3ec1a6 56e858b1 b0fbd32b dd05754b
+                df966715 cb84af97 a060ff59 5fa5697c
+                a878eaac 19aeca45 5dfd9620 bfc0bf55
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                9e5c6645 0a4d9b3c 4aa67ed4 c6798ead
+                0b9bcb1f 5092e69c 3e77bf4f fd538720
+                b32505ea c3c8d6df 05bebac5 749c48a9
+                25140d48 c6d7efe8 0fffc768 037dc753
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                1803fee7 25b78b59 03db9706 a89bc51c
+                81d6a2c4 de82b8f5 80c59cc8 d405d300
+                e82d5cdf 46a7cad4 6bab64b4 2466e8d7
+                c6d5de71 cbe02d47 cf1badaf 004ca986
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 340.66s.
+yarn run v1.22.19
+$ node scripts/generateZKKey.js evaluateMainCkt30 powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 setup artifacts/evaluateMainCkt30.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt30_00.zkey
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[INFO]  snarkJS: Circuit hash:
+                c8ab490c 1a6534ac 3853e38a ecf9cbfd
+                ef3782f8 743227b2 b7dc770a 64b0c292
+                5a8c5913 aae38305 3348e5ae 17741c07
+                e251ce06 34446a76 bad90ae6 58e2c345
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt30_00.zkey circuits/zkey/evaluateMainCkt30_01.zkey -e=772dbe1a77d3e1028bab '-n=1st zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/518423
+[DEBUG] snarkJS: Applying key: L Section: 65536/518423
+[DEBUG] snarkJS: Applying key: L Section: 131072/518423
+[DEBUG] snarkJS: Applying key: L Section: 196608/518423
+[DEBUG] snarkJS: Applying key: L Section: 262144/518423
+[DEBUG] snarkJS: Applying key: L Section: 327680/518423
+[DEBUG] snarkJS: Applying key: L Section: 393216/518423
+[DEBUG] snarkJS: Applying key: L Section: 458752/518423
+[DEBUG] snarkJS: Applying key: H Section: 0/524288
+[DEBUG] snarkJS: Applying key: H Section: 65536/524288
+[DEBUG] snarkJS: Applying key: H Section: 131072/524288
+[DEBUG] snarkJS: Applying key: H Section: 196608/524288
+[DEBUG] snarkJS: Applying key: H Section: 262144/524288
+[DEBUG] snarkJS: Applying key: H Section: 327680/524288
+[DEBUG] snarkJS: Applying key: H Section: 393216/524288
+[DEBUG] snarkJS: Applying key: H Section: 458752/524288
+[INFO]  snarkJS: Circuit Hash:
+                c8ab490c 1a6534ac 3853e38a ecf9cbfd
+                ef3782f8 743227b2 b7dc770a 64b0c292
+                5a8c5913 aae38305 3348e5ae 17741c07
+                e251ce06 34446a76 bad90ae6 58e2c345
+[INFO]  snarkJS: Contribution Hash:
+                664feac2 5473f3cd 65d699b3 79d2c82b
+                1b84f2b4 ad1154d7 434b22ef 0d0d10b9
+                2fc43c53 8c06e532 6b0ef6d8 d0a883f9
+                dee52d51 918f29f2 9adaf3cd 74d9f56c
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt30_01.zkey circuits/zkey/evaluateMainCkt30_02.zkey -e=2232600adc90c442829a '-n=2nd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/518423
+[DEBUG] snarkJS: Applying key: L Section: 65536/518423
+[DEBUG] snarkJS: Applying key: L Section: 131072/518423
+[DEBUG] snarkJS: Applying key: L Section: 196608/518423
+[DEBUG] snarkJS: Applying key: L Section: 262144/518423
+[DEBUG] snarkJS: Applying key: L Section: 327680/518423
+[DEBUG] snarkJS: Applying key: L Section: 393216/518423
+[DEBUG] snarkJS: Applying key: L Section: 458752/518423
+[DEBUG] snarkJS: Applying key: H Section: 0/524288
+[DEBUG] snarkJS: Applying key: H Section: 65536/524288
+[DEBUG] snarkJS: Applying key: H Section: 131072/524288
+[DEBUG] snarkJS: Applying key: H Section: 196608/524288
+[DEBUG] snarkJS: Applying key: H Section: 262144/524288
+[DEBUG] snarkJS: Applying key: H Section: 327680/524288
+[DEBUG] snarkJS: Applying key: H Section: 393216/524288
+[DEBUG] snarkJS: Applying key: H Section: 458752/524288
+[INFO]  snarkJS: Circuit Hash:
+                c8ab490c 1a6534ac 3853e38a ecf9cbfd
+                ef3782f8 743227b2 b7dc770a 64b0c292
+                5a8c5913 aae38305 3348e5ae 17741c07
+                e251ce06 34446a76 bad90ae6 58e2c345
+[INFO]  snarkJS: Contribution Hash:
+                e1a0e20d 5926f786 842e8f52 9ad62a16
+                f91f26f8 7f2e9c54 9d686035 23a66c15
+                864d8439 2e5abecf cce381fb 1f0dd8cc
+                5979b96e 8eb6470a 04d56123 220aa27a
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey contribute circuits/zkey/evaluateMainCkt30_02.zkey circuits/zkey/evaluateMainCkt30_03.zkey -e=b3914412eff211e04164 '-n=3rd zkey contribution' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/518423
+[DEBUG] snarkJS: Applying key: L Section: 65536/518423
+[DEBUG] snarkJS: Applying key: L Section: 131072/518423
+[DEBUG] snarkJS: Applying key: L Section: 196608/518423
+[DEBUG] snarkJS: Applying key: L Section: 262144/518423
+[DEBUG] snarkJS: Applying key: L Section: 327680/518423
+[DEBUG] snarkJS: Applying key: L Section: 393216/518423
+[DEBUG] snarkJS: Applying key: L Section: 458752/518423
+[DEBUG] snarkJS: Applying key: H Section: 0/524288
+[DEBUG] snarkJS: Applying key: H Section: 65536/524288
+[DEBUG] snarkJS: Applying key: H Section: 131072/524288
+[DEBUG] snarkJS: Applying key: H Section: 196608/524288
+[DEBUG] snarkJS: Applying key: H Section: 262144/524288
+[DEBUG] snarkJS: Applying key: H Section: 327680/524288
+[DEBUG] snarkJS: Applying key: H Section: 393216/524288
+[DEBUG] snarkJS: Applying key: H Section: 458752/524288
+[INFO]  snarkJS: Circuit Hash:
+                c8ab490c 1a6534ac 3853e38a ecf9cbfd
+                ef3782f8 743227b2 b7dc770a 64b0c292
+                5a8c5913 aae38305 3348e5ae 17741c07
+                e251ce06 34446a76 bad90ae6 58e2c345
+[INFO]  snarkJS: Contribution Hash:
+                cc600101 0fac495a 8a4b9a8e ff4e6716
+                8034f016 4ed43181 4a24eb44 3d9bf88b
+                c7a24422 513dfd79 2200eec6 69564735
+                d6b3c713 4086120a 0113a033 9054e8e5
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey beacon circuits/zkey/evaluateMainCkt30_03.zkey circuits/zkey/evaluateMainCkt30_final.zkey 4a247118f3c77bc962cf 10 '-n=final beacon phase 2' -v
+[DEBUG] snarkJS: Applying key: L Section: 0/518423
+[DEBUG] snarkJS: Applying key: L Section: 65536/518423
+[DEBUG] snarkJS: Applying key: L Section: 131072/518423
+[DEBUG] snarkJS: Applying key: L Section: 196608/518423
+[DEBUG] snarkJS: Applying key: L Section: 262144/518423
+[DEBUG] snarkJS: Applying key: L Section: 327680/518423
+[DEBUG] snarkJS: Applying key: L Section: 393216/518423
+[DEBUG] snarkJS: Applying key: L Section: 458752/518423
+[DEBUG] snarkJS: Applying key: H Section: 0/524288
+[DEBUG] snarkJS: Applying key: H Section: 65536/524288
+[DEBUG] snarkJS: Applying key: H Section: 131072/524288
+[DEBUG] snarkJS: Applying key: H Section: 196608/524288
+[DEBUG] snarkJS: Applying key: H Section: 262144/524288
+[DEBUG] snarkJS: Applying key: H Section: 327680/524288
+[DEBUG] snarkJS: Applying key: H Section: 393216/524288
+[DEBUG] snarkJS: Applying key: H Section: 458752/524288
+[INFO]  snarkJS: Contribution Hash:
+                736e4c9a ae570d2a ea7b20aa 1380d43d
+                c3434232 409c5528 9b1bab88 27ca89a9
+                d7861390 bdbd8d4e b5dedad2 39a1ddb3
+                c2d03acf 22761be8 284f16c1 52178c87
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey verify artifacts/evaluateMainCkt30.r1cs powers-of-tau/powersOfTau28_hez_final_25.ptau circuits/zkey/evaluateMainCkt30_final.zkey -v
+[INFO]  snarkJS: Reading r1cs
+[INFO]  snarkJS: Reading tauG1
+[INFO]  snarkJS: Reading tauG2
+[INFO]  snarkJS: Reading alphatauG1
+[INFO]  snarkJS: Reading betatauG1
+[DEBUG] snarkJS: processing constraints: 0/388818
+[DEBUG] snarkJS: processing constraints: 10000/388818
+[DEBUG] snarkJS: processing constraints: 20000/388818
+[DEBUG] snarkJS: processing constraints: 30000/388818
+[DEBUG] snarkJS: processing constraints: 40000/388818
+[DEBUG] snarkJS: processing constraints: 50000/388818
+[DEBUG] snarkJS: processing constraints: 60000/388818
+[DEBUG] snarkJS: processing constraints: 70000/388818
+[DEBUG] snarkJS: processing constraints: 80000/388818
+[DEBUG] snarkJS: processing constraints: 90000/388818
+[DEBUG] snarkJS: processing constraints: 100000/388818
+[DEBUG] snarkJS: processing constraints: 110000/388818
+[DEBUG] snarkJS: processing constraints: 120000/388818
+[DEBUG] snarkJS: processing constraints: 130000/388818
+[DEBUG] snarkJS: processing constraints: 140000/388818
+[DEBUG] snarkJS: processing constraints: 150000/388818
+[DEBUG] snarkJS: processing constraints: 160000/388818
+[DEBUG] snarkJS: processing constraints: 170000/388818
+[DEBUG] snarkJS: processing constraints: 180000/388818
+[DEBUG] snarkJS: processing constraints: 190000/388818
+[DEBUG] snarkJS: processing constraints: 200000/388818
+[DEBUG] snarkJS: processing constraints: 210000/388818
+[DEBUG] snarkJS: processing constraints: 220000/388818
+[DEBUG] snarkJS: processing constraints: 230000/388818
+[DEBUG] snarkJS: processing constraints: 240000/388818
+[DEBUG] snarkJS: processing constraints: 250000/388818
+[DEBUG] snarkJS: processing constraints: 260000/388818
+[DEBUG] snarkJS: processing constraints: 270000/388818
+[DEBUG] snarkJS: processing constraints: 280000/388818
+[DEBUG] snarkJS: processing constraints: 290000/388818
+[DEBUG] snarkJS: processing constraints: 300000/388818
+[DEBUG] snarkJS: processing constraints: 310000/388818
+[DEBUG] snarkJS: processing constraints: 320000/388818
+[DEBUG] snarkJS: processing constraints: 330000/388818
+[DEBUG] snarkJS: processing constraints: 340000/388818
+[DEBUG] snarkJS: processing constraints: 350000/388818
+[DEBUG] snarkJS: processing constraints: 360000/388818
+[DEBUG] snarkJS: processing constraints: 370000/388818
+[DEBUG] snarkJS: processing constraints: 380000/388818
+[DEBUG] snarkJS: writing coeffs: 0/172815
+[DEBUG] snarkJS: writing coeffs: 100000/172815
+[DEBUG] snarkJS: Writing points start IC: 0/3
+[DEBUG] snarkJS: Configuring big array IC: 10000/86407
+[DEBUG] snarkJS: Configuring big array IC: 20000/86407
+[DEBUG] snarkJS: Configuring big array IC: 30000/86407
+[DEBUG] snarkJS: Configuring big array IC: 40000/86407
+[DEBUG] snarkJS: Configuring big array IC: 50000/86407
+[DEBUG] snarkJS: Configuring big array IC: 60000/86407
+[DEBUG] snarkJS: Configuring big array IC: 70000/86407
+[DEBUG] snarkJS: Configuring big array IC: 80000/86407
+[DEBUG] snarkJS: Multiexp start: IC: 0/86407
+[DEBUG] snarkJS: Writing points start IC: 1/3
+[DEBUG] snarkJS: Writing points end IC: 1/3
+[DEBUG] snarkJS: Multiexp end: IC: 0/86407
+[DEBUG] snarkJS: Writing points end IC: 0/3
+[DEBUG] snarkJS: spliting buffer: 0/524288
+[DEBUG] snarkJS: spliting buffer: 10000/524288
+[DEBUG] snarkJS: spliting buffer: 20000/524288
+[DEBUG] snarkJS: spliting buffer: 30000/524288
+[DEBUG] snarkJS: spliting buffer: 40000/524288
+[DEBUG] snarkJS: spliting buffer: 50000/524288
+[DEBUG] snarkJS: spliting buffer: 60000/524288
+[DEBUG] snarkJS: spliting buffer: 70000/524288
+[DEBUG] snarkJS: spliting buffer: 80000/524288
+[DEBUG] snarkJS: spliting buffer: 90000/524288
+[DEBUG] snarkJS: spliting buffer: 100000/524288
+[DEBUG] snarkJS: spliting buffer: 110000/524288
+[DEBUG] snarkJS: spliting buffer: 120000/524288
+[DEBUG] snarkJS: spliting buffer: 130000/524288
+[DEBUG] snarkJS: spliting buffer: 140000/524288
+[DEBUG] snarkJS: spliting buffer: 150000/524288
+[DEBUG] snarkJS: spliting buffer: 160000/524288
+[DEBUG] snarkJS: spliting buffer: 170000/524288
+[DEBUG] snarkJS: spliting buffer: 180000/524288
+[DEBUG] snarkJS: spliting buffer: 190000/524288
+[DEBUG] snarkJS: spliting buffer: 200000/524288
+[DEBUG] snarkJS: spliting buffer: 210000/524288
+[DEBUG] snarkJS: spliting buffer: 220000/524288
+[DEBUG] snarkJS: spliting buffer: 230000/524288
+[DEBUG] snarkJS: spliting buffer: 240000/524288
+[DEBUG] snarkJS: spliting buffer: 250000/524288
+[DEBUG] snarkJS: spliting buffer: 260000/524288
+[DEBUG] snarkJS: spliting buffer: 270000/524288
+[DEBUG] snarkJS: spliting buffer: 280000/524288
+[DEBUG] snarkJS: spliting buffer: 290000/524288
+[DEBUG] snarkJS: spliting buffer: 300000/524288
+[DEBUG] snarkJS: spliting buffer: 310000/524288
+[DEBUG] snarkJS: spliting buffer: 320000/524288
+[DEBUG] snarkJS: spliting buffer: 330000/524288
+[DEBUG] snarkJS: spliting buffer: 340000/524288
+[DEBUG] snarkJS: spliting buffer: 350000/524288
+[DEBUG] snarkJS: spliting buffer: 360000/524288
+[DEBUG] snarkJS: spliting buffer: 370000/524288
+[DEBUG] snarkJS: spliting buffer: 380000/524288
+[DEBUG] snarkJS: spliting buffer: 390000/524288
+[DEBUG] snarkJS: spliting buffer: 400000/524288
+[DEBUG] snarkJS: spliting buffer: 410000/524288
+[DEBUG] snarkJS: spliting buffer: 420000/524288
+[DEBUG] snarkJS: spliting buffer: 430000/524288
+[DEBUG] snarkJS: spliting buffer: 440000/524288
+[DEBUG] snarkJS: spliting buffer: 450000/524288
+[DEBUG] snarkJS: spliting buffer: 460000/524288
+[DEBUG] snarkJS: spliting buffer: 470000/524288
+[DEBUG] snarkJS: spliting buffer: 480000/524288
+[DEBUG] snarkJS: spliting buffer: 490000/524288
+[DEBUG] snarkJS: spliting buffer: 500000/524288
+[DEBUG] snarkJS: spliting buffer: 510000/524288
+[DEBUG] snarkJS: spliting buffer: 520000/524288
+[DEBUG] snarkJS: HashingHPoints: 0/524288
+[DEBUG] snarkJS: HashingHPoints: 16384/524288
+[DEBUG] snarkJS: HashingHPoints: 32768/524288
+[DEBUG] snarkJS: HashingHPoints: 49152/524288
+[DEBUG] snarkJS: HashingHPoints: 65536/524288
+[DEBUG] snarkJS: HashingHPoints: 81920/524288
+[DEBUG] snarkJS: HashingHPoints: 98304/524288
+[DEBUG] snarkJS: HashingHPoints: 114688/524288
+[DEBUG] snarkJS: HashingHPoints: 131072/524288
+[DEBUG] snarkJS: HashingHPoints: 147456/524288
+[DEBUG] snarkJS: HashingHPoints: 163840/524288
+[DEBUG] snarkJS: HashingHPoints: 180224/524288
+[DEBUG] snarkJS: HashingHPoints: 196608/524288
+[DEBUG] snarkJS: HashingHPoints: 212992/524288
+[DEBUG] snarkJS: HashingHPoints: 229376/524288
+[DEBUG] snarkJS: HashingHPoints: 245760/524288
+[DEBUG] snarkJS: HashingHPoints: 262144/524288
+[DEBUG] snarkJS: HashingHPoints: 278528/524288
+[DEBUG] snarkJS: HashingHPoints: 294912/524288
+[DEBUG] snarkJS: HashingHPoints: 311296/524288
+[DEBUG] snarkJS: HashingHPoints: 327680/524288
+[DEBUG] snarkJS: HashingHPoints: 344064/524288
+[DEBUG] snarkJS: HashingHPoints: 360448/524288
+[DEBUG] snarkJS: HashingHPoints: 376832/524288
+[DEBUG] snarkJS: HashingHPoints: 393216/524288
+[DEBUG] snarkJS: HashingHPoints: 409600/524288
+[DEBUG] snarkJS: HashingHPoints: 425984/524288
+[DEBUG] snarkJS: HashingHPoints: 442368/524288
+[DEBUG] snarkJS: HashingHPoints: 458752/524288
+[DEBUG] snarkJS: HashingHPoints: 475136/524288
+[DEBUG] snarkJS: HashingHPoints: 491520/524288
+[DEBUG] snarkJS: HashingHPoints: 507904/524288
+[DEBUG] snarkJS: Writing points start C: 0/518423
+[DEBUG] snarkJS: Writing points start C: 16384/518423
+[DEBUG] snarkJS: Writing points start C: 32767/518423
+[DEBUG] snarkJS: Writing points start C: 49150/518423
+[DEBUG] snarkJS: Writing points start C: 65533/518423
+[DEBUG] snarkJS: Writing points start C: 81916/518423
+[DEBUG] snarkJS: Writing points start C: 110197/518423
+[DEBUG] snarkJS: Writing points start C: 142959/518423
+[DEBUG] snarkJS: Writing points end C: 0/518423
+[DEBUG] snarkJS: Writing points end C: 16384/518423
+[DEBUG] snarkJS: Writing points end C: 32767/518423
+[DEBUG] snarkJS: Writing points end C: 49150/518423
+[DEBUG] snarkJS: Writing points end C: 65533/518423
+[DEBUG] snarkJS: Writing points end C: 81916/518423
+[DEBUG] snarkJS: Writing points end C: 142959/518423
+[DEBUG] snarkJS: Writing points end C: 110197/518423
+[DEBUG] snarkJS: Writing points start C: 175726/518423
+[DEBUG] snarkJS: Writing points start C: 208493/518423
+[DEBUG] snarkJS: Writing points start C: 229783/518423
+[DEBUG] snarkJS: Writing points start C: 247655/518423
+[DEBUG] snarkJS: Writing points start C: 265528/518423
+[DEBUG] snarkJS: Writing points start C: 283400/518423
+[DEBUG] snarkJS: Writing points start C: 301273/518423
+[DEBUG] snarkJS: Writing points start C: 319145/518423
+[DEBUG] snarkJS: Writing points end C: 247655/518423
+[DEBUG] snarkJS: Writing points end C: 265528/518423
+[DEBUG] snarkJS: Writing points end C: 301273/518423
+[DEBUG] snarkJS: Writing points end C: 208493/518423
+[DEBUG] snarkJS: Writing points end C: 229783/518423
+[DEBUG] snarkJS: Writing points end C: 283400/518423
+[DEBUG] snarkJS: Writing points end C: 319145/518423
+[DEBUG] snarkJS: Writing points end C: 175726/518423
+[DEBUG] snarkJS: Writing points start C: 337018/518423
+[DEBUG] snarkJS: Writing points start C: 354890/518423
+[DEBUG] snarkJS: Writing points start C: 372763/518423
+[DEBUG] snarkJS: Writing points start C: 390635/518423
+[DEBUG] snarkJS: Writing points start C: 408508/518423
+[DEBUG] snarkJS: Writing points start C: 426380/518423
+[DEBUG] snarkJS: Writing points start C: 444253/518423
+[DEBUG] snarkJS: Writing points start C: 462125/518423
+[DEBUG] snarkJS: Writing points end C: 337018/518423
+[DEBUG] snarkJS: Writing points end C: 354890/518423
+[DEBUG] snarkJS: Writing points end C: 390635/518423
+[DEBUG] snarkJS: Writing points end C: 372763/518423
+[DEBUG] snarkJS: Writing points end C: 444253/518423
+[DEBUG] snarkJS: Writing points end C: 408508/518423
+[DEBUG] snarkJS: Writing points end C: 426380/518423
+[DEBUG] snarkJS: Writing points end C: 462125/518423
+[DEBUG] snarkJS: Writing points start C: 483988/518423
+[DEBUG] snarkJS: Writing points start C: 516755/518423
+[DEBUG] snarkJS: Writing points end C: 516755/518423
+[DEBUG] snarkJS: Writing points end C: 483988/518423
+[DEBUG] snarkJS: Writing points start A: 0/518426
+[DEBUG] snarkJS: Writing points start A: 32768/518426
+[DEBUG] snarkJS: Writing points start A: 65536/518426
+[DEBUG] snarkJS: Writing points start A: 98304/518426
+[DEBUG] snarkJS: Writing points start A: 131072/518426
+[DEBUG] snarkJS: Writing points start A: 163840/518426
+[DEBUG] snarkJS: Writing points start A: 196608/518426
+[DEBUG] snarkJS: Writing points start A: 229376/518426
+[DEBUG] snarkJS: Writing points end A: 0/518426
+[DEBUG] snarkJS: Writing points end A: 32768/518426
+[DEBUG] snarkJS: Writing points end A: 65536/518426
+[DEBUG] snarkJS: Writing points end A: 98304/518426
+[DEBUG] snarkJS: Writing points end A: 131072/518426
+[DEBUG] snarkJS: Writing points end A: 163840/518426
+[DEBUG] snarkJS: Writing points end A: 196608/518426
+[DEBUG] snarkJS: Writing points end A: 229376/518426
+[DEBUG] snarkJS: Writing points start A: 262144/518426
+[DEBUG] snarkJS: Writing points start A: 294912/518426
+[DEBUG] snarkJS: Writing points start A: 327680/518426
+[DEBUG] snarkJS: Writing points start A: 360448/518426
+[DEBUG] snarkJS: Writing points start A: 393216/518426
+[DEBUG] snarkJS: Writing points start A: 425984/518426
+[DEBUG] snarkJS: Writing points start A: 458752/518426
+[DEBUG] snarkJS: Writing points start A: 491520/518426
+[DEBUG] snarkJS: Writing points end A: 262144/518426
+[DEBUG] snarkJS: Writing points end A: 294912/518426
+[DEBUG] snarkJS: Writing points end A: 327680/518426
+[DEBUG] snarkJS: Writing points end A: 360448/518426
+[DEBUG] snarkJS: Writing points end A: 393216/518426
+[DEBUG] snarkJS: Writing points end A: 491520/518426
+[DEBUG] snarkJS: Writing points end A: 458752/518426
+[DEBUG] snarkJS: Writing points end A: 425984/518426
+[DEBUG] snarkJS: Writing points start B1: 0/518426
+[DEBUG] snarkJS: Writing points start B1: 32768/518426
+[DEBUG] snarkJS: Writing points start B1: 65536/518426
+[DEBUG] snarkJS: Writing points start B1: 98304/518426
+[DEBUG] snarkJS: Writing points start B1: 131072/518426
+[DEBUG] snarkJS: Writing points start B1: 163840/518426
+[DEBUG] snarkJS: Writing points start B1: 196608/518426
+[DEBUG] snarkJS: Writing points start B1: 229376/518426
+[DEBUG] snarkJS: Writing points end B1: 0/518426
+[DEBUG] snarkJS: Writing points end B1: 32768/518426
+[DEBUG] snarkJS: Writing points end B1: 65536/518426
+[DEBUG] snarkJS: Writing points end B1: 98304/518426
+[DEBUG] snarkJS: Writing points end B1: 131072/518426
+[DEBUG] snarkJS: Writing points end B1: 163840/518426
+[DEBUG] snarkJS: Writing points end B1: 196608/518426
+[DEBUG] snarkJS: Writing points end B1: 229376/518426
+[DEBUG] snarkJS: Writing points start B1: 262144/518426
+[DEBUG] snarkJS: Writing points start B1: 294912/518426
+[DEBUG] snarkJS: Writing points start B1: 327680/518426
+[DEBUG] snarkJS: Writing points start B1: 360448/518426
+[DEBUG] snarkJS: Writing points start B1: 393216/518426
+[DEBUG] snarkJS: Writing points start B1: 425984/518426
+[DEBUG] snarkJS: Writing points start B1: 458752/518426
+[DEBUG] snarkJS: Writing points start B1: 491520/518426
+[DEBUG] snarkJS: Writing points end B1: 262144/518426
+[DEBUG] snarkJS: Writing points end B1: 294912/518426
+[DEBUG] snarkJS: Writing points end B1: 327680/518426
+[DEBUG] snarkJS: Writing points end B1: 360448/518426
+[DEBUG] snarkJS: Writing points end B1: 393216/518426
+[DEBUG] snarkJS: Writing points end B1: 425984/518426
+[DEBUG] snarkJS: Writing points end B1: 458752/518426
+[DEBUG] snarkJS: Writing points end B1: 491520/518426
+[DEBUG] snarkJS: Writing points start B2: 0/518426
+[DEBUG] snarkJS: Writing points start B2: 32768/518426
+[DEBUG] snarkJS: Writing points start B2: 65536/518426
+[DEBUG] snarkJS: Writing points start B2: 98304/518426
+[DEBUG] snarkJS: Writing points start B2: 131072/518426
+[DEBUG] snarkJS: Writing points start B2: 163840/518426
+[DEBUG] snarkJS: Writing points start B2: 196608/518426
+[DEBUG] snarkJS: Writing points start B2: 229376/518426
+[DEBUG] snarkJS: Writing points end B2: 0/518426
+[DEBUG] snarkJS: Writing points end B2: 32768/518426
+[DEBUG] snarkJS: Writing points end B2: 65536/518426
+[DEBUG] snarkJS: Writing points end B2: 98304/518426
+[DEBUG] snarkJS: Writing points end B2: 131072/518426
+[DEBUG] snarkJS: Writing points end B2: 163840/518426
+[DEBUG] snarkJS: Writing points end B2: 196608/518426
+[DEBUG] snarkJS: Writing points end B2: 229376/518426
+[DEBUG] snarkJS: Writing points start B2: 262144/518426
+[DEBUG] snarkJS: Writing points start B2: 294912/518426
+[DEBUG] snarkJS: Writing points start B2: 327680/518426
+[DEBUG] snarkJS: Writing points start B2: 360448/518426
+[DEBUG] snarkJS: Writing points start B2: 393216/518426
+[DEBUG] snarkJS: Writing points start B2: 425984/518426
+[DEBUG] snarkJS: Writing points start B2: 458752/518426
+[DEBUG] snarkJS: Writing points start B2: 491520/518426
+[DEBUG] snarkJS: Writing points end B2: 262144/518426
+[DEBUG] snarkJS: Writing points end B2: 294912/518426
+[DEBUG] snarkJS: Writing points end B2: 327680/518426
+[DEBUG] snarkJS: Writing points end B2: 360448/518426
+[DEBUG] snarkJS: Writing points end B2: 393216/518426
+[DEBUG] snarkJS: Writing points end B2: 491520/518426
+[DEBUG] snarkJS: Writing points end B2: 425984/518426
+[DEBUG] snarkJS: Writing points end B2: 458752/518426
+[INFO]  snarkJS: Circuit hash:
+                c8ab490c 1a6534ac 3853e38a ecf9cbfd
+                ef3782f8 743227b2 b7dc770a 64b0c292
+                5a8c5913 aae38305 3348e5ae 17741c07
+                e251ce06 34446a76 bad90ae6 58e2c345
+[DEBUG] snarkJS: Same ratio check L section:  0/518423
+[DEBUG] snarkJS: H Verificaition(tau):  0/524288
+[DEBUG] snarkJS: H Verificaition(lagrange):  0/524288
+[INFO]  snarkJS: Circuit Hash:
+                c8ab490c 1a6534ac 3853e38a ecf9cbfd
+                ef3782f8 743227b2 b7dc770a 64b0c292
+                5a8c5913 aae38305 3348e5ae 17741c07
+                e251ce06 34446a76 bad90ae6 58e2c345
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 final beacon phase 2:
+                736e4c9a ae570d2a ea7b20aa 1380d43d
+                c3434232 409c5528 9b1bab88 27ca89a9
+                d7861390 bdbd8d4e b5dedad2 39a1ddb3
+                c2d03acf 22761be8 284f16c1 52178c87
+[INFO]  snarkJS: Beacon generator: 4a247118f3c77bc962cf
+[INFO]  snarkJS: Beacon iterations Exp: 10
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 3rd zkey contribution:
+                cc600101 0fac495a 8a4b9a8e ff4e6716
+                8034f016 4ed43181 4a24eb44 3d9bf88b
+                c7a24422 513dfd79 2200eec6 69564735
+                d6b3c713 4086120a 0113a033 9054e8e5
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 2nd zkey contribution:
+                e1a0e20d 5926f786 842e8f52 9ad62a16
+                f91f26f8 7f2e9c54 9d686035 23a66c15
+                864d8439 2e5abecf cce381fb 1f0dd8cc
+                5979b96e 8eb6470a 04d56123 220aa27a
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 1st zkey contribution:
+                664feac2 5473f3cd 65d699b3 79d2c82b
+                1b84f2b4 ad1154d7 434b22ef 0d0d10b9
+                2fc43c53 8c06e532 6b0ef6d8 d0a883f9
+                dee52d51 918f29f2 9adaf3cd 74d9f56c
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+
+Done in 676.13s.

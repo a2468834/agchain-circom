@@ -1,0 +1,74 @@
+[23:46:57] a2468834@WSL:/mnt/d/snarkjs-example$ (yarn compile evaluateMerkleTreePos2; yarn compile evaluateMerkleTreePos4; yarn compile evaluateMerkleTreePos8; yarn compile evaluateMerkleTreePos16;)
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMerkleTreePos2
+
+[Compile]
+template instances: 74
+non-linear constraints: 246
+linear constraints: 532
+public inputs: 1
+public outputs: 0
+private inputs: 3
+private outputs: 0
+wires: 781
+labels: 781
+Written successfully: artifacts/evaluateMerkleTreePos2.r1cs
+Constraints written in: artifacts/evaluateMerkleTreePos2_constraints.json
+Written successfully: artifacts/evaluateMerkleTreePos2_js/evaluateMerkleTreePos2.wasm
+Everything went okay, circom safe
+Done in 1.89s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMerkleTreePos4
+
+[Compile]
+template instances: 74
+non-linear constraints: 738
+linear constraints: 1590
+public inputs: 1
+public outputs: 0
+private inputs: 7
+private outputs: 0
+wires: 2333
+labels: 2333
+Written successfully: artifacts/evaluateMerkleTreePos4.r1cs
+Constraints written in: artifacts/evaluateMerkleTreePos4_constraints.json
+Written successfully: artifacts/evaluateMerkleTreePos4_js/evaluateMerkleTreePos4.wasm
+Everything went okay, circom safe
+Done in 4.25s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMerkleTreePos8
+
+[Compile]
+template instances: 74
+non-linear constraints: 1722
+linear constraints: 3706
+public inputs: 1
+public outputs: 0
+private inputs: 15
+private outputs: 0
+wires: 5437
+labels: 5437
+Written successfully: artifacts/evaluateMerkleTreePos8.r1cs
+Constraints written in: artifacts/evaluateMerkleTreePos8_constraints.json
+Written successfully: artifacts/evaluateMerkleTreePos8_js/evaluateMerkleTreePos8.wasm
+Everything went okay, circom safe
+Done in 9.69s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMerkleTreePos16
+
+[Compile]
+template instances: 74
+non-linear constraints: 3690
+linear constraints: 7938
+public inputs: 1
+public outputs: 0
+private inputs: 31
+private outputs: 0
+wires: 11645
+labels: 11645
+Written successfully: artifacts/evaluateMerkleTreePos16.r1cs
+Constraints written in: artifacts/evaluateMerkleTreePos16_constraints.json
+Written successfully: artifacts/evaluateMerkleTreePos16_js/evaluateMerkleTreePos16.wasm
+Everything went okay, circom safe
+Done in 20.32s.
+[23:47:51] a2468834@WSL:/mnt/d/snarkjs-example$

@@ -1,0 +1,25 @@
+
+(yarn zkey evaluateMerkleTreeSHA2 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMerkleTreeSHA4 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMerkleTreeSHA8 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMerkleTreeSHA16 powers-of-tau/powersOfTau28_hez_final_25.ptau;)
+
+(yarn proof evaluateMerkleTreeSHA2 circuits/data/input2.json; yarn proof evaluateMerkleTreeSHA4 circuits/data/input4.json; yarn proof evaluateMerkleTreeSHA8 circuits/data/input8.json; yarn proof evaluateMerkleTreeSHA16 circuits/data/input16.json;)
+
+(yarn compile evaluateMerkleTreeSHA2; yarn compile evaluateMerkleTreeSHA4; yarn compile evaluateMerkleTreeSHA8; yarn compile evaluateMerkleTreeSHA16)
+
+(\
+yarn zkey evaluateMerkleTreeSHA2 powers-of-tau/powersOfTau28_hez_final_25.ptau;\
+yarn zkey evaluateMerkleTreeSHA4 powers-of-tau/powersOfTau28_hez_final_25.ptau;\
+yarn proof evaluateMerkleTreeSHA2 circuits/data/input2.json;\
+yarn proof evaluateMerkleTreeSHA4 circuits/data/input4.json;\
+yarn compile evaluateMerkleTreeSHA16;\
+)
+
+(yarn compile evaluateMainCkt16; yarn compile evaluateMainCkt30; yarn compile evaluateMainCkt60; yarn compile evaluateMainCkt90;)
+
+
+
+
+(yarn compile evaluateMainCkt2; yarn compile evaluateMainCkt4; yarn compile evaluateMainCkt8; yarn compile evaluateMainCkt16; yarn compile evaluateMainCkt30)
+
+(yarn zkey evaluateMainCkt2 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMainCkt4 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMainCkt8 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMainCkt16 powers-of-tau/powersOfTau28_hez_final_25.ptau; yarn zkey evaluateMainCkt30 powers-of-tau/powersOfTau28_hez_final_25.ptau)
+
+(yarn proof evaluateMainCkt2 circuits/data/input2.json; yarn proof evaluateMainCkt4 circuits/data/input4.json; yarn proof evaluateMainCkt8 circuits/data/input8.json; yarn proof evaluateMainCkt16 circuits/data/input16.json; yarn proof evaluateMainCkt30 circuits/data/input30.json)

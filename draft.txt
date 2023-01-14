@@ -1,0 +1,7 @@
+node scripts/test.js
+
+yarn compile merkleTree
+
+yarn zkey merkleTree powers-of-tau/powersOfTau28_hez_final_25.ptau
+
+yarn proof merkleTree circuits/data/input.json

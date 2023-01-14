@@ -1,0 +1,91 @@
+[02:10:04] a2468834@WSL:/mnt/d/snarkjs-example$ (yarn compile evaluateMainCkt2; yarn compile evaluateMainCkt4; yarn compile evaluateMainCkt8; yarn compile evaluateMainCkt16; yarn compile evaluateMainCkt30)
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCkt2
+
+[Compile]
+template instances: 6
+non-linear constraints: 5766
+linear constraints: 20172
+public inputs: 2
+public outputs: 0
+private inputs: 5762
+private outputs: 0
+wires: 34586
+labels: 34586
+Written successfully: artifacts/evaluateMainCkt2.r1cs
+Constraints written in: artifacts/evaluateMainCkt2_constraints.json
+Written successfully: artifacts/evaluateMainCkt2_js/evaluateMainCkt2.wasm
+Everything went okay, circom safe
+Done in 43.12s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCkt4
+
+[Compile]
+template instances: 6
+non-linear constraints: 11526
+linear constraints: 40332
+public inputs: 2
+public outputs: 0
+private inputs: 11522
+private outputs: 0
+wires: 69146
+labels: 69146
+Written successfully: artifacts/evaluateMainCkt4.r1cs
+Constraints written in: artifacts/evaluateMainCkt4_constraints.json
+Written successfully: artifacts/evaluateMainCkt4_js/evaluateMainCkt4.wasm
+Everything went okay, circom safe
+Done in 100.38s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCkt8
+
+[Compile]
+template instances: 6
+non-linear constraints: 23046
+linear constraints: 80652
+public inputs: 2
+public outputs: 0
+private inputs: 23042
+private outputs: 0
+wires: 138266
+labels: 138266
+Written successfully: artifacts/evaluateMainCkt8.r1cs
+Constraints written in: artifacts/evaluateMainCkt8_constraints.json
+Written successfully: artifacts/evaluateMainCkt8_js/evaluateMainCkt8.wasm
+Everything went okay, circom safe
+Done in 292.48s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCkt16
+
+[Compile]
+template instances: 6
+non-linear constraints: 46086
+linear constraints: 161292
+public inputs: 2
+public outputs: 0
+private inputs: 46082
+private outputs: 0
+wires: 276506
+labels: 276506
+Written successfully: artifacts/evaluateMainCkt16.r1cs
+Constraints written in: artifacts/evaluateMainCkt16_constraints.json
+Written successfully: artifacts/evaluateMainCkt16_js/evaluateMainCkt16.wasm
+Everything went okay, circom safe
+Done in 969.93s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCkt30
+
+[Compile]
+template instances: 6
+non-linear constraints: 86406
+linear constraints: 302412
+public inputs: 2
+public outputs: 0
+private inputs: 86402
+private outputs: 0
+wires: 518426
+labels: 518426
+Written successfully: artifacts/evaluateMainCkt30.r1cs
+Constraints written in: artifacts/evaluateMainCkt30_constraints.json
+Written successfully: artifacts/evaluateMainCkt30_js/evaluateMainCkt30.wasm
+Everything went okay, circom safe
+Done in 3319.73s.

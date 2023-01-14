@@ -1,0 +1,59 @@
+[03:24:47] a2468834@WSL:/mnt/d/snarkjs-example$ yarn compile evaluateMainCkt
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCkt
+
+[Compile]
+error[T3001]: Out of bounds exception
+   ┌─ "circuits/evaluateMainCkt.circom":44:24
+   │
+44 │         in_SDM[i] === (in[length] - average) ** 2;
+   │                        ^^^^^^^^^^ found here
+   │
+   = call trace:
+     ->Main
+      ->checkArraySDM
+
+previous errors were found
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+[03:24:48] a2468834@WSL:/mnt/d/snarkjs-example$ yarn compile evaluateMainCkt
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCkt
+
+[Compile]
+Unknown
+template instances: 6
+non-linear constraints: 6
+linear constraints: 24
+public inputs: 5
+public outputs: 0
+private inputs: 7
+private outputs: 0
+wires: 38
+labels: 38
+Written successfully: artifacts/evaluateMainCkt.r1cs
+Constraints written in: artifacts/evaluateMainCkt_constraints.json
+Written successfully: artifacts/evaluateMainCkt_js/evaluateMainCkt.wasm
+Everything went okay, circom safe
+Done in 0.37s.
+[03:25:10] a2468834@WSL:/mnt/d/snarkjs-example$ yarn compile evaluateMainCkt
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMainCkt
+
+[Compile]
+Unknown
+template instances: 6
+non-linear constraints: 172802
+linear constraints: 691208
+public inputs: 172801
+public outputs: 0
+private inputs: 172803
+private outputs: 0
+wires: 1036814
+labels: 1036814
+Written successfully: artifacts/evaluateMainCkt.r1cs
+Constraints written in: artifacts/evaluateMainCkt_constraints.json
+Written successfully: artifacts/evaluateMainCkt_js/evaluateMainCkt.wasm
+Everything went okay, circom safe
+Done in 18285.66s.
+[08:37:03] a2468834@WSL:/mnt/d/snarkjs-example$

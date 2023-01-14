@@ -1,0 +1,2071 @@
+[03:57:19] a2468834@WSL:/mnt/d/snarkjs-example$ (yarn proof evaluateMainCkt2 circuits/data/input2.json; yarn proof evaluateMainCkt4 circuits/data/input4.json; yarn proof evaluateMainCkt8 circuits/data/input8.json; yarn proof evaluateMainCkt16 circuits/data/input16.json; yarn proof evaluateMainCkt30 circuits/data/input30.json)
+yarn run v1.22.19
+$ node scripts/createProof.js evaluateMainCkt2 circuits/data/input2.json
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 fullprove circuits/data/input2.json artifacts/evaluateMainCkt2_js/evaluateMainCkt2.wasm circuits/zkey/evaluateMainCkt2_final.zkey circuits/data/evaluateMainCkt2_proof.json circuits/data/evaluateMainCkt2_public.json -v
+[DEBUG] snarkJS: Reading Wtns
+[DEBUG] snarkJS: Reading Coeffs
+[DEBUG] snarkJS: Building ABC
+[DEBUG] snarkJS: QAP AB: 0/11535
+[DEBUG] snarkJS: QAP C: 0/32768
+[DEBUG] snarkJS: IFFT_A: fft 15 mix start: 0/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix start: 1/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix start: 2/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix start: 3/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix start: 4/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix start: 5/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix start: 6/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix start: 7/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix end: 0/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix end: 1/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix end: 2/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix end: 3/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix end: 4/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix end: 5/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix end: 6/8
+[DEBUG] snarkJS: IFFT_A: fft 15 mix end: 7/8
+[DEBUG] snarkJS: IFFT_A: fft  15  join: 13/15
+[DEBUG] snarkJS: IFFT_A: fft 15 join  13/15  1/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft 15 join  13/15  2/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft 15 join  13/15  3/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft 15 join  13/15  4/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft  15  join: 14/15
+[DEBUG] snarkJS: IFFT_A: fft 15 join  14/15  1/2 0/2
+[DEBUG] snarkJS: IFFT_A: fft 15 join  14/15  2/2 0/2
+[DEBUG] snarkJS: IFFT_A: fft 15 join  14/15  1/2 1/2
+[DEBUG] snarkJS: IFFT_A: fft 15 join  14/15  2/2 1/2
+[DEBUG] snarkJS: IFFT_A: fft  15  join: 15/15
+[DEBUG] snarkJS: IFFT_A: fft 15 join  15/15  1/1 0/4
+[DEBUG] snarkJS: IFFT_A: fft 15 join  15/15  1/1 2/4
+[DEBUG] snarkJS: IFFT_A: fft 15 join  15/15  1/1 1/4
+[DEBUG] snarkJS: IFFT_A: fft 15 join  15/15  1/1 3/4
+[DEBUG] snarkJS: FFT_A: fft 15 mix start: 0/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix start: 1/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix start: 2/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix start: 3/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix start: 4/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix start: 5/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix start: 6/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix start: 7/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix end: 3/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix end: 2/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix end: 4/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix end: 6/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix end: 0/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix end: 1/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix end: 5/8
+[DEBUG] snarkJS: FFT_A: fft 15 mix end: 7/8
+[DEBUG] snarkJS: FFT_A: fft  15  join: 13/15
+[DEBUG] snarkJS: FFT_A: fft 15 join  13/15  1/4 0/1
+[DEBUG] snarkJS: FFT_A: fft 15 join  13/15  3/4 0/1
+[DEBUG] snarkJS: FFT_A: fft 15 join  13/15  2/4 0/1
+[DEBUG] snarkJS: FFT_A: fft 15 join  13/15  4/4 0/1
+[DEBUG] snarkJS: FFT_A: fft  15  join: 14/15
+[DEBUG] snarkJS: FFT_A: fft 15 join  14/15  1/2 0/2
+[DEBUG] snarkJS: FFT_A: fft 15 join  14/15  2/2 1/2
+[DEBUG] snarkJS: FFT_A: fft 15 join  14/15  1/2 1/2
+[DEBUG] snarkJS: FFT_A: fft 15 join  14/15  2/2 0/2
+[DEBUG] snarkJS: FFT_A: fft  15  join: 15/15
+[DEBUG] snarkJS: FFT_A: fft 15 join  15/15  1/1 0/4
+[DEBUG] snarkJS: FFT_A: fft 15 join  15/15  1/1 2/4
+[DEBUG] snarkJS: FFT_A: fft 15 join  15/15  1/1 1/4
+[DEBUG] snarkJS: FFT_A: fft 15 join  15/15  1/1 3/4
+[DEBUG] snarkJS: IFFT_B: fft 15 mix start: 0/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix start: 1/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix start: 2/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix start: 3/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix start: 4/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix start: 5/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix start: 6/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix start: 7/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix end: 2/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix end: 0/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix end: 4/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix end: 6/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix end: 5/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix end: 3/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix end: 1/8
+[DEBUG] snarkJS: IFFT_B: fft 15 mix end: 7/8
+[DEBUG] snarkJS: IFFT_B: fft  15  join: 13/15
+[DEBUG] snarkJS: IFFT_B: fft 15 join  13/15  1/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft 15 join  13/15  3/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft 15 join  13/15  2/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft 15 join  13/15  4/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft  15  join: 14/15
+[DEBUG] snarkJS: IFFT_B: fft 15 join  14/15  1/2 1/2
+[DEBUG] snarkJS: IFFT_B: fft 15 join  14/15  2/2 0/2
+[DEBUG] snarkJS: IFFT_B: fft 15 join  14/15  1/2 0/2
+[DEBUG] snarkJS: IFFT_B: fft 15 join  14/15  2/2 1/2
+[DEBUG] snarkJS: IFFT_B: fft  15  join: 15/15
+[DEBUG] snarkJS: IFFT_B: fft 15 join  15/15  1/1 0/4
+[DEBUG] snarkJS: IFFT_B: fft 15 join  15/15  1/1 2/4
+[DEBUG] snarkJS: IFFT_B: fft 15 join  15/15  1/1 1/4
+[DEBUG] snarkJS: IFFT_B: fft 15 join  15/15  1/1 3/4
+[DEBUG] snarkJS: FFT_B: fft 15 mix start: 0/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix start: 1/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix start: 2/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix start: 3/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix start: 4/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix start: 5/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix start: 6/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix start: 7/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix end: 2/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix end: 3/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix end: 6/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix end: 7/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix end: 1/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix end: 4/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix end: 5/8
+[DEBUG] snarkJS: FFT_B: fft 15 mix end: 0/8
+[DEBUG] snarkJS: FFT_B: fft  15  join: 13/15
+[DEBUG] snarkJS: FFT_B: fft 15 join  13/15  1/4 0/1
+[DEBUG] snarkJS: FFT_B: fft 15 join  13/15  2/4 0/1
+[DEBUG] snarkJS: FFT_B: fft 15 join  13/15  3/4 0/1
+[DEBUG] snarkJS: FFT_B: fft 15 join  13/15  4/4 0/1
+[DEBUG] snarkJS: FFT_B: fft  15  join: 14/15
+[DEBUG] snarkJS: FFT_B: fft 15 join  14/15  1/2 0/2
+[DEBUG] snarkJS: FFT_B: fft 15 join  14/15  1/2 1/2
+[DEBUG] snarkJS: FFT_B: fft 15 join  14/15  2/2 0/2
+[DEBUG] snarkJS: FFT_B: fft 15 join  14/15  2/2 1/2
+[DEBUG] snarkJS: FFT_B: fft  15  join: 15/15
+[DEBUG] snarkJS: FFT_B: fft 15 join  15/15  1/1 0/4
+[DEBUG] snarkJS: FFT_B: fft 15 join  15/15  1/1 1/4
+[DEBUG] snarkJS: FFT_B: fft 15 join  15/15  1/1 2/4
+[DEBUG] snarkJS: FFT_B: fft 15 join  15/15  1/1 3/4
+[DEBUG] snarkJS: IFFT_C: fft 15 mix start: 0/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix start: 1/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix start: 2/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix start: 3/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix start: 4/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix start: 5/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix start: 6/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix start: 7/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix end: 0/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix end: 3/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix end: 4/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix end: 2/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix end: 5/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix end: 1/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix end: 6/8
+[DEBUG] snarkJS: IFFT_C: fft 15 mix end: 7/8
+[DEBUG] snarkJS: IFFT_C: fft  15  join: 13/15
+[DEBUG] snarkJS: IFFT_C: fft 15 join  13/15  1/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft 15 join  13/15  2/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft 15 join  13/15  4/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft 15 join  13/15  3/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft  15  join: 14/15
+[DEBUG] snarkJS: IFFT_C: fft 15 join  14/15  1/2 0/2
+[DEBUG] snarkJS: IFFT_C: fft 15 join  14/15  1/2 1/2
+[DEBUG] snarkJS: IFFT_C: fft 15 join  14/15  2/2 0/2
+[DEBUG] snarkJS: IFFT_C: fft 15 join  14/15  2/2 1/2
+[DEBUG] snarkJS: IFFT_C: fft  15  join: 15/15
+[DEBUG] snarkJS: IFFT_C: fft 15 join  15/15  1/1 0/4
+[DEBUG] snarkJS: IFFT_C: fft 15 join  15/15  1/1 1/4
+[DEBUG] snarkJS: IFFT_C: fft 15 join  15/15  1/1 2/4
+[DEBUG] snarkJS: IFFT_C: fft 15 join  15/15  1/1 3/4
+[DEBUG] snarkJS: FFT_C: fft 15 mix start: 0/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix start: 1/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix start: 2/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix start: 3/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix start: 4/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix start: 5/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix start: 6/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix start: 7/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix end: 0/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix end: 1/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix end: 3/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix end: 2/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix end: 4/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix end: 6/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix end: 7/8
+[DEBUG] snarkJS: FFT_C: fft 15 mix end: 5/8
+[DEBUG] snarkJS: FFT_C: fft  15  join: 13/15
+[DEBUG] snarkJS: FFT_C: fft 15 join  13/15  1/4 0/1
+[DEBUG] snarkJS: FFT_C: fft 15 join  13/15  3/4 0/1
+[DEBUG] snarkJS: FFT_C: fft 15 join  13/15  2/4 0/1
+[DEBUG] snarkJS: FFT_C: fft 15 join  13/15  4/4 0/1
+[DEBUG] snarkJS: FFT_C: fft  15  join: 14/15
+[DEBUG] snarkJS: FFT_C: fft 15 join  14/15  1/2 1/2
+[DEBUG] snarkJS: FFT_C: fft 15 join  14/15  2/2 1/2
+[DEBUG] snarkJS: FFT_C: fft 15 join  14/15  1/2 0/2
+[DEBUG] snarkJS: FFT_C: fft 15 join  14/15  2/2 0/2
+[DEBUG] snarkJS: FFT_C: fft  15  join: 15/15
+[DEBUG] snarkJS: FFT_C: fft 15 join  15/15  1/1 1/4
+[DEBUG] snarkJS: FFT_C: fft 15 join  15/15  1/1 0/4
+[DEBUG] snarkJS: FFT_C: fft 15 join  15/15  1/1 2/4
+[DEBUG] snarkJS: FFT_C: fft 15 join  15/15  1/1 3/4
+[DEBUG] snarkJS: Join ABC
+[DEBUG] snarkJS: JoinABC: 0/32768
+[DEBUG] snarkJS: Reading A Points
+[DEBUG] snarkJS: Multiexp start: multiexp A: 0/34586
+[DEBUG] snarkJS: Multiexp end: multiexp A: 0/34586
+[DEBUG] snarkJS: Reading B1 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B1: 0/34586
+[DEBUG] snarkJS: Multiexp end: multiexp B1: 0/34586
+[DEBUG] snarkJS: Reading B2 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B2: 0/34586
+[DEBUG] snarkJS: Multiexp end: multiexp B2: 0/34586
+[DEBUG] snarkJS: Reading C Points
+[DEBUG] snarkJS: Multiexp start: multiexp C: 0/34583
+[DEBUG] snarkJS: Multiexp end: multiexp C: 0/34583
+[DEBUG] snarkJS: Reading H Points
+[DEBUG] snarkJS: Multiexp start: multiexp H: 0/32768
+[DEBUG] snarkJS: Multiexp end: multiexp H: 0/32768
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export verificationkey circuits/zkey/evaluateMainCkt2_final.zkey circuits/zkey/evaluateMainCkt2_verification_key.json -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 verify circuits/zkey/evaluateMainCkt2_verification_key.json circuits/data/evaluateMainCkt2_public.json circuits/data/evaluateMainCkt2_proof.json -v
+[INFO]  snarkJS: OK!
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export solidityverifier circuits/zkey/evaluateMainCkt2_final.zkey contracts/evaluateMainCkt2_verifier.sol -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export soliditycalldata circuits/data/evaluateMainCkt2_public.json circuits/data/evaluateMainCkt2_proof.json -v
+["0x19ae5fddb3c57740dfcb5e3be766970ec7eee6bdc6445c7c2c32fb188d3c0efa", "0x2fa3f662de34d4185052837044d8d975396e2a9661f6c44a76bd5fb29575e42f"],[["0x19a4085d1e731082c30ec27b7541344cbae16f1000ab9d5852613a289c77a0cd", "0x28de1060fc63e5bcd6650f6f09619367a36804906a7b6e79ba981ee5853942ea"],["0x0e1f554c0edc073c2fef3fef3eb86c45b6f70aa32aa1692e254fff3ce688f6b2", "0x014bdd7a69767103f1a85b6c94fb052d059944343c11649b69a15c3743438753"]],["0x1c8e1734eed7a0cada24f0b6e820f59be5e4e9b1476a31527deb9d06e9623c03", "0x223539dcaad296a850a87051b8bd64c739e2d277407d2498865eb15a1e477d26"],["0x0000000000000000000000000000000000000000000000000000000000000000","0x000000000000000000000000000000000000000000000000000000024fdfc680"]
+
+Done in 11.65s.
+yarn run v1.22.19
+$ node scripts/createProof.js evaluateMainCkt4 circuits/data/input4.json
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 fullprove circuits/data/input4.json artifacts/evaluateMainCkt4_js/evaluateMainCkt4.wasm circuits/zkey/evaluateMainCkt4_final.zkey circuits/data/evaluateMainCkt4_proof.json circuits/data/evaluateMainCkt4_public.json -v
+[DEBUG] snarkJS: Reading Wtns
+[DEBUG] snarkJS: Reading Coeffs
+[DEBUG] snarkJS: Building ABC
+[DEBUG] snarkJS: QAP AB: 0/23055
+[DEBUG] snarkJS: QAP C: 0/65536
+[DEBUG] snarkJS: IFFT_A: fft 16 mix start: 0/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix start: 1/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix start: 2/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix start: 3/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix start: 4/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix start: 5/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix start: 6/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix start: 7/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix end: 0/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix end: 1/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix end: 2/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix end: 3/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix end: 4/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix end: 5/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix end: 6/8
+[DEBUG] snarkJS: IFFT_A: fft 16 mix end: 7/8
+[DEBUG] snarkJS: IFFT_A: fft  16  join: 14/16
+[DEBUG] snarkJS: IFFT_A: fft 16 join  14/16  1/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft 16 join  14/16  2/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft 16 join  14/16  3/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft 16 join  14/16  4/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft  16  join: 15/16
+[DEBUG] snarkJS: IFFT_A: fft 16 join  15/16  1/2 0/2
+[DEBUG] snarkJS: IFFT_A: fft 16 join  15/16  1/2 1/2
+[DEBUG] snarkJS: IFFT_A: fft 16 join  15/16  2/2 0/2
+[DEBUG] snarkJS: IFFT_A: fft 16 join  15/16  2/2 1/2
+[DEBUG] snarkJS: IFFT_A: fft  16  join: 16/16
+[DEBUG] snarkJS: IFFT_A: fft 16 join  16/16  1/1 2/4
+[DEBUG] snarkJS: IFFT_A: fft 16 join  16/16  1/1 3/4
+[DEBUG] snarkJS: IFFT_A: fft 16 join  16/16  1/1 0/4
+[DEBUG] snarkJS: IFFT_A: fft 16 join  16/16  1/1 1/4
+[DEBUG] snarkJS: FFT_A: fft 16 mix start: 0/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix start: 1/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix start: 2/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix start: 3/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix start: 4/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix start: 5/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix start: 6/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix start: 7/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix end: 1/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix end: 0/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix end: 2/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix end: 3/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix end: 4/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix end: 5/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix end: 6/8
+[DEBUG] snarkJS: FFT_A: fft 16 mix end: 7/8
+[DEBUG] snarkJS: FFT_A: fft  16  join: 14/16
+[DEBUG] snarkJS: FFT_A: fft 16 join  14/16  1/4 0/1
+[DEBUG] snarkJS: FFT_A: fft 16 join  14/16  4/4 0/1
+[DEBUG] snarkJS: FFT_A: fft 16 join  14/16  3/4 0/1
+[DEBUG] snarkJS: FFT_A: fft 16 join  14/16  2/4 0/1
+[DEBUG] snarkJS: FFT_A: fft  16  join: 15/16
+[DEBUG] snarkJS: FFT_A: fft 16 join  15/16  1/2 0/2
+[DEBUG] snarkJS: FFT_A: fft 16 join  15/16  2/2 0/2
+[DEBUG] snarkJS: FFT_A: fft 16 join  15/16  1/2 1/2
+[DEBUG] snarkJS: FFT_A: fft 16 join  15/16  2/2 1/2
+[DEBUG] snarkJS: FFT_A: fft  16  join: 16/16
+[DEBUG] snarkJS: FFT_A: fft 16 join  16/16  1/1 0/4
+[DEBUG] snarkJS: FFT_A: fft 16 join  16/16  1/1 1/4
+[DEBUG] snarkJS: FFT_A: fft 16 join  16/16  1/1 2/4
+[DEBUG] snarkJS: FFT_A: fft 16 join  16/16  1/1 3/4
+[DEBUG] snarkJS: IFFT_B: fft 16 mix start: 0/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix start: 1/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix start: 2/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix start: 3/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix start: 4/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix start: 5/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix start: 6/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix start: 7/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix end: 3/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix end: 0/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix end: 2/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix end: 4/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix end: 1/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix end: 5/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix end: 7/8
+[DEBUG] snarkJS: IFFT_B: fft 16 mix end: 6/8
+[DEBUG] snarkJS: IFFT_B: fft  16  join: 14/16
+[DEBUG] snarkJS: IFFT_B: fft 16 join  14/16  1/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft 16 join  14/16  3/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft 16 join  14/16  2/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft 16 join  14/16  4/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft  16  join: 15/16
+[DEBUG] snarkJS: IFFT_B: fft 16 join  15/16  1/2 0/2
+[DEBUG] snarkJS: IFFT_B: fft 16 join  15/16  1/2 1/2
+[DEBUG] snarkJS: IFFT_B: fft 16 join  15/16  2/2 0/2
+[DEBUG] snarkJS: IFFT_B: fft 16 join  15/16  2/2 1/2
+[DEBUG] snarkJS: IFFT_B: fft  16  join: 16/16
+[DEBUG] snarkJS: IFFT_B: fft 16 join  16/16  1/1 0/4
+[DEBUG] snarkJS: IFFT_B: fft 16 join  16/16  1/1 1/4
+[DEBUG] snarkJS: IFFT_B: fft 16 join  16/16  1/1 2/4
+[DEBUG] snarkJS: IFFT_B: fft 16 join  16/16  1/1 3/4
+[DEBUG] snarkJS: FFT_B: fft 16 mix start: 0/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix start: 1/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix start: 2/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix start: 3/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix start: 4/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix start: 5/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix start: 6/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix start: 7/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix end: 0/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix end: 4/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix end: 2/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix end: 6/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix end: 7/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix end: 3/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix end: 1/8
+[DEBUG] snarkJS: FFT_B: fft 16 mix end: 5/8
+[DEBUG] snarkJS: FFT_B: fft  16  join: 14/16
+[DEBUG] snarkJS: FFT_B: fft 16 join  14/16  1/4 0/1
+[DEBUG] snarkJS: FFT_B: fft 16 join  14/16  3/4 0/1
+[DEBUG] snarkJS: FFT_B: fft 16 join  14/16  2/4 0/1
+[DEBUG] snarkJS: FFT_B: fft 16 join  14/16  4/4 0/1
+[DEBUG] snarkJS: FFT_B: fft  16  join: 15/16
+[DEBUG] snarkJS: FFT_B: fft 16 join  15/16  1/2 0/2
+[DEBUG] snarkJS: FFT_B: fft 16 join  15/16  2/2 0/2
+[DEBUG] snarkJS: FFT_B: fft 16 join  15/16  1/2 1/2
+[DEBUG] snarkJS: FFT_B: fft 16 join  15/16  2/2 1/2
+[DEBUG] snarkJS: FFT_B: fft  16  join: 16/16
+[DEBUG] snarkJS: FFT_B: fft 16 join  16/16  1/1 0/4
+[DEBUG] snarkJS: FFT_B: fft 16 join  16/16  1/1 1/4
+[DEBUG] snarkJS: FFT_B: fft 16 join  16/16  1/1 2/4
+[DEBUG] snarkJS: FFT_B: fft 16 join  16/16  1/1 3/4
+[DEBUG] snarkJS: IFFT_C: fft 16 mix start: 0/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix start: 1/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix start: 2/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix start: 3/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix start: 4/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix start: 5/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix start: 6/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix start: 7/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix end: 2/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix end: 1/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix end: 5/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix end: 0/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix end: 4/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix end: 7/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix end: 3/8
+[DEBUG] snarkJS: IFFT_C: fft 16 mix end: 6/8
+[DEBUG] snarkJS: IFFT_C: fft  16  join: 14/16
+[DEBUG] snarkJS: IFFT_C: fft 16 join  14/16  1/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft 16 join  14/16  2/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft 16 join  14/16  3/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft 16 join  14/16  4/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft  16  join: 15/16
+[DEBUG] snarkJS: IFFT_C: fft 16 join  15/16  1/2 0/2
+[DEBUG] snarkJS: IFFT_C: fft 16 join  15/16  2/2 0/2
+[DEBUG] snarkJS: IFFT_C: fft 16 join  15/16  1/2 1/2
+[DEBUG] snarkJS: IFFT_C: fft 16 join  15/16  2/2 1/2
+[DEBUG] snarkJS: IFFT_C: fft  16  join: 16/16
+[DEBUG] snarkJS: IFFT_C: fft 16 join  16/16  1/1 0/4
+[DEBUG] snarkJS: IFFT_C: fft 16 join  16/16  1/1 2/4
+[DEBUG] snarkJS: IFFT_C: fft 16 join  16/16  1/1 1/4
+[DEBUG] snarkJS: IFFT_C: fft 16 join  16/16  1/1 3/4
+[DEBUG] snarkJS: FFT_C: fft 16 mix start: 0/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix start: 1/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix start: 2/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix start: 3/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix start: 4/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix start: 5/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix start: 6/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix start: 7/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix end: 5/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix end: 0/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix end: 1/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix end: 3/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix end: 2/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix end: 4/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix end: 6/8
+[DEBUG] snarkJS: FFT_C: fft 16 mix end: 7/8
+[DEBUG] snarkJS: FFT_C: fft  16  join: 14/16
+[DEBUG] snarkJS: FFT_C: fft 16 join  14/16  2/4 0/1
+[DEBUG] snarkJS: FFT_C: fft 16 join  14/16  3/4 0/1
+[DEBUG] snarkJS: FFT_C: fft 16 join  14/16  1/4 0/1
+[DEBUG] snarkJS: FFT_C: fft 16 join  14/16  4/4 0/1
+[DEBUG] snarkJS: FFT_C: fft  16  join: 15/16
+[DEBUG] snarkJS: FFT_C: fft 16 join  15/16  2/2 1/2
+[DEBUG] snarkJS: FFT_C: fft 16 join  15/16  2/2 0/2
+[DEBUG] snarkJS: FFT_C: fft 16 join  15/16  1/2 0/2
+[DEBUG] snarkJS: FFT_C: fft 16 join  15/16  1/2 1/2
+[DEBUG] snarkJS: FFT_C: fft  16  join: 16/16
+[DEBUG] snarkJS: FFT_C: fft 16 join  16/16  1/1 0/4
+[DEBUG] snarkJS: FFT_C: fft 16 join  16/16  1/1 2/4
+[DEBUG] snarkJS: FFT_C: fft 16 join  16/16  1/1 1/4
+[DEBUG] snarkJS: FFT_C: fft 16 join  16/16  1/1 3/4
+[DEBUG] snarkJS: Join ABC
+[DEBUG] snarkJS: JoinABC: 0/65536
+[DEBUG] snarkJS: Reading A Points
+[DEBUG] snarkJS: Multiexp start: multiexp A: 0/69146
+[DEBUG] snarkJS: Multiexp end: multiexp A: 0/69146
+[DEBUG] snarkJS: Reading B1 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B1: 0/69146
+[DEBUG] snarkJS: Multiexp end: multiexp B1: 0/69146
+[DEBUG] snarkJS: Reading B2 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B2: 0/69146
+[DEBUG] snarkJS: Multiexp end: multiexp B2: 0/69146
+[DEBUG] snarkJS: Reading C Points
+[DEBUG] snarkJS: Multiexp start: multiexp C: 0/69143
+[DEBUG] snarkJS: Multiexp end: multiexp C: 0/69143
+[DEBUG] snarkJS: Reading H Points
+[DEBUG] snarkJS: Multiexp start: multiexp H: 0/65536
+[DEBUG] snarkJS: Multiexp end: multiexp H: 0/65536
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export verificationkey circuits/zkey/evaluateMainCkt4_final.zkey circuits/zkey/evaluateMainCkt4_verification_key.json -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 verify circuits/zkey/evaluateMainCkt4_verification_key.json circuits/data/evaluateMainCkt4_public.json circuits/data/evaluateMainCkt4_proof.json -v
+[INFO]  snarkJS: OK!
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export solidityverifier circuits/zkey/evaluateMainCkt4_final.zkey contracts/evaluateMainCkt4_verifier.sol -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export soliditycalldata circuits/data/evaluateMainCkt4_public.json circuits/data/evaluateMainCkt4_proof.json -v
+["0x24f090416f37bce71f3bce2a230dca3f8d04d172c9bb0731ab4939cf6013c5df", "0x0507b6a844a3ae2cb58894d40e4a7b79cc05682a40333b12da64efe472fd78a5"],[["0x155098afe9925021b1c8d84821279ad425fe5e5f7274b0ba88bb7c96a988b14b", "0x1c1bc2621f8ec45fb43485cb46b97be3b267dbe685017533c86c9eb36a071add"],["0x1b03bf68de014014571ea6af2174e4ffc307cb228a457ce7d0dc2c7dc8f8b46e", "0x2168a13eac735728095a7881d1a945e0cbbed4e3b1829c840edea725753d060e"]],["0x2ea0ad0e7ddb7a2b0b364dfcba4004c03ba94075fbcd960533adfbe48fd77b75", "0x176dd09bbf78aa34586069547ee66e014ff4e5634831a6db1ebac822bc4cd5ed"],["0x0000000000000000000000000000000000000000000000000000000000000000","0x000000000000000000000000000000000000000000000000000000024fdfc680"]
+
+Done in 14.21s.
+yarn run v1.22.19
+$ node scripts/createProof.js evaluateMainCkt8 circuits/data/input8.json
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 fullprove circuits/data/input8.json artifacts/evaluateMainCkt8_js/evaluateMainCkt8.wasm circuits/zkey/evaluateMainCkt8_final.zkey circuits/data/evaluateMainCkt8_proof.json circuits/data/evaluateMainCkt8_public.json -v
+[DEBUG] snarkJS: Reading Wtns
+[DEBUG] snarkJS: Reading Coeffs
+[DEBUG] snarkJS: Building ABC
+[DEBUG] snarkJS: QAP AB: 0/46095
+[DEBUG] snarkJS: QAP C: 0/131072
+[DEBUG] snarkJS: IFFT_A: fft 17 mix start: 0/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix start: 1/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix start: 2/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix start: 3/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix start: 4/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix start: 5/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix start: 6/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix start: 7/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix end: 5/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix end: 0/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix end: 3/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix end: 4/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix end: 1/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix end: 6/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix end: 2/8
+[DEBUG] snarkJS: IFFT_A: fft 17 mix end: 7/8
+[DEBUG] snarkJS: IFFT_A: fft  17  join: 15/17
+[DEBUG] snarkJS: IFFT_A: fft 17 join  15/17  1/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft 17 join  15/17  2/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft 17 join  15/17  3/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft 17 join  15/17  4/4 0/1
+[DEBUG] snarkJS: IFFT_A: fft  17  join: 16/17
+[DEBUG] snarkJS: IFFT_A: fft 17 join  16/17  1/2 0/2
+[DEBUG] snarkJS: IFFT_A: fft 17 join  16/17  1/2 1/2
+[DEBUG] snarkJS: IFFT_A: fft 17 join  16/17  2/2 0/2
+[DEBUG] snarkJS: IFFT_A: fft 17 join  16/17  2/2 1/2
+[DEBUG] snarkJS: IFFT_A: fft  17  join: 17/17
+[DEBUG] snarkJS: IFFT_A: fft 17 join  17/17  1/1 0/4
+[DEBUG] snarkJS: IFFT_A: fft 17 join  17/17  1/1 1/4
+[DEBUG] snarkJS: IFFT_A: fft 17 join  17/17  1/1 2/4
+[DEBUG] snarkJS: IFFT_A: fft 17 join  17/17  1/1 3/4
+[DEBUG] snarkJS: FFT_A: fft 17 mix start: 0/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix start: 1/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix start: 2/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix start: 3/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix start: 4/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix start: 5/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix start: 6/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix start: 7/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix end: 0/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix end: 1/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix end: 2/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix end: 3/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix end: 5/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix end: 4/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix end: 6/8
+[DEBUG] snarkJS: FFT_A: fft 17 mix end: 7/8
+[DEBUG] snarkJS: FFT_A: fft  17  join: 15/17
+[DEBUG] snarkJS: FFT_A: fft 17 join  15/17  1/4 0/1
+[DEBUG] snarkJS: FFT_A: fft 17 join  15/17  2/4 0/1
+[DEBUG] snarkJS: FFT_A: fft 17 join  15/17  3/4 0/1
+[DEBUG] snarkJS: FFT_A: fft 17 join  15/17  4/4 0/1
+[DEBUG] snarkJS: FFT_A: fft  17  join: 16/17
+[DEBUG] snarkJS: FFT_A: fft 17 join  16/17  1/2 0/2
+[DEBUG] snarkJS: FFT_A: fft 17 join  16/17  1/2 1/2
+[DEBUG] snarkJS: FFT_A: fft 17 join  16/17  2/2 0/2
+[DEBUG] snarkJS: FFT_A: fft 17 join  16/17  2/2 1/2
+[DEBUG] snarkJS: FFT_A: fft  17  join: 17/17
+[DEBUG] snarkJS: FFT_A: fft 17 join  17/17  1/1 0/4
+[DEBUG] snarkJS: FFT_A: fft 17 join  17/17  1/1 1/4
+[DEBUG] snarkJS: FFT_A: fft 17 join  17/17  1/1 2/4
+[DEBUG] snarkJS: FFT_A: fft 17 join  17/17  1/1 3/4
+[DEBUG] snarkJS: IFFT_B: fft 17 mix start: 0/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix start: 1/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix start: 2/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix start: 3/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix start: 4/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix start: 5/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix start: 6/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix start: 7/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix end: 4/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix end: 2/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix end: 3/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix end: 5/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix end: 0/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix end: 6/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix end: 7/8
+[DEBUG] snarkJS: IFFT_B: fft 17 mix end: 1/8
+[DEBUG] snarkJS: IFFT_B: fft  17  join: 15/17
+[DEBUG] snarkJS: IFFT_B: fft 17 join  15/17  2/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft 17 join  15/17  1/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft 17 join  15/17  3/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft 17 join  15/17  4/4 0/1
+[DEBUG] snarkJS: IFFT_B: fft  17  join: 16/17
+[DEBUG] snarkJS: IFFT_B: fft 17 join  16/17  1/2 0/2
+[DEBUG] snarkJS: IFFT_B: fft 17 join  16/17  2/2 0/2
+[DEBUG] snarkJS: IFFT_B: fft 17 join  16/17  1/2 1/2
+[DEBUG] snarkJS: IFFT_B: fft 17 join  16/17  2/2 1/2
+[DEBUG] snarkJS: IFFT_B: fft  17  join: 17/17
+[DEBUG] snarkJS: IFFT_B: fft 17 join  17/17  1/1 1/4
+[DEBUG] snarkJS: IFFT_B: fft 17 join  17/17  1/1 2/4
+[DEBUG] snarkJS: IFFT_B: fft 17 join  17/17  1/1 0/4
+[DEBUG] snarkJS: IFFT_B: fft 17 join  17/17  1/1 3/4
+[DEBUG] snarkJS: FFT_B: fft 17 mix start: 0/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix start: 1/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix start: 2/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix start: 3/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix start: 4/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix start: 5/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix start: 6/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix start: 7/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix end: 0/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix end: 2/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix end: 3/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix end: 1/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix end: 5/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix end: 4/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix end: 6/8
+[DEBUG] snarkJS: FFT_B: fft 17 mix end: 7/8
+[DEBUG] snarkJS: FFT_B: fft  17  join: 15/17
+[DEBUG] snarkJS: FFT_B: fft 17 join  15/17  2/4 0/1
+[DEBUG] snarkJS: FFT_B: fft 17 join  15/17  4/4 0/1
+[DEBUG] snarkJS: FFT_B: fft 17 join  15/17  1/4 0/1
+[DEBUG] snarkJS: FFT_B: fft 17 join  15/17  3/4 0/1
+[DEBUG] snarkJS: FFT_B: fft  17  join: 16/17
+[DEBUG] snarkJS: FFT_B: fft 17 join  16/17  1/2 0/2
+[DEBUG] snarkJS: FFT_B: fft 17 join  16/17  1/2 1/2
+[DEBUG] snarkJS: FFT_B: fft 17 join  16/17  2/2 0/2
+[DEBUG] snarkJS: FFT_B: fft 17 join  16/17  2/2 1/2
+[DEBUG] snarkJS: FFT_B: fft  17  join: 17/17
+[DEBUG] snarkJS: FFT_B: fft 17 join  17/17  1/1 0/4
+[DEBUG] snarkJS: FFT_B: fft 17 join  17/17  1/1 1/4
+[DEBUG] snarkJS: FFT_B: fft 17 join  17/17  1/1 3/4
+[DEBUG] snarkJS: FFT_B: fft 17 join  17/17  1/1 2/4
+[DEBUG] snarkJS: IFFT_C: fft 17 mix start: 0/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix start: 1/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix start: 2/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix start: 3/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix start: 4/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix start: 5/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix start: 6/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix start: 7/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix end: 1/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix end: 0/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix end: 3/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix end: 6/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix end: 5/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix end: 4/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix end: 7/8
+[DEBUG] snarkJS: IFFT_C: fft 17 mix end: 2/8
+[DEBUG] snarkJS: IFFT_C: fft  17  join: 15/17
+[DEBUG] snarkJS: IFFT_C: fft 17 join  15/17  1/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft 17 join  15/17  2/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft 17 join  15/17  3/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft 17 join  15/17  4/4 0/1
+[DEBUG] snarkJS: IFFT_C: fft  17  join: 16/17
+[DEBUG] snarkJS: IFFT_C: fft 17 join  16/17  1/2 0/2
+[DEBUG] snarkJS: IFFT_C: fft 17 join  16/17  1/2 1/2
+[DEBUG] snarkJS: IFFT_C: fft 17 join  16/17  2/2 0/2
+[DEBUG] snarkJS: IFFT_C: fft 17 join  16/17  2/2 1/2
+[DEBUG] snarkJS: IFFT_C: fft  17  join: 17/17
+[DEBUG] snarkJS: IFFT_C: fft 17 join  17/17  1/1 0/4
+[DEBUG] snarkJS: IFFT_C: fft 17 join  17/17  1/1 3/4
+[DEBUG] snarkJS: IFFT_C: fft 17 join  17/17  1/1 1/4
+[DEBUG] snarkJS: IFFT_C: fft 17 join  17/17  1/1 2/4
+[DEBUG] snarkJS: FFT_C: fft 17 mix start: 0/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix start: 1/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix start: 2/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix start: 3/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix start: 4/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix start: 5/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix start: 6/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix start: 7/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix end: 5/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix end: 3/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix end: 2/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix end: 6/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix end: 1/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix end: 0/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix end: 4/8
+[DEBUG] snarkJS: FFT_C: fft 17 mix end: 7/8
+[DEBUG] snarkJS: FFT_C: fft  17  join: 15/17
+[DEBUG] snarkJS: FFT_C: fft 17 join  15/17  2/4 0/1
+[DEBUG] snarkJS: FFT_C: fft 17 join  15/17  3/4 0/1
+[DEBUG] snarkJS: FFT_C: fft 17 join  15/17  1/4 0/1
+[DEBUG] snarkJS: FFT_C: fft 17 join  15/17  4/4 0/1
+[DEBUG] snarkJS: FFT_C: fft  17  join: 16/17
+[DEBUG] snarkJS: FFT_C: fft 17 join  16/17  1/2 0/2
+[DEBUG] snarkJS: FFT_C: fft 17 join  16/17  1/2 1/2
+[DEBUG] snarkJS: FFT_C: fft 17 join  16/17  2/2 0/2
+[DEBUG] snarkJS: FFT_C: fft 17 join  16/17  2/2 1/2
+[DEBUG] snarkJS: FFT_C: fft  17  join: 17/17
+[DEBUG] snarkJS: FFT_C: fft 17 join  17/17  1/1 0/4
+[DEBUG] snarkJS: FFT_C: fft 17 join  17/17  1/1 1/4
+[DEBUG] snarkJS: FFT_C: fft 17 join  17/17  1/1 2/4
+[DEBUG] snarkJS: FFT_C: fft 17 join  17/17  1/1 3/4
+[DEBUG] snarkJS: Join ABC
+[DEBUG] snarkJS: JoinABC: 0/131072
+[DEBUG] snarkJS: Reading A Points
+[DEBUG] snarkJS: Multiexp start: multiexp A: 0/138266
+[DEBUG] snarkJS: Multiexp end: multiexp A: 0/138266
+[DEBUG] snarkJS: Reading B1 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B1: 0/138266
+[DEBUG] snarkJS: Multiexp end: multiexp B1: 0/138266
+[DEBUG] snarkJS: Reading B2 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B2: 0/138266
+[DEBUG] snarkJS: Multiexp end: multiexp B2: 0/138266
+[DEBUG] snarkJS: Reading C Points
+[DEBUG] snarkJS: Multiexp start: multiexp C: 0/138263
+[DEBUG] snarkJS: Multiexp end: multiexp C: 0/138263
+[DEBUG] snarkJS: Reading H Points
+[DEBUG] snarkJS: Multiexp start: multiexp H: 0/131072
+[DEBUG] snarkJS: Multiexp end: multiexp H: 0/131072
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export verificationkey circuits/zkey/evaluateMainCkt8_final.zkey circuits/zkey/evaluateMainCkt8_verification_key.json -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 verify circuits/zkey/evaluateMainCkt8_verification_key.json circuits/data/evaluateMainCkt8_public.json circuits/data/evaluateMainCkt8_proof.json -v
+[INFO]  snarkJS: OK!
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export solidityverifier circuits/zkey/evaluateMainCkt8_final.zkey contracts/evaluateMainCkt8_verifier.sol -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export soliditycalldata circuits/data/evaluateMainCkt8_public.json circuits/data/evaluateMainCkt8_proof.json -v
+["0x1abd312e008c209ba7ee3bcd36f97c89a24ef68a3d7ab8707bb1d665cd1214d2", "0x2e677e055c5b56f8dc3ff35aaa8734bec96b6ad5ea3014f6186e2bb9c2750faa"],[["0x221ad0562ff328c3d720aa6660dd797a5976bb114dbeaa73f9bc9e01cd382d3c", "0x2c5b559aeffe4c3424debb18914acde17327b8049a74c1f2d44b3b1e075382a3"],["0x04a821eefad68b7242bd6272322ee9136e2c42c77eeef4e60476f3a65e67ed12", "0x06581f1e69db7e8d7c5ed7679354e7f4b7377a5592e126f906fc7aa651d15120"]],["0x15ec887ebe1d51f9983ac28a3d3dc9d65a97a6fb501653e735ed4b0ec8ae004c", "0x2497c818527f6122825ae859b7574d505ef89eb8f6222a91016fd0cf3157f21b"],["0x0000000000000000000000000000000000000000000000000000000000000000","0x000000000000000000000000000000000000000000000000000000024fdfc680"]
+
+Done in 16.61s.
+yarn run v1.22.19
+$ node scripts/createProof.js evaluateMainCkt16 circuits/data/input16.json
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 fullprove circuits/data/input16.json artifacts/evaluateMainCkt16_js/evaluateMainCkt16.wasm circuits/zkey/evaluateMainCkt16_final.zkey circuits/data/evaluateMainCkt16_proof.json circuits/data/evaluateMainCkt16_public.json -v
+[DEBUG] snarkJS: Reading Wtns
+[DEBUG] snarkJS: Reading Coeffs
+[DEBUG] snarkJS: Building ABC
+[DEBUG] snarkJS: QAP AB: 0/92175
+[DEBUG] snarkJS: QAP C: 0/262144
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 0/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 1/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 2/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 3/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 4/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 5/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 6/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 7/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 8/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 9/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 10/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 11/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 12/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 13/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 14/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix start: 15/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 0/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 3/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 2/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 1/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 7/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 4/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 5/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 6/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 9/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 8/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 11/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 10/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 13/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 12/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 14/16
+[DEBUG] snarkJS: IFFT_A: fft 18 mix end: 15/16
+[DEBUG] snarkJS: IFFT_A: fft  18  join: 15/18
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: IFFT_A: fft  18  join: 16/18
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: IFFT_A: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: IFFT_A: fft  18  join: 17/18
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: IFFT_A: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: IFFT_A: fft  18  join: 18/18
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: IFFT_A: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 0/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 1/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 2/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 3/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 4/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 5/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 6/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 7/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 8/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 9/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 10/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 11/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 12/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 13/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 14/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix start: 15/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 1/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 3/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 4/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 0/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 6/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 2/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 5/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 7/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 8/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 10/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 9/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 11/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 12/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 13/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 14/16
+[DEBUG] snarkJS: FFT_A: fft 18 mix end: 15/16
+[DEBUG] snarkJS: FFT_A: fft  18  join: 15/18
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: FFT_A: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: FFT_A: fft  18  join: 16/18
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: FFT_A: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: FFT_A: fft  18  join: 17/18
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: FFT_A: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: FFT_A: fft  18  join: 18/18
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: FFT_A: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 0/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 1/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 2/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 3/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 4/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 5/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 6/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 7/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 8/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 9/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 10/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 11/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 12/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 13/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 14/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix start: 15/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 5/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 2/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 6/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 0/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 1/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 3/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 7/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 4/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 8/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 9/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 10/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 11/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 12/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 14/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 13/16
+[DEBUG] snarkJS: IFFT_B: fft 18 mix end: 15/16
+[DEBUG] snarkJS: IFFT_B: fft  18  join: 15/18
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: IFFT_B: fft  18  join: 16/18
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: IFFT_B: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: IFFT_B: fft  18  join: 17/18
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: IFFT_B: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: IFFT_B: fft  18  join: 18/18
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: IFFT_B: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 0/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 1/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 2/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 3/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 4/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 5/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 6/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 7/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 8/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 9/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 10/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 11/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 12/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 13/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 14/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix start: 15/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 1/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 2/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 0/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 6/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 3/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 4/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 5/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 7/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 8/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 9/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 10/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 11/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 12/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 13/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 14/16
+[DEBUG] snarkJS: FFT_B: fft 18 mix end: 15/16
+[DEBUG] snarkJS: FFT_B: fft  18  join: 15/18
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: FFT_B: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: FFT_B: fft  18  join: 16/18
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: FFT_B: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: FFT_B: fft  18  join: 17/18
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: FFT_B: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: FFT_B: fft  18  join: 18/18
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: FFT_B: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 0/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 1/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 2/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 3/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 4/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 5/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 6/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 7/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 8/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 9/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 10/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 11/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 12/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 13/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 14/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix start: 15/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 0/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 2/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 3/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 4/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 1/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 5/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 6/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 7/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 12/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 9/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 8/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 14/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 10/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 11/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 13/16
+[DEBUG] snarkJS: IFFT_C: fft 18 mix end: 15/16
+[DEBUG] snarkJS: IFFT_C: fft  18  join: 15/18
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: IFFT_C: fft  18  join: 16/18
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: IFFT_C: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: IFFT_C: fft  18  join: 17/18
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: IFFT_C: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: IFFT_C: fft  18  join: 18/18
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: IFFT_C: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 0/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 1/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 2/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 3/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 4/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 5/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 6/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 7/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 8/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 9/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 10/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 11/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 12/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 13/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 14/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix start: 15/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 0/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 5/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 2/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 6/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 3/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 4/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 1/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 7/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 11/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 9/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 8/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 10/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 14/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 13/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 12/16
+[DEBUG] snarkJS: FFT_C: fft 18 mix end: 15/16
+[DEBUG] snarkJS: FFT_C: fft  18  join: 15/18
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  1/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  5/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  2/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  4/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  6/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  3/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  7/8 0/1
+[DEBUG] snarkJS: FFT_C: fft 18 join  15/18  8/8 0/1
+[DEBUG] snarkJS: FFT_C: fft  18  join: 16/18
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  1/4 0/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  1/4 1/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  2/4 0/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  2/4 1/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  3/4 0/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  3/4 1/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  4/4 0/2
+[DEBUG] snarkJS: FFT_C: fft 18 join  16/18  4/4 1/2
+[DEBUG] snarkJS: FFT_C: fft  18  join: 17/18
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  1/2 0/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  1/2 2/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  1/2 1/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  1/2 3/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  2/2 0/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  2/2 2/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  2/2 3/4
+[DEBUG] snarkJS: FFT_C: fft 18 join  17/18  2/2 1/4
+[DEBUG] snarkJS: FFT_C: fft  18  join: 18/18
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 1/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 2/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 0/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 4/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 5/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 6/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 7/8
+[DEBUG] snarkJS: FFT_C: fft 18 join  18/18  1/1 3/8
+[DEBUG] snarkJS: Join ABC
+[DEBUG] snarkJS: JoinABC: 0/262144
+[DEBUG] snarkJS: Reading A Points
+[DEBUG] snarkJS: Multiexp start: multiexp A: 0/276506
+[DEBUG] snarkJS: Multiexp end: multiexp A: 0/276506
+[DEBUG] snarkJS: Reading B1 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B1: 0/276506
+[DEBUG] snarkJS: Multiexp end: multiexp B1: 0/276506
+[DEBUG] snarkJS: Reading B2 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B2: 0/276506
+[DEBUG] snarkJS: Multiexp end: multiexp B2: 0/276506
+[DEBUG] snarkJS: Reading C Points
+[DEBUG] snarkJS: Multiexp start: multiexp C: 0/276503
+[DEBUG] snarkJS: Multiexp end: multiexp C: 0/276503
+[DEBUG] snarkJS: Reading H Points
+[DEBUG] snarkJS: Multiexp start: multiexp H: 0/262144
+[DEBUG] snarkJS: Multiexp end: multiexp H: 0/262144
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export verificationkey circuits/zkey/evaluateMainCkt16_final.zkey circuits/zkey/evaluateMainCkt16_verification_key.json -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 verify circuits/zkey/evaluateMainCkt16_verification_key.json circuits/data/evaluateMainCkt16_public.json circuits/data/evaluateMainCkt16_proof.json -v
+[INFO]  snarkJS: OK!
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export solidityverifier circuits/zkey/evaluateMainCkt16_final.zkey contracts/evaluateMainCkt16_verifier.sol -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export soliditycalldata circuits/data/evaluateMainCkt16_public.json circuits/data/evaluateMainCkt16_proof.json -v
+["0x0eecb534c1367cd11c1c9be100a6a1c396022cf27285f4db339fdfbe371738ad", "0x005d37129023c48752c193c5b4d7c8d3f3b892ff37d4cc406c95a5d2926d744c"],[["0x2df986f4d68ec722e4b6e272c4847a17ae5399cc7dca36419783f80b93ee3cd2", "0x0cca55ecb748b1e3f5300271a07ca4f38431617160c47ee545d3076ae708abe6"],["0x2c55ee385343a9613ab3051927bd39179a54a2bf86d585001c9e7319e01660fe", "0x0527a7de5199273adeba636c99558ae9f6b7b1f79e6bf79b89f4762f7c381279"]],["0x06eaceb27846a8b3d2ea94c256625ab9d8e7bbe71c045b2a8dc270191fcbbef5", "0x15492f475338fbf1883c1132e7d73c1aeb10db083341a04bb82449b6b1ce0a4f"],["0x0000000000000000000000000000000000000000000000000000000000000000","0x000000000000000000000000000000000000000000000000000000024fdfc680"]
+
+Done in 21.48s.
+yarn run v1.22.19
+$ node scripts/createProof.js evaluateMainCkt30 circuits/data/input30.json
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 fullprove circuits/data/input30.json artifacts/evaluateMainCkt30_js/evaluateMainCkt30.wasm circuits/zkey/evaluateMainCkt30_final.zkey circuits/data/evaluateMainCkt30_proof.json circuits/data/evaluateMainCkt30_public.json -v
+[DEBUG] snarkJS: Reading Wtns
+[DEBUG] snarkJS: Reading Coeffs
+[DEBUG] snarkJS: Building ABC
+[DEBUG] snarkJS: QAP AB: 0/172815
+[DEBUG] snarkJS: QAP C: 0/524288
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 0/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 1/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 2/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 3/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 4/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 5/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 6/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 7/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 8/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 9/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 10/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 11/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 12/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 13/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 14/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 15/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 16/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 17/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 18/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 19/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 20/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 21/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 22/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 23/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 24/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 25/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 26/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 27/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 28/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 29/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 30/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix start: 31/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 2/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 5/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 6/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 3/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 0/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 4/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 1/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 7/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 8/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 10/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 12/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 9/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 13/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 14/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 11/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 15/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 16/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 17/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 18/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 19/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 20/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 22/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 21/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 23/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 25/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 24/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 26/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 27/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 28/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 30/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 29/32
+[DEBUG] snarkJS: IFFT_A: fft 19 mix end: 31/32
+[DEBUG] snarkJS: IFFT_A: fft  19  join: 15/19
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  1/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  2/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  4/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  5/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  6/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  3/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  8/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  9/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  10/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  11/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  7/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  12/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  13/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  14/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  15/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft 19 join  15/19  16/16 0/1
+[DEBUG] snarkJS: IFFT_A: fft  19  join: 16/19
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  1/8 0/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  3/8 0/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  4/8 0/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  2/8 1/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  3/8 1/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  4/8 1/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  1/8 1/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  2/8 0/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  6/8 0/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  5/8 0/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  8/8 0/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  6/8 1/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  5/8 1/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  7/8 1/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  7/8 0/2
+[DEBUG] snarkJS: IFFT_A: fft 19 join  16/19  8/8 1/2
+[DEBUG] snarkJS: IFFT_A: fft  19  join: 17/19
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  1/4 0/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  1/4 1/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  1/4 2/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  1/4 3/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  2/4 0/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  2/4 1/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  2/4 2/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  2/4 3/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  3/4 0/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  3/4 1/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  3/4 2/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  3/4 3/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  4/4 0/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  4/4 1/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  4/4 2/4
+[DEBUG] snarkJS: IFFT_A: fft 19 join  17/19  4/4 3/4
+[DEBUG] snarkJS: IFFT_A: fft  19  join: 18/19
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  1/2 0/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  1/2 1/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  1/2 3/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  1/2 5/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  1/2 6/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  1/2 7/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  1/2 2/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  1/2 4/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  2/2 0/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  2/2 2/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  2/2 1/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  2/2 5/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  2/2 3/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  2/2 4/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  2/2 6/8
+[DEBUG] snarkJS: IFFT_A: fft 19 join  18/19  2/2 7/8
+[DEBUG] snarkJS: IFFT_A: fft  19  join: 19/19
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 0/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 6/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 1/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 7/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 2/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 3/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 4/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 5/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 8/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 11/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 10/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 9/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 12/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 14/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 13/16
+[DEBUG] snarkJS: IFFT_A: fft 19 join  19/19  1/1 15/16
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 0/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 1/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 2/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 3/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 4/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 5/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 6/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 7/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 8/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 9/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 10/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 11/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 12/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 13/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 14/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 15/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 16/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 17/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 18/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 19/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 20/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 21/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 22/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 23/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 24/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 25/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 26/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 27/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 28/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 29/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 30/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix start: 31/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 3/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 1/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 5/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 7/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 2/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 4/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 6/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 0/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 8/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 9/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 15/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 12/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 10/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 11/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 13/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 17/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 16/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 14/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 19/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 18/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 20/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 24/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 21/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 23/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 22/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 25/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 26/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 27/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 29/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 28/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 31/32
+[DEBUG] snarkJS: FFT_A: fft 19 mix end: 30/32
+[DEBUG] snarkJS: FFT_A: fft  19  join: 15/19
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  3/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  4/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  5/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  6/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  7/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  1/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  2/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  10/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  12/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  13/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  8/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  11/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  16/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  15/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  14/16 0/1
+[DEBUG] snarkJS: FFT_A: fft 19 join  15/19  9/16 0/1
+[DEBUG] snarkJS: FFT_A: fft  19  join: 16/19
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  2/8 0/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  1/8 0/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  1/8 1/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  2/8 1/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  3/8 0/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  3/8 1/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  4/8 0/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  4/8 1/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  5/8 1/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  5/8 0/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  6/8 1/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  7/8 0/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  6/8 0/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  8/8 0/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  7/8 1/2
+[DEBUG] snarkJS: FFT_A: fft 19 join  16/19  8/8 1/2
+[DEBUG] snarkJS: FFT_A: fft  19  join: 17/19
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  1/4 0/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  1/4 1/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  1/4 2/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  1/4 3/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  2/4 0/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  2/4 1/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  2/4 2/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  3/4 0/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  3/4 1/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  2/4 3/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  3/4 3/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  3/4 2/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  4/4 0/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  4/4 2/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  4/4 1/4
+[DEBUG] snarkJS: FFT_A: fft 19 join  17/19  4/4 3/4
+[DEBUG] snarkJS: FFT_A: fft  19  join: 18/19
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  1/2 2/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  1/2 6/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  1/2 7/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  1/2 0/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  1/2 1/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  1/2 3/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  1/2 4/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  1/2 5/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  2/2 0/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  2/2 3/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  2/2 6/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  2/2 1/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  2/2 2/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  2/2 5/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  2/2 7/8
+[DEBUG] snarkJS: FFT_A: fft 19 join  18/19  2/2 4/8
+[DEBUG] snarkJS: FFT_A: fft  19  join: 19/19
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 0/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 3/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 2/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 4/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 5/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 1/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 7/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 6/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 9/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 11/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 8/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 10/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 13/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 14/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 12/16
+[DEBUG] snarkJS: FFT_A: fft 19 join  19/19  1/1 15/16
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 0/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 1/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 2/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 3/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 4/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 5/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 6/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 7/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 8/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 9/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 10/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 11/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 12/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 13/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 14/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 15/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 16/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 17/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 18/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 19/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 20/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 21/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 22/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 23/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 24/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 25/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 26/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 27/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 28/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 29/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 30/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix start: 31/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 2/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 3/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 1/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 4/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 5/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 0/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 7/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 6/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 8/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 10/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 12/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 9/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 11/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 13/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 14/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 15/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 20/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 16/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 19/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 18/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 17/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 21/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 22/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 23/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 27/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 24/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 26/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 25/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 29/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 31/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 30/32
+[DEBUG] snarkJS: IFFT_B: fft 19 mix end: 28/32
+[DEBUG] snarkJS: IFFT_B: fft  19  join: 15/19
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  4/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  6/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  8/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  1/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  2/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  3/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  7/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  5/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  10/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  12/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  13/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  11/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  9/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  14/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  16/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft 19 join  15/19  15/16 0/1
+[DEBUG] snarkJS: IFFT_B: fft  19  join: 16/19
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  1/8 1/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  2/8 0/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  2/8 1/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  3/8 0/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  4/8 0/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  4/8 1/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  1/8 0/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  5/8 1/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  3/8 1/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  5/8 0/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  8/8 0/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  6/8 0/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  6/8 1/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  7/8 0/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  7/8 1/2
+[DEBUG] snarkJS: IFFT_B: fft 19 join  16/19  8/8 1/2
+[DEBUG] snarkJS: IFFT_B: fft  19  join: 17/19
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  1/4 0/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  1/4 2/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  2/4 0/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  2/4 1/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  2/4 2/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  1/4 1/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  1/4 3/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  2/4 3/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  3/4 1/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  3/4 0/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  3/4 2/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  4/4 1/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  4/4 2/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  4/4 3/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  4/4 0/4
+[DEBUG] snarkJS: IFFT_B: fft 19 join  17/19  3/4 3/4
+[DEBUG] snarkJS: IFFT_B: fft  19  join: 18/19
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  1/2 0/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  1/2 3/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  1/2 4/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  1/2 2/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  1/2 7/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  1/2 1/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  1/2 5/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  1/2 6/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  2/2 4/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  2/2 0/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  2/2 5/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  2/2 3/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  2/2 1/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  2/2 2/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  2/2 6/8
+[DEBUG] snarkJS: IFFT_B: fft 19 join  18/19  2/2 7/8
+[DEBUG] snarkJS: IFFT_B: fft  19  join: 19/19
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 0/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 1/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 2/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 5/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 7/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 3/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 4/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 6/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 8/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 9/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 10/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 12/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 11/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 13/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 14/16
+[DEBUG] snarkJS: IFFT_B: fft 19 join  19/19  1/1 15/16
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 0/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 1/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 2/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 3/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 4/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 5/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 6/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 7/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 8/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 9/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 10/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 11/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 12/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 13/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 14/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 15/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 16/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 17/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 18/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 19/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 20/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 21/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 22/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 23/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 24/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 25/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 26/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 27/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 28/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 29/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 30/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix start: 31/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 4/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 6/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 5/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 0/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 2/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 1/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 7/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 3/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 8/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 11/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 9/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 10/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 12/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 13/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 14/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 15/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 16/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 18/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 17/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 19/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 21/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 20/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 22/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 23/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 24/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 26/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 25/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 27/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 28/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 29/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 30/32
+[DEBUG] snarkJS: FFT_B: fft 19 mix end: 31/32
+[DEBUG] snarkJS: FFT_B: fft  19  join: 15/19
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  3/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  4/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  5/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  7/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  8/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  1/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  2/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  6/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  10/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  9/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  11/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  12/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  14/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  13/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  15/16 0/1
+[DEBUG] snarkJS: FFT_B: fft 19 join  15/19  16/16 0/1
+[DEBUG] snarkJS: FFT_B: fft  19  join: 16/19
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  1/8 0/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  2/8 0/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  2/8 1/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  3/8 0/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  4/8 0/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  1/8 1/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  4/8 1/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  3/8 1/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  5/8 0/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  5/8 1/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  6/8 0/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  6/8 1/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  7/8 0/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  7/8 1/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  8/8 0/2
+[DEBUG] snarkJS: FFT_B: fft 19 join  16/19  8/8 1/2
+[DEBUG] snarkJS: FFT_B: fft  19  join: 17/19
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  1/4 0/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  1/4 1/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  1/4 2/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  1/4 3/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  2/4 0/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  2/4 1/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  2/4 2/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  2/4 3/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  3/4 0/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  3/4 2/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  3/4 1/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  4/4 1/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  4/4 2/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  4/4 0/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  3/4 3/4
+[DEBUG] snarkJS: FFT_B: fft 19 join  17/19  4/4 3/4
+[DEBUG] snarkJS: FFT_B: fft  19  join: 18/19
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  1/2 0/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  1/2 2/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  1/2 4/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  1/2 5/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  1/2 6/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  1/2 7/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  2/2 0/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  1/2 1/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  1/2 3/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  2/2 1/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  2/2 6/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  2/2 2/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  2/2 3/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  2/2 4/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  2/2 5/8
+[DEBUG] snarkJS: FFT_B: fft 19 join  18/19  2/2 7/8
+[DEBUG] snarkJS: FFT_B: fft  19  join: 19/19
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 0/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 2/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 3/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 4/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 6/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 1/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 5/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 7/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 8/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 9/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 10/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 11/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 12/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 13/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 14/16
+[DEBUG] snarkJS: FFT_B: fft 19 join  19/19  1/1 15/16
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 0/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 1/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 2/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 3/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 4/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 5/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 6/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 7/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 8/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 9/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 10/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 11/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 12/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 13/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 14/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 15/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 16/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 17/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 18/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 19/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 20/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 21/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 22/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 23/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 24/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 25/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 26/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 27/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 28/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 29/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 30/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix start: 31/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 1/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 5/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 2/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 4/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 3/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 0/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 7/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 6/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 8/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 11/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 9/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 10/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 12/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 13/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 14/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 15/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 16/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 17/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 20/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 18/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 19/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 21/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 22/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 23/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 26/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 27/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 25/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 29/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 24/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 28/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 30/32
+[DEBUG] snarkJS: IFFT_C: fft 19 mix end: 31/32
+[DEBUG] snarkJS: IFFT_C: fft  19  join: 15/19
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  2/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  3/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  5/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  7/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  8/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  1/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  4/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  6/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  9/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  10/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  13/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  11/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  12/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  15/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  16/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft 19 join  15/19  14/16 0/1
+[DEBUG] snarkJS: IFFT_C: fft  19  join: 16/19
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  1/8 0/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  2/8 0/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  4/8 0/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  2/8 1/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  1/8 1/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  3/8 0/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  3/8 1/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  6/8 0/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  4/8 1/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  5/8 0/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  5/8 1/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  6/8 1/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  7/8 0/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  7/8 1/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  8/8 1/2
+[DEBUG] snarkJS: IFFT_C: fft 19 join  16/19  8/8 0/2
+[DEBUG] snarkJS: IFFT_C: fft  19  join: 17/19
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  1/4 3/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  1/4 2/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  1/4 0/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  1/4 1/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  2/4 2/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  2/4 1/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  2/4 3/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  2/4 0/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  3/4 0/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  3/4 2/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  3/4 3/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  4/4 1/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  4/4 2/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  4/4 0/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  4/4 3/4
+[DEBUG] snarkJS: IFFT_C: fft 19 join  17/19  3/4 1/4
+[DEBUG] snarkJS: IFFT_C: fft  19  join: 18/19
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  1/2 0/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  1/2 2/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  1/2 5/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  1/2 1/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  1/2 3/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  1/2 4/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  1/2 6/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  1/2 7/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  2/2 0/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  2/2 1/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  2/2 2/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  2/2 3/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  2/2 4/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  2/2 5/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  2/2 6/8
+[DEBUG] snarkJS: IFFT_C: fft 19 join  18/19  2/2 7/8
+[DEBUG] snarkJS: IFFT_C: fft  19  join: 19/19
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 0/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 1/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 2/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 3/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 5/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 4/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 6/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 7/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 9/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 8/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 11/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 14/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 10/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 12/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 13/16
+[DEBUG] snarkJS: IFFT_C: fft 19 join  19/19  1/1 15/16
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 0/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 1/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 2/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 3/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 4/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 5/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 6/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 7/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 8/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 9/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 10/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 11/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 12/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 13/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 14/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 15/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 16/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 17/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 18/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 19/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 20/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 21/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 22/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 23/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 24/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 25/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 26/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 27/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 28/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 29/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 30/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix start: 31/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 4/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 2/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 1/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 0/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 3/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 6/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 5/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 7/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 9/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 10/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 8/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 14/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 13/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 12/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 11/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 15/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 17/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 16/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 18/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 19/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 20/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 22/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 21/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 23/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 26/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 24/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 25/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 28/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 27/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 31/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 29/32
+[DEBUG] snarkJS: FFT_C: fft 19 mix end: 30/32
+[DEBUG] snarkJS: FFT_C: fft  19  join: 15/19
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  5/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  4/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  2/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  3/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  6/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  7/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  8/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  1/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  9/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  11/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  10/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  13/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  15/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  12/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  16/16 0/1
+[DEBUG] snarkJS: FFT_C: fft 19 join  15/19  14/16 0/1
+[DEBUG] snarkJS: FFT_C: fft  19  join: 16/19
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  1/8 0/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  1/8 1/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  4/8 0/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  2/8 0/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  2/8 1/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  3/8 0/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  3/8 1/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  4/8 1/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  5/8 0/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  6/8 0/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  6/8 1/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  5/8 1/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  8/8 0/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  8/8 1/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  7/8 0/2
+[DEBUG] snarkJS: FFT_C: fft 19 join  16/19  7/8 1/2
+[DEBUG] snarkJS: FFT_C: fft  19  join: 17/19
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  1/4 1/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  1/4 0/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  1/4 2/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  1/4 3/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  2/4 0/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  2/4 1/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  2/4 2/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  2/4 3/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  3/4 1/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  3/4 0/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  3/4 2/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  4/4 0/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  3/4 3/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  4/4 1/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  4/4 2/4
+[DEBUG] snarkJS: FFT_C: fft 19 join  17/19  4/4 3/4
+[DEBUG] snarkJS: FFT_C: fft  19  join: 18/19
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  1/2 0/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  1/2 1/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  1/2 2/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  1/2 5/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  1/2 3/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  1/2 6/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  1/2 4/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  1/2 7/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  2/2 1/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  2/2 2/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  2/2 0/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  2/2 3/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  2/2 4/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  2/2 6/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  2/2 5/8
+[DEBUG] snarkJS: FFT_C: fft 19 join  18/19  2/2 7/8
+[DEBUG] snarkJS: FFT_C: fft  19  join: 19/19
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 1/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 2/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 3/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 4/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 5/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 6/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 0/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 7/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 10/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 11/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 9/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 12/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 8/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 14/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 13/16
+[DEBUG] snarkJS: FFT_C: fft 19 join  19/19  1/1 15/16
+[DEBUG] snarkJS: Join ABC
+[DEBUG] snarkJS: JoinABC: 0/524288
+[DEBUG] snarkJS: Reading A Points
+[DEBUG] snarkJS: Multiexp start: multiexp A: 0/518426
+[DEBUG] snarkJS: Multiexp end: multiexp A: 0/518426
+[DEBUG] snarkJS: Reading B1 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B1: 0/518426
+[DEBUG] snarkJS: Multiexp end: multiexp B1: 0/518426
+[DEBUG] snarkJS: Reading B2 Points
+[DEBUG] snarkJS: Multiexp start: multiexp B2: 0/518426
+[DEBUG] snarkJS: Multiexp end: multiexp B2: 0/518426
+[DEBUG] snarkJS: Reading C Points
+[DEBUG] snarkJS: Multiexp start: multiexp C: 0/518423
+[DEBUG] snarkJS: Multiexp end: multiexp C: 0/518423
+[DEBUG] snarkJS: Reading H Points
+[DEBUG] snarkJS: Multiexp start: multiexp H: 0/524288
+[DEBUG] snarkJS: Multiexp end: multiexp H: 0/524288
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export verificationkey circuits/zkey/evaluateMainCkt30_final.zkey circuits/zkey/evaluateMainCkt30_verification_key.json -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs groth16 verify circuits/zkey/evaluateMainCkt30_verification_key.json circuits/data/evaluateMainCkt30_public.json circuits/data/evaluateMainCkt30_proof.json -v
+[INFO]  snarkJS: OK!
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export solidityverifier circuits/zkey/evaluateMainCkt30_final.zkey contracts/evaluateMainCkt30_verifier.sol -v
+
+
+$ /mnt/d/snarkjs-example/node_modules/.bin/snarkjs zkey export soliditycalldata circuits/data/evaluateMainCkt30_public.json circuits/data/evaluateMainCkt30_proof.json -v
+["0x0df3031e7b2a81f6538090741ef465cef2cedb451b59065b140f5c1847647b8a", "0x2aa7bec6062780591a6ba8e7a6354f13d89f4986b933e30bd6c86b2e09a916a5"],[["0x1ef536ac19f2fb2ae3e47f40f6c8b7893a612a7f37fd6cf9ef1108d63ad005bb", "0x07b3b50200013f776f9c7a7c308de5fef6ceed08531ed9fecb8ffe833a4b64bf"],["0x1621cb3f0c20772e697be6b410442646d120ef7be20cebab822ea48eb0f92646", "0x1f4f44497201b7adb2e69d76714da8feeb609ad2729084c7d587032c8b355d4c"]],["0x245da150c33af146e96389be4da57af5251429974947f673f71d954fbd06885c", "0x22b22e9967ae967e8617db38f99b811fd12209df131436504b74742dbe8e5376"],["0x0000000000000000000000000000000000000000000000000000000000000000","0x000000000000000000000000000000000000000000000000000000024fdfc680"]
+
+Done in 26.70s.

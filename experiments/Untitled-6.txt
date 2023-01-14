@@ -1,0 +1,88 @@
+[01:03:57] a2468834@WSL:/mnt/d/snarkjs-example$ (yarn compile evaluateMerkleTreeSHA2; yarn compile evaluateMerkleTreeSHA4; yarn compile evaluateMerkleTreeSHA8; yarn compile evaluateMerkleTreeSHA16)
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMerkleTreeSHA2
+
+[Compile]
+Unknown
+Unknown
+Unknown
+template instances: 104
+non-linear constraints: 31387
+linear constraints: 173087
+public inputs: 1
+public outputs: 0
+private inputs: 3
+private outputs: 0
+wires: 204164
+labels: 204164
+Written successfully: artifacts/evaluateMerkleTreeSHA2.r1cs
+Constraints written in: artifacts/evaluateMerkleTreeSHA2_constraints.json
+Written successfully: artifacts/evaluateMerkleTreeSHA2_js/evaluateMerkleTreeSHA2.wasm
+Everything went okay, circom safe
+Done in 295.48s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMerkleTreeSHA4
+
+[Compile]
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+template instances: 104
+non-linear constraints: 94161
+linear constraints: 519257
+public inputs: 1
+public outputs: 0
+private inputs: 7
+private outputs: 0
+wires: 612482
+labels: 612482
+Written successfully: artifacts/evaluateMerkleTreeSHA4.r1cs
+Constraints written in: artifacts/evaluateMerkleTreeSHA4_constraints.json
+Written successfully: artifacts/evaluateMerkleTreeSHA4_js/evaluateMerkleTreeSHA4.wasm
+Everything went okay, circom safe
+Done in 909.77s.
+yarn run v1.22.19
+$ bash scripts/compile.sh evaluateMerkleTreeSHA8
+
+[Compile]
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+Unknown
+template instances: 104
+non-linear constraints: 219709
+linear constraints: 1211597
+public inputs: 1
+public outputs: 0
+private inputs: 15
+private outputs: 0
+wires: 1429118
+labels: 1429118
+Written successfully: artifacts/evaluateMerkleTreeSHA8.r1cs
+Constraints written in: artifacts/evaluateMerkleTreeSHA8_constraints.json
+Written successfully: artifacts/evaluateMerkleTreeSHA8_js/evaluateMerkleTreeSHA8.wasm
+Everything went okay, circom safe
+Done in 2140.07s.
